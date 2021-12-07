@@ -66,6 +66,15 @@ class OntologyReader:
                     this_item["name"] = item["iri"]
                 for each in item["label"].keys():
                     this_item["label_" + each] = item["label"][each]
+            elif label == 'annotations' and 'annotations' in item:
+                item_annotations = {}
+                for k, j in item[label].items():
+                    if k in self.annotations.keys():
+                        item_annotations[self.annotations[k]] = j
+                    else:
+                        item_annotations[k] = j
+                    
+                this_item[label] = item_annotations
             else:
                 this_item[label] = item[label]
             if "name" not in this_item.keys():
