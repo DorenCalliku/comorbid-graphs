@@ -8,11 +8,11 @@ class OntologyGraph(AnyTreeMixin, AnyTreeIOMixin):
     def __init__(self):
         self.tree = None
 
-    def load_from_ontology(self, filename, name="Source", id=1):
+    def load_from_ontology(self, json_data, name="Source", id=1):
         """Takes a dictionary of preprocessed from OntologyReader,
         and creates an AnyTree from that for easy processing."""
 
-        oreader = OntologyReader(filename)
+        oreader = OntologyReader(json_data)
         self.flattened_items = oreader.get_flattened()
         del oreader
 

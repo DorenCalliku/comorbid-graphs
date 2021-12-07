@@ -1,5 +1,4 @@
 import pprint
-import json
 from .config import MAIN_FIELDS, KNOWN_ANNOTATIONS
 
 
@@ -7,9 +6,8 @@ class OntologyReader:
     """Takes file_name.json after doing: java -jar owl2vowl.jar -file file_name.owl.
     Creates a list of objects with solved parents."""
 
-    def __init__(self, filename):
-        self.filename = filename
-        self.unprocessed_items = self.get_objects_from_ontology_file(filename)
+    def __init__(self, json_data):
+        self.unprocessed_items = json_data['classAttribute']
         self.annotations = self.clean_annotations(KNOWN_ANNOTATIONS)
 
         # extract everything
@@ -21,12 +19,6 @@ class OntologyReader:
         TODO: check if this is really necessary for processing"""
 
         return self.flattened_items
-
-    @staticmethod
-    def get_objects_from_ontology_file(file):
-        """Extract only things that matter"""
-        with open(file) as f:
-            return json.load(f)["classAttribute"]
 
     def extract(self):
         # use recursion to extract superClasses

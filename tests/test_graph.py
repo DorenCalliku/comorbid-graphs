@@ -4,7 +4,9 @@ import json
 
 def test_load_from_ontology():
     og = OntologyGraph()
-    og.load_from_ontology('tests/fixtures/symp.json')
+    with open('tests/fixtures/symp.json') as f:
+        data = json.load(f)
+    og.load_from_ontology(data)
     assert og.tree != None
     assert og.tree.name == 'Source'
 

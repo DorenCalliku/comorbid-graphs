@@ -24,7 +24,6 @@ class AnyTreeMixin(object):
             raise Exception('Node not provided.')
         found_val = findall(
             self.tree, filter_=lambda node: node.name.lower() == node_name.lower()
-            if node.name else []
         )
         # TODO: find best match here, not first one
         if found_val is not None and len(found_val) > 0:
