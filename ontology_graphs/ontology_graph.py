@@ -1,9 +1,9 @@
 from anytree import Node, PreOrderIter
 from .ontology_reader import OntologyReader
-from .tree_mixin import AnyTreeMixin
+from .tree_mixin import AnyTreeMixin, AnyTreeIOMixin
 
 
-class OntologyGraph(AnyTreeMixin):
+class OntologyGraph(AnyTreeMixin, AnyTreeIOMixin):
 
     def __init__(self):
         self.tree = None

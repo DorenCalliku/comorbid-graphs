@@ -36,6 +36,9 @@ class AnyTreeMixin(object):
         tree = cls({"name": parent_name, "children": json_list})
         return tree
 
+
+class AnyTreeIOMixin(object):
+
     @classmethod
     def generate_tree_from_node(cls, node, max_level):
         """ 
