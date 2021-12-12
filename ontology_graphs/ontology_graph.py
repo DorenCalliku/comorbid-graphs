@@ -1,4 +1,4 @@
-from anytree import Node, PreOrderIter
+from anytree import Node, PreOrderIter, node
 from .ontology_reader import OntologyReader
 from .tree_mixin import AnyTreeMixin, AnyTreeIOMixin
 
@@ -52,7 +52,7 @@ class OntologyGraph(AnyTreeMixin, AnyTreeIOMixin):
         node.parent = parent
         self.lookup_table[item["id"]] = node
 
-    def load_from_json(self, json_data, options=False):
-        self.tree = self.import_tree(json_data)
+    def load_from_json(self, json_data, options=False, node_type=Node):
+        self.tree = self.import_tree(json_data, node_type=node_type)
         if options:
             self.options = [node.name for node in PreOrderIter(self.tree)]

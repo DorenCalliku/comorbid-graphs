@@ -1,4 +1,5 @@
-from ontology_graphs import OntologyGraph, ontology_graph
+from ontology_graphs import OntologyGraph
+from ontology_graphs.tree_mixin import OntologyNode
 import json 
 
 fixtures = {
@@ -32,6 +33,6 @@ def test_load_from_json():
             data = json.load(f)
 
         og = OntologyGraph()
-        og.load_from_json(data)
+        og.load_from_json(data, node_type=OntologyNode)
         assert og.tree != None
         # assert og.tree.name == 'Source'

@@ -2,15 +2,22 @@
 # coding: utf-8
 
 import io
-from anytree import RenderTree, PreOrderIter, findall
+from anytree import Node, RenderTree, PreOrderIter, findall
 from contextlib import redirect_stdout
 from anytree.importer import DictImporter
 from anytree.exporter import DictExporter
 
 
+class OntologyNode(Node):
+    def __init__(self, name="default", parent=None, children=[], *args, **kwargs):
+        """Quick Initializer for testing and defaulting"""
+        super().__init__(name, parent, children, *args, **kwargs)
+        
+
 class AnyTreeMixin(object):
-    def import_tree(self, json_data):
-        return DictImporter().import_(json_data)
+    def import_tree(self, json_data, node_type=Node):
+        importer = DictImporter(node_type)
+        return importer.import_(json_data)
 
     @classmethod
     def export_node(cls, node):
