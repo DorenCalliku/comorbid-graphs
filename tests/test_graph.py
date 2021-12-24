@@ -1,5 +1,5 @@
-from ontology_graphs import OntologyGraph
-from ontology_graphs.tree_mixin import OntologyNode
+
+from comorbid_graphs import ComorbidGraph, ComorbidGraphNode
 import json 
 
 fixtures = {
@@ -19,8 +19,7 @@ def test_load_from_ontology():
         with open(ontology_file) as f:
             data = json.load(f)
 
-        og = OntologyGraph()
-        og.load_from_ontology(data)
+        og = ComorbidGraph.from_ontology(data, ComorbidGraphNode)
         assert og.tree != None
         assert og.tree.name == 'Source'
 
@@ -32,7 +31,6 @@ def test_load_from_json():
         with open(ontology_file) as f:
             data = json.load(f)
 
-        og = OntologyGraph()
-        og.load_from_json(data, node_type=OntologyNode)
+        og = ComorbidGraph(data, node_type=ComorbidGraphNode)
         assert og.tree != None
         # assert og.tree.name == 'Source'

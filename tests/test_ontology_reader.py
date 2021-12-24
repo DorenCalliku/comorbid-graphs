@@ -1,4 +1,4 @@
-from ontology_graphs.ontology_reader import OntologyReader
+from comorbid_graphs.from_ontology.ontology_reader import OntologyReader
 import json
 
 def test_process():

@@ -8,12 +8,6 @@ from anytree.importer import DictImporter
 from anytree.exporter import DictExporter
 
 
-class OntologyNode(Node):
-    def __init__(self, name="default", parent=None, children=[], *args, **kwargs):
-        """Quick Initializer for testing and defaulting"""
-        super().__init__(name, parent, children, *args, **kwargs)
-        
-
 class AnyTreeMixin(object):
     def import_tree(self, json_data, node_type=Node):
         importer = DictImporter(node_type)
@@ -108,13 +102,3 @@ class AnyTreeIOMixin(object):
             graph_data += vals
             graph_data.append([key, "Source", len(vals)])
         return graph_data
-
-    def get_tree_and_graph(self, name=None):
-        """Unnecessary method, for ease of use."""
-        if not name:
-            name = self.tree.name
-        node = self.find_node(name)
-        return (
-            self.pretty_print_tree(node.name).split("\n")[:-1],
-            self.generate_tree_graph_data(node)
-        )

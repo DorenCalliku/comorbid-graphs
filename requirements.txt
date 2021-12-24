@@ -1,4 +1,8 @@
 anytree
+bs4
+markdown
+micawber
 
 # for testing
+jupyter
 pytest

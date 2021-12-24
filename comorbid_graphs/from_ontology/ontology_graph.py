@@ -1,14 +1,16 @@
-from anytree import Node, PreOrderIter, node
 from .ontology_reader import OntologyReader
-from .tree_mixin import AnyTreeMixin, AnyTreeIOMixin
 
 
-class OntologyGraph(AnyTreeMixin, AnyTreeIOMixin):
+class OntologyGraphMixin(object):
+    @classmethod
+    def from_ontology(cls, json_data, node_type, name="Source", id=1):
+        ontology_graph = cls(dict(), node_type=node_type)
+        ontology_graph._load_from_ontology(
+            json_data=json_data, name=name, id=id, node_type=node_type
+        )
+        return ontology_graph
 
-    def __init__(self):
-        self.tree = None
-
-    def load_from_ontology(self, json_data, name="Source", id=1):
+    def _load_from_ontology(self, json_data, name, id, node_type):
         """Takes a dictionary of preprocessed from OntologyReader,
         and creates an AnyTree from that for easy processing."""
 
@@ -17,12 +19,12 @@ class OntologyGraph(AnyTreeMixin, AnyTreeIOMixin):
         del oreader
 
         self.lookup_table = {}
-
-        self.tree = Node(name, id=id)
+        # TODO
+        self.tree = node_type(name=name, id=id)
         for val in self.flattened_items.values():
-            self.add_to_tree(val)
+            self._add_to_tree(val, node_type)
 
-    def add_to_tree(self, item):
+    def _add_to_tree(self, item, node_type):
         # basic step of recursion
         if item["id"] in self.lookup_table:
             return
@@ -32,7 +34,7 @@ class OntologyGraph(AnyTreeMixin, AnyTreeIOMixin):
 
         # if no superclasses, then add to source
         if item["superClasses"] is None or item["superClasses"] == []:
-            node = Node(item["name"], parent=self.tree)
+            node = node_type(name=item["name"], parent=self.tree)
             self.lookup_table[item["id"]] = node
             return
 
@@ -40,7 +42,7 @@ class OntologyGraph(AnyTreeMixin, AnyTreeIOMixin):
         for i in item["superClasses"]:
             if i not in self.lookup_table:
                 if i in self.flattened_items:
-                    self.add_to_tree(self.flattened_items[i])
+                    self._add_to_tree(self.flattened_items[i], node_type=node_type)
 
         # add to list, superparent the first one (otherwise its a graph)
         first_parent_id = item["superClasses"][-1]
@@ -48,11 +50,6 @@ class OntologyGraph(AnyTreeMixin, AnyTreeIOMixin):
             parent = self.lookup_table[item["superClasses"][-1]]
         else:
             parent = self.tree
-        node = Node(**item)
+        node = node_type(**item)
         node.parent = parent
         self.lookup_table[item["id"]] = node
-
-    def load_from_json(self, json_data, options=False, node_type=Node):
-        self.tree = self.import_tree(json_data, node_type=node_type)
-        if options:
-            self.options = [node.name for node in PreOrderIter(self.tree)]
