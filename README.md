@@ -4,10 +4,12 @@
 * [QuickStart](#quickstart)
     - [Install](#install)
     - [Load](#load)
+    - [Stats](#stats)
+    - [Search](#search)
 * [Advanced Search](#advanced-search)
     - [Building Blocks](#building-blocks)
+    - [Examples](#examples)
     - [Stacking](#stacking)
-* [Stats](#stats)
 * [Insights](#insights)  
 
 
@@ -15,7 +17,7 @@
 
 ### Install
 
-```
+```bash
 pip install git+https://github.com/DorenCalliku/comorbid-graphs
 ```
 
@@ -23,25 +25,33 @@ pip install git+https://github.com/DorenCalliku/comorbid-graphs
 
 For this example you can use one of [examples in the docs](https://github.com/DorenCalliku/comorbid-graphs/examples/data).
 
-```
+```python
 # import libraries needed
 import json
 from comorbid_graphs import ComorbidGraph, ComorbidGraphNode
 
 # load data - expects a hierarchical tree of the form
 # {"name": "Default", "children":[{"name": "Default Child", "children":[]}]}
-with open('example.json") as f:
+with open('example.json') as f:
     data = json.load(f)
 
 cg = ComorbidGraph(json_data=data, node_type=ComorbidGraphNode)
 ```
 
+### Stats
+
+```python
+cg.stats()
+```
+
 ### Search
 
-```
+```python
 results = cg.search("depressive disorders")
+print(results.stats())
 results.pretty_print_tree()
 ```
+
 
 ## Advanced Search
 Making use of this kind of structure makes sense if we can make use of an advanced query for extracting specifically what we want.
@@ -57,7 +67,9 @@ A search is based on `{DIRECTION}_{FILTER}` for making things easier for people 
 | include   | include or filter-in  | `include_parent:DSM-V`                     |
 | exclude   | exclude or filter-out | `exclude_title:Disorder`                   |
 
-> **Info: inc and exc**: If a graph is included and excluded, it will be excluded in the end.
+> **Info: inc and exc**: If a graph is included and excluded, it will be excluded in the end.  
+
+<br>
 
 | FILTER      | Filter inc/                                  | Expects | Strict Match | Example                          | Sorting Order                         |
 | ----------- | -------------------------------------------- | ------- | ------------ | -------------------------------- | ------------------------------------- |
@@ -69,9 +81,14 @@ A search is based on `{DIRECTION}_{FILTER}` for making things easier for people 
 | parent      | if parent has name like this                 | string  | False        | `inc_parent: Neurodevelopmental` | `NaN`                                 |
 
 > **Info: Strict match**: Means if we are checking with `==` or with `contains`.  
+
 > **Warning: parent vs ancestor**: If you write `inc_parent`, this will override `inc_ancestor`
 
-```
+<br>
+
+### Examples 
+
+```python
 # Search in 'DSM-V', but exclude all the stuff in 'NeuroDevelopmental Disorders' subgraph
 # for documents containing phrases like 'anxiety', and 'Disorder' in titles
 # also, the text should be better than 300 chars.
@@ -92,9 +109,9 @@ results.pretty_print_tree()
 
 ### Stacking
 
-You can stack results together by using actions.
+You can stack results together.
 
-```
+```python
 # What is the extent of depression in DSM-V? Include all of the depressive disorders.
 
 results = cg.advanced_search("""
@@ -112,17 +129,15 @@ inc_ancestor:Depressive Disorders
 results.pretty_print_tree()
 ```
 
-
-## Stats
-
-```
-cg.stats()
-```
-
 ## Insights
 
+
+### Compare by  
+Usage of `groupby` to compare 1-1 sections or documents.   
+
+
 ### Self-Organizing-Maps for Comorbid Graphs
-```
+```python
 cg.som()
 ```
 [SOM](docs/imgs/som.png)

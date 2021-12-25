@@ -1,5 +1,4 @@
-# Comorbid-Graphs
-
+# Loading from Ontology Graphs
 ## Usage
 Turning owl files to json for application purposes.
 
