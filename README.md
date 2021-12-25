@@ -1,200 +1,128 @@
-# ontology-graphs
-Turning owl files to json for application purposes.
+# Comorbid-Graphs
 
-> **Warning: tree, not a graph**: For simplification purposes, I am turning these into trees. Check `anytree_mixin.py`.
+## Table of Contents
+* [QuickStart](#quickstart)
+    - [Install](#install)
+    - [Load](#load)
+* [Advanced Search](#advanced-search)
+    - [Building Blocks](#building-blocks)
+    - [Stacking](#stacking)
+* [Stats](#stats)
+* [Insights](#insights)  
 
-## Usage
 
-### Load from ontology of owl.
-1. Download `owl2vowl`   
+## Quickstart
 
-downloadable here: http://vowl.visualdataweb.org/webvowl.html
+### Install
 
-
-2. Create a script for extraction from online source.
 ```
-# extract_from_web.sh
-
-owl_url_1="https://example.com/owl_url_1.json"
-owl_url_2="https://example.com/owl_url_2.json"
-
-for i in $owl_url_1 $owl_url_2
-do
-    java -jar $owl_location -iri $i
-done
+pip install git+https://github.com/DorenCalliku/comorbid-graphs
 ```
 
-3. Turn to Graph json.
+### Load
+
+For this example you can use one of [examples in the docs](https://github.com/DorenCalliku/comorbid-graphs/examples/data).
+
 ```
->>> import json
->>> import pprint
->>> from ontology_graphs import OntologyGraph
->>>
->>> with open('tests/fixtures/symp.json') as f:
-...        json_data = json.load(f)
-... 
->>> og = OntologyGraph()
->>> og.load_from_ontology(json_data)
->>> pprint.pprint(og.pretty_print_tree(max_level=4))
-('Source\n'
- '├── symptom\n'
- '│   ├── urinary system symptom\n'
- '│   │   ├── urinary incontinence\n'
- '│   │   ├── renal abscess\n'
- '│   │   ├── genitourinary hemorrhage\n'
- '│   │   └── renal alteration\n'
- '│   ├── general symptom\n'
- '│   │   ├── hallucination\n'
- '│   │   ├── chills\n'
- '|   |   |   ... more\n'
- '│   │   └── asthenia\n'
- '│   ├── respiratory system and chest symptom\n'
- '│   │   ├── respiratory abnormality\n'
- '│   │   ├── cough\n'
- '|   |   |   ... more\n'
- '│   │   └── bronchiolitis\n'
- '│   ├── neurological and physiological symptom\n'
- '│   │   ├── alteration of consciousness\n'
- '|   |   |   ... more\n'
- '│   │   └── proprioception symptom\n'
- '│   ├── musculoskeletal system symptom\n'
- '│   │   ├── torticollis\n'
- '│   │   ├── abnormal posture\n'
- '|   |   |   ... more\n'
- '│   │   └── decreased jaw tone\n'
- '│   ├── nervous system symptom\n'
- '│   │   ├── coordination symptom\n'
- '|   |    |   ... more\n'
- '│   │   └── floppy head\n'
- '│   ├── abdominal symptom\n'
- '│   │   ├── abdominal rigidity\n'
- '|   |   |   ... more\n'
- '│   │   └── pelvic symptom\n'
- '│   ├── head and neck symptom\n'
- '│   │   ├── head symptom\n'
- '│   │   ├── throat symptom\n'
- '│   │   └── neck symptom\n'
- '│   ├── skin and integumentary tissue symptom\n'
- '│   │   ├── rash\n'
- '│   │   ├── skin lesion\n'
- '|   |   |   ... more\n'
- '│   │   └── eczema\n'
- '│   ├── hemic and immune system symptom\n'
- '│   │   ├── immune system symptom\n'
- '│   │   ├── hemic system symptom\n'
- '│   │   └── hematopoietic system symptom\n'
- '│   ├── digestive system symptom\n'
- '│   │   ├── rectorrhagia\n'
- '│   │   ├── tenesmus\n'
- '|   |   |   ... more\n'
- '│   │   └── belching\n'
- '│   ├── cardiovascular system symptom\n'
- '│   │   ├── palpitation\n'
- '│   │   ├── hemorrhage\n'
- '|   |   |   ... more\n'
- '│   │   └── heart failure\n'
- '│   ├── nutrition, metabolism, and development symptom\n'
- '│   │   ├── lack of expected normal physiological development in childhood\n'
- '│   │   ├── polydipsia\n'
- '│   │   ├── weight loss\n'
- '|       |   ... more\n'
- '│   │   └── decreased milk production\n'
- '│   └── reproductive system symptom\n'
- '│       ├── miscarriage\n'
- '│       ├── abortion\n'
- '|       |   ... more\n'
- '│       └── epididymitis\n'
- '├── obsolete appendicitis\n'
- '|   ... more '
- '├── acute respiratory distress\n'
- '└── excess pericardial fluid\n')
->>> 
+# import libraries needed
+import json
+from comorbid_graphs import ComorbidGraph, ComorbidGraphNode
+
+# load data - expects a hierarchical tree of the form
+# {"name": "Default", "children":[{"name": "Default Child", "children":[]}]}
+with open('example.json") as f:
+    data = json.load(f)
+
+cg = ComorbidGraph(json_data=data, node_type=ComorbidGraphNode)
+```
+
+### Search
+
+```
+results = cg.search("depressive disorders")
+results.pretty_print_tree()
+```
+
+## Advanced Search
+Making use of this kind of structure makes sense if we can make use of an advanced query for extracting specifically what we want.
+This way we can have some actions on these results.
+
+### Building Blocks
+A search is based on `{DIRECTION}_{FILTER}` for making things easier for people to use.
+
+| DIRECTION | Meaning               | Example                                    |
+| --------- | --------------------- | ------------------------------------------ |
+| inc       | include or filter-in  | `inc_parent:DSM-V`                         |
+| exc       | exclude or filter-out | `exc_name: Disorder` exclude all disorders |
+| include   | include or filter-in  | `include_parent:DSM-V`                     |
+| exclude   | exclude or filter-out | `exclude_title:Disorder`                   |
+
+> **Info: inc and exc**: If a graph is included and excluded, it will be excluded in the end.
+
+| FILTER      | Filter inc/                                  | Expects | Strict Match | Example                          | Sorting Order                         |
+| ----------- | -------------------------------------------- | ------- | ------------ | -------------------------------- | ------------------------------------- |
+| name        | if graph has name/title                      | string  | False        | `inc_name: Disorder`             | `+ 100` per subgraph containing       |
+| phrase      | these words are in the body                  | string  | True         | `exc_phrase:developmental`       | `+ 10` per time found in any subgraph |
+| type        | if node has type like this                   | string  | True         | `inc_type:section`               | `NaN`                                 |
+| text_longer | filter the nodes with text longer than count | int     | True         | `inc_text_longer:300`            | `NaN`                                 |
+| ancestor    | if one of ancestors has a name like this     | string  | False        | `inc_ancestor: Phobic`           | `NaN`                                 |
+| parent      | if parent has name like this                 | string  | False        | `inc_parent: Neurodevelopmental` | `NaN`                                 |
+
+> **Info: Strict match**: Means if we are checking with `==` or with `contains`.  
+> **Warning: parent vs ancestor**: If you write `inc_parent`, this will override `inc_ancestor`
+
+```
+# Search in 'DSM-V', but exclude all the stuff in 'NeuroDevelopmental Disorders' subgraph
+# for documents containing phrases like 'anxiety', and 'Disorder' in titles
+# also, the text should be better than 300 chars.
+# Dont return stuff that match partially.
+
+results = cg.advanced_search("""
+anxiety
+
+inc_parent:DSM-V
+inc_title:Disorder
+inc_text_longer:300
+
+exc_ancestor:Neurodevelopmental Disorders
+""", full_match=True)
+
+results.pretty_print_tree()
+```
+
+### Stacking
+
+You can stack results together by using actions.
+
+```
+# What is the extent of depression in DSM-V? Include all of the depressive disorders.
+
+results = cg.advanced_search("""
+depressive, depression, low mood
+inc_type:document
+inc_ancestor:DSM-V
+exc_ancestor:Depressive Disorders
+
+MERGE
+
+inc_type:document
+inc_ancestor:Depressive Disorders
+""", full_match=True)
+
+results.pretty_print_tree()
 ```
 
 
-### Load from AnyTree json
+## Stats
+
 ```
->>> import json
->>> import pprint
->>> from ontology_graphs import OntologyGraph
->>>
->>> with open('tests/fixtures/symp_tree.json') as f:
-...        json_data = json.load(f)
-... 
->>> og = OntologyGraph()
->>> og.load_from_json(json_data)
->>> pprint.pprint(og.pretty_print_tree(max_level=4))
-('Source\n'
- '├── symptom\n'
- '│   ├── urinary system symptom\n'
- '│   │   ├── urinary incontinence\n'
- '│   │   ├── renal abscess\n'
- '│   │   ├── genitourinary hemorrhage\n'
- '│   │   └── renal alteration\n'
- '│   ├── general symptom\n'
- '│   │   ├── hallucination\n'
- '│   │   ├── chills\n'
- '|   |   |   ... more\n'
- '│   │   └── asthenia\n'
- '│   ├── respiratory system and chest symptom\n'
- '│   │   ├── respiratory abnormality\n'
- '│   │   ├── cough\n'
- '|   |   |   ... more\n'
- '│   │   └── bronchiolitis\n'
- '│   ├── neurological and physiological symptom\n'
- '│   │   ├── alteration of consciousness\n'
- '|   |   |   ... more\n'
- '│   │   └── proprioception symptom\n'
- '│   ├── musculoskeletal system symptom\n'
- '│   │   ├── torticollis\n'
- '│   │   ├── abnormal posture\n'
- '|   |   |   ... more\n'
- '│   │   └── decreased jaw tone\n'
- '│   ├── nervous system symptom\n'
- '│   │   ├── coordination symptom\n'
- '|   |    |   ... more\n'
- '│   │   └── floppy head\n'
- '│   ├── abdominal symptom\n'
- '│   │   ├── abdominal rigidity\n'
- '|   |   |   ... more\n'
- '│   │   └── pelvic symptom\n'
- '│   ├── head and neck symptom\n'
- '│   │   ├── head symptom\n'
- '│   │   ├── throat symptom\n'
- '│   │   └── neck symptom\n'
- '│   ├── skin and integumentary tissue symptom\n'
- '│   │   ├── rash\n'
- '│   │   ├── skin lesion\n'
- '|   |   |   ... more\n'
- '│   │   └── eczema\n'
- '│   ├── hemic and immune system symptom\n'
- '│   │   ├── immune system symptom\n'
- '│   │   ├── hemic system symptom\n'
- '│   │   └── hematopoietic system symptom\n'
- '│   ├── digestive system symptom\n'
- '│   │   ├── rectorrhagia\n'
- '│   │   ├── tenesmus\n'
- '|   |   |   ... more\n'
- '│   │   └── belching\n'
- '│   ├── cardiovascular system symptom\n'
- '│   │   ├── palpitation\n'
- '│   │   ├── hemorrhage\n'
- '|   |   |   ... more\n'
- '│   │   └── heart failure\n'
- '│   ├── nutrition, metabolism, and development symptom\n'
- '│   │   ├── lack of expected normal physiological development in childhood\n'
- '│   │   ├── polydipsia\n'
- '│   │   ├── weight loss\n'
- '|       |   ... more\n'
- '│   │   └── decreased milk production\n'
- '│   └── reproductive system symptom\n'
- '│       ├── miscarriage\n'
- '│       ├── abortion\n'
- '|       |   ... more\n'
- '│       └── epididymitis\n'
- '├── obsolete appendicitis\n'
- '|   ... more '
- '├── acute respiratory distress\n'
- '└── excess pericardial fluid\n')
->>> 
+cg.stats()
 ```
+
+## Insights
+
+### Self-Organizing-Maps for Comorbid Graphs
+```
+cg.som()
+```
+[SOM](docs/imgs/som.png)

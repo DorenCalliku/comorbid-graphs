@@ -1,9 +1,9 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="ontology-graphs",
+    name="comorbid-graphs",
     version="0.0.1",
-    description="Turning to knowledge graphs ontologies for ease of use.",
+    description="A package for quick analysis of graphical data. Can load from ontology-json.",
     url="",
     author="DorenCalliku",
     author_email="doren.calliku01@universitadipavia.it",
