@@ -12,6 +12,7 @@ class VisualizableMixin(object):
 
         if base_str is None:
             return ''
+        
         HTML_WRAPPER = "<a href='{}' data-bs-toggle='tooltip' class='{}' title='' data-bs-original-title='{}'>{}</a>"
         split_body = []
         init = 0

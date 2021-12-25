@@ -1,5 +1,5 @@
 from .mixins.tree_mixin import AnyTreeMixin, AnyTreeIOMixin
-from .from_ontology.ontology_graph import OntologyGraphMixin
+from .mixins.ontology_graph_mixin import OntologyGraphMixin
 
 from anytree import PreOrderIter, LevelOrderIter
 
@@ -47,10 +47,16 @@ class ComorbidGraph(AnyTreeMixin, AnyTreeIOMixin, OntologyGraphMixin):
 
     @classmethod
     def merge_trees(
-        cls, json_list, parent_name="Source", parent_type="annotation", assign_ids=False
+        cls,
+        json_list,
+        parent_name="Source",
+        parent_type="annotation",
+        assign_ids=False,
+        node_type=None,
     ):
         tree = cls(
             {"name": parent_name, "id": 0, "type": parent_type, "children": json_list},
             assign_ids=assign_ids,
+            node_type=node_type,
         )
         return tree

@@ -1,4 +1,4 @@
-from .ontology_reader import OntologyReader
+from ..from_ontology.ontology_reader import OntologyReader
 
 
 class OntologyGraphMixin(object):
