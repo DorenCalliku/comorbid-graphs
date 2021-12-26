@@ -1,41 +1,72 @@
 # Comorbid-Graphs
+A tool for making it easier to compare information using KnowledgeGraphs in neuro-psychology.   
+Based on `anytree` (for tree structures) and `networkx` (for graphs).  
 
-## Table of Contents
-* [QuickStart](#quickstart)
-    - [Install](#install)
-    - [Load](#load)
-    - [Stats](#stats)
+Part of the Comorbid project.
+
+<br>
+
+### Table of Contents
+* [Getting Started](#getting-started)
+    - [ComorbidGraphs-101](#comorbidgraphs-101)
+    - [Installation and Setup](#installation-and-setup)
+* [Examples](#examples)
+    - [Compare Wikipedia articles on DSM-V disorders?](./examples/Wikipedia.ipynb)
+    - [Compare DSM-V disorders on symptoms found?](./examples/DSM-V-Symptom.ipynb)
+* [Usage](#usage)
+    - [Explore](#explore)
     - [Search](#search)
-* [Advanced Search](#advanced-search)
-    - [Building Blocks](#building-blocks)
-    - [Examples](#examples)
+    - [Stats](#stats)
+* [Advanced Usage](#advanced-usage)
+    - [Advanced Search](#advanced-search)
     - [Stacking](#stacking)
-* [Insights](#insights)  
+* [Insights](#insights)
+    - [Compare By](#compare-by)
+    - [SOM](#som)
+    - [Pivot Analysis](#pivot-analysis)
+* [References](#references)
+    - [Software](#software)
+    - [Research](#research)
+<br><br>
 
+## Getting Started
 
-## Quickstart
+### ComorbidGraphs 101
 
-### Install
-
-```bash
-pip install git+https://github.com/DorenCalliku/comorbid-graphs
-```
-
-### Load
-
-For this example you can use one of [examples in the docs](https://github.com/DorenCalliku/comorbid-graphs/examples/data).
+For this example you can use one of [data files](https://github.com/DorenCalliku/comorbid-graphs/examples/data) in the docs.
 
 ```python
 # import libraries needed
 import json
 from comorbid_graphs import ComorbidGraph, ComorbidGraphNode
 
-# load data - expects a hierarchical tree of the form
-# {"name": "Default", "children":[{"name": "Default Child", "children":[]}]}
 with open('example.json') as f:
     data = json.load(f)
 
+# load data - expects a hierarchical tree of the form
+# {"name": "Default", "children":[{"name": "Default Child", "children":[]}]}
 cg = ComorbidGraph(json_data=data, node_type=ComorbidGraphNode)
+```
+
+### Installation and Setup
+
+```bash
+pip install git+https://github.com/DorenCalliku/comorbid-graphs
+```
+
+## Usage
+
+### Explore
+
+```python
+cg.pretty_print_tree()
+```
+
+### Search
+
+```python
+results = cg.search("depressive disorders")
+results.pretty_print_tree()
 ```
 
 ### Stats
@@ -44,20 +75,15 @@ cg = ComorbidGraph(json_data=data, node_type=ComorbidGraphNode)
 cg.stats()
 ```
 
-### Search
 
-```python
-results = cg.search("depressive disorders")
-print(results.stats())
-results.pretty_print_tree()
-```
+## Advanced Usage
+Besides the basics, there are some more geeky usages possible for people not searching for only a general picture.
+This is the Zoom-In feature which can bring specific results.
 
-
-## Advanced Search
+### Advanced Search
 Making use of this kind of structure makes sense if we can make use of an advanced query for extracting specifically what we want.
 This way we can have some actions on these results.
 
-### Building Blocks
 A search is based on `{DIRECTION}_{FILTER}` for making things easier for people to use.
 
 | DIRECTION | Meaning               | Example                                    |
@@ -86,7 +112,6 @@ A search is based on `{DIRECTION}_{FILTER}` for making things easier for people 
 
 <br>
 
-### Examples 
 
 ```python
 # Search in 'DSM-V', but exclude all the stuff in 'NeuroDevelopmental Disorders' subgraph
@@ -107,7 +132,7 @@ exc_ancestor:Neurodevelopmental Disorders
 results.pretty_print_tree()
 ```
 
-### Stacking
+#### Stacking
 
 You can stack results together.
 
@@ -136,8 +161,21 @@ results.pretty_print_tree()
 Usage of `groupby` to compare 1-1 sections or documents.   
 
 
-### Self-Organizing-Maps for Comorbid Graphs
+### SOM
+Self-Organizing-Maps for Comorbid Graphs
 ```python
 cg.som()
 ```
 [SOM](docs/imgs/som.png)
+
+### Pivot Analysis
+
+
+
+## References
+
+### Software
+- [Anytree](https://anytree.readthedocs.io/en/latest/index.html)
+- [Networkx](https://networkx.org/)
+
+### Research
