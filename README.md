@@ -131,3 +131,5 @@ cg.stats()
 ### Software
 - [Anytree](https://anytree.readthedocs.io/en/latest/index.html)
 - [Networkx](https://networkx.org/)
+
+[Readings](docs/notes.md)

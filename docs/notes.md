@@ -1,3 +1,4 @@
+
 ## Other options
 * KGlab - [docs](https://derwen.ai/docs/kgl/), [code](https://github.com/DerwenAI/kglab)
 * PyTextRank - [ppt](https://derwen.ai/s/kcgh#106), [code](https://github.com/DerwenAI/pytextrank)
@@ -19,10 +20,15 @@
 * DeepMind WikiGraphs - [code](https://github.com/deepmind/deepmind-research/tree/master/wikigraphs)
 * TextGraphs - [page](http://www.textgraphs.org/), [example conference](http://www.textgraphs.org/)
 * TextPipeliner - [code](https://github.com/krzysiekfonal/textpipeliner)
+
+## Vectors for NLP
+* X2Vec - [article](https://dl.acm.org/doi/pdf/10.1145/3375395.3387641)
 * sense2vec - [article](https://explosion.ai/blog/sense2vec-reloaded), [code](https://github.com/explosion/sense2vec)
+* graph2vec - [paper](https://arxiv.org/abs/1707.05005), [code](https://github.com/benedekrozemberczki/graph2vec)
 
 
 ## Graph Operations
+* MemGraphs - Networkx Guide - [docs](https://networkx.guide/)
 * @U-Cambridge - Graphs Intro - [ppt](https://www.cl.cam.ac.uk/~cm542/teaching/2011/stna-pdfs/stna-lecture11.pdf)
 * @GeeksForGeeks - Network centrality measures - [article](https://www.geeksforgeeks.org/network-centrality-measures-in-a-graph-using-networkx-python/)
 
