@@ -1,10 +1,6 @@
 # Loading from Ontology Graphs
-## Usage
-Turning owl files to json for application purposes.
 
-> **Warning: tree, not a graph**: For simplification purposes, I am turning these into trees. Check `anytree_mixin.py`.
-
-### Load from ontology of owl.
+## Load from ontology of owl.
 1. Download `owl2vowl`   
 
 downloadable here: http://vowl.visualdataweb.org/webvowl.html
@@ -111,7 +107,7 @@ done
 ```
 
 
-### Load from AnyTree json
+## Load from AnyTree json
 ```
 >>> import json
 >>> import pprint

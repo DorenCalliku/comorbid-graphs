@@ -1,7 +1,12 @@
+# computations
 anytree
+networkx
+
+# visualizing
 bs4
 markdown
 micawber
+matplotlib
 
 # for testing
 jupyter

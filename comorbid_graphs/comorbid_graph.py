@@ -1,3 +1,4 @@
+from types import ClassMethodDescriptorType
 from .mixins.tree_mixin import AnyTreeMixin, AnyTreeIOMixin
 from .mixins.ontology_graph_mixin import OntologyGraphMixin
 
@@ -16,6 +17,7 @@ class ComorbidGraph(AnyTreeMixin, AnyTreeIOMixin, OntologyGraphMixin):
         """
 
         self.tree = self.import_tree(json_data, node_type=node_type)
+        self.graph = None
         if assign_ids:
             id = 0
             for node in LevelOrderIter(self.tree):
@@ -26,24 +28,16 @@ class ComorbidGraph(AnyTreeMixin, AnyTreeIOMixin, OntologyGraphMixin):
     def set_options(self):
         self.options = [node.name for node in PreOrderIter(self.tree)]
 
+
     def get_nodes_n_edges(self, node=None, max_level=3):
         if not node:
             node = self.tree
         # filter children
-        vals = [
+        return [
             j
-            for child in node.children
-            for n in LevelOrderIter(child, maxlevel=max_level - 1)
+            for n in LevelOrderIter(node, maxlevel=max_level)
             for j in n.get_node_edge()
         ]
-        # get own node
-        val_node = node.name + " " + str(node.id)
-        if not hasattr(node, "type"):
-            type = "search_for"
-        else:
-            type = node.type
-        my_node = [{"data": {"id": val_node, "label": node.name, "type": type}}]
-        return vals + my_node
 
     @classmethod
     def merge_trees(
