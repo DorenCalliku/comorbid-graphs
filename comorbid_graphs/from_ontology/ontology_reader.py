@@ -68,12 +68,15 @@ class OntologyReader:
                     this_item["label_" + each] = item["label"][each]
             elif label == 'annotations' and 'annotations' in item:
                 item_annotations = {}
+                item_def_ref = {
+                    "definition": "body",
+                    "definition source": "reference"
+                }
                 for k, j in item[label].items():
-                    if k in self.annotations.keys():
-                        item_annotations[self.annotations[k]] = j
-                    else:
-                        item_annotations[k] = j
-                    
+                    if k in self.annotations.keys() and self.annotations[k] in ['definition', 'definition source']:
+                        referenced_key = item_def_ref[self.annotations[k]]
+                        this_item[referenced_key] = '\n\n'.join([ind['value'] for ind in j])
+                    item_annotations[k] = j
                 this_item[label] = item_annotations
             else:
                 this_item[label] = item[label]

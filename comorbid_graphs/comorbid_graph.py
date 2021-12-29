@@ -1,6 +1,6 @@
 from types import ClassMethodDescriptorType
 from .mixins.tree_mixin import AnyTreeMixin, AnyTreeIOMixin
-from .mixins.ontology_graph_mixin import OntologyGraphMixin
+from .from_ontology.ontology_graph_mixin import OntologyGraphMixin
 
 from anytree import PreOrderIter, LevelOrderIter
 
