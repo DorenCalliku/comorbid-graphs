@@ -1,8 +1,9 @@
 from anytree import AnyNode
 from .mixins.visualizable_mixin import VisualizableMixin
+from .searchable import LBLNodeMixin, FilterableNodeMixin
 
 
-class ComorbidGraphNode(AnyNode, VisualizableMixin):
+class ComorbidGraphNode(AnyNode, VisualizableMixin, FilterableNodeMixin, LBLNodeMixin):
     def __init__(self, *args, **kwargs):
         u"""Quick Initializer for testing and defaulting"""
 
@@ -46,8 +47,14 @@ class ComorbidGraphNode(AnyNode, VisualizableMixin):
     def deep_copy(self, parent=None):
         dict_values = {}
         for att in dir(self):
-            if att not in ['children', 'parent'] and att in ['id', 'name', 'type', 'body', 'description']:
-                dict_values[att] = getattr(self,att)
+            if att not in ["children", "parent"] and att in [
+                "id",
+                "name",
+                "type",
+                "body",
+                "description",
+            ]:
+                dict_values[att] = getattr(self, att)
         node = type(self)(**dict_values)
         if parent:
             node.parent = parent

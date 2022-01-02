@@ -1,11 +1,17 @@
-from types import ClassMethodDescriptorType
 from .mixins.tree_mixin import AnyTreeMixin, AnyTreeIOMixin
 from .from_ontology.ontology_graph_mixin import OntologyGraphMixin
-
+from .searchable import FilterableSubgraphMixin, SearchableMixin, LBLGraphMixin
 from anytree import PreOrderIter, LevelOrderIter
 
 
-class ComorbidGraph(AnyTreeMixin, AnyTreeIOMixin, OntologyGraphMixin):
+class ComorbidGraph(
+    AnyTreeMixin,
+    AnyTreeIOMixin,
+    OntologyGraphMixin,
+    SearchableMixin,
+    FilterableSubgraphMixin,
+    LBLGraphMixin,
+):
     def __init__(self, json_data, node_type, assign_ids=False):
         u"""
         A generic tree graph based on json data.
@@ -27,7 +33,6 @@ class ComorbidGraph(AnyTreeMixin, AnyTreeIOMixin, OntologyGraphMixin):
 
     def set_options(self):
         self.options = [node.name for node in PreOrderIter(self.tree)]
-
 
     def get_nodes_n_edges(self, node=None, max_level=3):
         if not node:
