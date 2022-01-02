@@ -131,7 +131,6 @@ class SearchableMixin(object):
 
         # filter out nodes that appear less than expected
         baseline = {node.name: node for node in nodes[-1]}
-
         count_nodes = len(nodes)
         for name_key, count in collections.Counter(all_nodes).items():
             if count < count_nodes and name_key in baseline:

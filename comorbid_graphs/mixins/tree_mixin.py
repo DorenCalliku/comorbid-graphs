@@ -50,7 +50,7 @@ class AnyTreeIOMixin(object):
                 print("%s%s" % (pre, node.name))
             return buf.getvalue()
 
-    def pretty_print_tree(self, node_name=None, max_level=3):
+    def pretty_print_tree(self, node_name=None, max_level=None):
         if not node_name:
             node_name = self.tree.name
         node = self.find_node(node_name)
