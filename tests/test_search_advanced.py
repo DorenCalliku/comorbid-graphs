@@ -24,7 +24,7 @@ with open('tests/fixtures/symp_tree.json') as f:
     data = json.load(f)
 cg = ComorbidGraph(data, ComorbidGraphNode, assign_ids=True)
 test_node = cg.tree.children[0]
-test_node_content = [i for i in PostOrderIter(cg.tree) if hasattr(i, 'body')][0]
+test_node_content = [i for i in PostOrderIter(cg.tree) if hasattr(i, 'body') and i.body][0]
 
 # In[4]:
 

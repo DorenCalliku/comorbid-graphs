@@ -1,0 +1,22 @@
+- `dispositions`
+    - `personality trait`
+    - `mental dispositions`
+    - `capability`
+- `feeling`
+    - `response to stimuli`
+    - `generated from independent processes`
+- `emotion`
+    - `categorization process`
+    - `types`
+- `processes`
+    - `bodily processes`
+    - `mental processes`
+        - `cognitive schema`
+        - `representation`
+    - `interpersonal processes`
+- `result`
+    - `behavior`
+    - `potentially pathological`
+        - `disorders`
+        - `diseases`
+        - `syndrome`

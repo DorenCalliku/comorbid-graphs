@@ -1,11 +1,4 @@
 
-## Other options
-* KGlab - [docs](https://derwen.ai/docs/kgl/), [code](https://github.com/DerwenAI/kglab)
-* PyTextRank - [ppt](https://derwen.ai/s/kcgh#106), [code](https://github.com/DerwenAI/pytextrank)
-* OntoBio's [OntolFactory](https://github.com/biolink/ontobio/blob/master/ontobio/ontol_factory.py) - [docs](https://ontobio.readthedocs.io/en/latest/), [sample notebook on wikidata](https://nbviewer.org/github/biolink/ontobio/blob/master/notebooks/Wikidata_Ontology.ipynb)
-* Ontospy - visualize ontologies - [code](https://github.com/lambdamusic/Ontospy) 
-
-
 ## Creation of KGs
 * @AnalyticsVidhya - Building KGs using Spacy - [article](https://www.analyticsvidhya.com/blog/2019/10/how-to-build-knowledge-graph-text-using-spacy/)
 * @Kaggle - Building KGs using Python - [article](https://www.kaggle.com/nageshsingh/build-knowledge-graph-using-python)

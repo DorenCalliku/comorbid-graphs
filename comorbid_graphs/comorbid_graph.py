@@ -2,6 +2,7 @@
 from .from_ontology.ontology_graph_mixin import OntologyGraphMixin
 from .mixins.tree_mixin import AnyTreeMixin, AnyTreeIOMixin
 from .searchable import FilterableSubgraphMixin, SearchableMixin, LBLGraphMixin, SimpleSearchMixin, OrderableMixin
+from .processable import ProcessableGraphMixin
 from anytree import PreOrderIter, LevelOrderIter
 
 
@@ -13,9 +14,10 @@ class ComorbidGraph(
     SimpleSearchMixin,
     OrderableMixin,
     FilterableSubgraphMixin,
+    ProcessableGraphMixin,
     LBLGraphMixin,
 ):
-    def __init__(self, json_data, node_type, assign_ids=False):
+    def __init__(self, json_data, node_type, assign_ids=False, root_name=None):
         u"""
         A generic tree graph based on json data.
 
@@ -26,6 +28,8 @@ class ComorbidGraph(
         """
 
         self.tree = self.import_tree(json_data, node_type=node_type)
+        if root_name:
+            self.tree.name = root_name
         self.graph = None
         if assign_ids:
             id = 0

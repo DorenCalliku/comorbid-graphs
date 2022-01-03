@@ -1,17 +1,29 @@
 from anytree import Node
 from .mixins.visualizable_mixin import VisualizableMixin
 from .searchable import LBLNodeMixin, ScorableNodeMixin
+from .processable import LabelHandlerMixin, ProcessableNodeMixin
 
 
-class ComorbidGraphNode(Node, VisualizableMixin, ScorableNodeMixin, LBLNodeMixin):
+class ComorbidGraphNode(
+    Node,
+    VisualizableMixin,
+    ScorableNodeMixin,
+    LBLNodeMixin,
+    LabelHandlerMixin,
+    ProcessableNodeMixin,
+):
     def __init__(self, *args, **kwargs):
         u"""Quick Initializer for testing and defaulting"""
 
         super().__init__(*args, **kwargs)
+        if not hasattr(self, "body"):
+            self.body = None
         if not hasattr(self, "type"):
             self.type = "default"
         if not hasattr(self, "score"):
             self.score = 0
+        if not hasattr(self, "annotation_list"):
+            self.annotation_list = []
 
     def to_dict(self):
         dict_val = {

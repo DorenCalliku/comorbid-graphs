@@ -114,7 +114,7 @@ class ScorableNodeMixin(object):
         return False
 
     def _score_text_length(self, inc_list: list, exc_list: list) -> bool:
-        if not hasattr(self, "body"):
+        if not hasattr(self, "body") or not self.body:
             return False
         if inc_list != [] and len(self.body) <= int(inc_list[0]):
             return False
