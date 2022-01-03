@@ -10,6 +10,9 @@ from anytree.exporter import DictExporter
 
 class AnyTreeMixin(object):
     def import_tree(self, json_data, node_type=Node):
+        # TODO: testing gives error on some kind of ontology
+        if 'name' not in json_data:
+            json_data['name'] = 'default'
         importer = DictImporter(node_type)
         return importer.import_(json_data)
 
@@ -50,7 +53,7 @@ class AnyTreeIOMixin(object):
                 print("%s%s" % (pre, node.name))
             return buf.getvalue()
 
-    def pretty_print_tree(self, node_name=None, max_level=None):
+    def explore(self, node_name=None, max_level=None):
         if not node_name:
             node_name = self.tree.name
         node = self.find_node(node_name)

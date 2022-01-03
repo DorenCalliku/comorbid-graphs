@@ -10,7 +10,6 @@
 
 # In[2]:
 import json
-import matplotlib.pyplot as plt
 
 from anytree import PostOrderIter, RenderTree
 from comorbid_graphs import ComorbidGraph, ComorbidGraphNode
@@ -24,12 +23,13 @@ from comorbid_graphs import ComorbidGraph, ComorbidGraphNode
 with open('tests/fixtures/symp_tree.json') as f:
     data = json.load(f)
 cg = ComorbidGraph(data, ComorbidGraphNode, assign_ids=True)
-node_content = [i for i in PostOrderIter(cg.tree) if hasattr(i, 'body')][0]
+test_node = cg.tree.children[0]
+test_node_content = [i for i in PostOrderIter(cg.tree) if hasattr(i, 'body')][0]
 
 # In[4]:
 
 
-# print(cg.pretty_print_tree()[:500])
+# print(cg.explore()[:500])
 # print('...')
 
 
@@ -50,18 +50,17 @@ node_content = [i for i in PostOrderIter(cg.tree) if hasattr(i, 'body')][0]
 
 # In[5]:
 def test_filtering():
-
-    assert cg.tree._filter_name(['Source'], [])
-    assert cg.tree.children[0]._filter_parent(['Source'],[])
-    assert cg.tree._filter_type(['default'],[])
+    assert test_node._score_name([test_node.name.lower()], [])
+    assert test_node._score_parent([test_node.parent.name.lower()],[])
+    assert test_node._score_type(['default'],[])
 
     # text-length checks
     # check first node that has no content
-    assert not cg.tree._filter_text_length([0],[])
+    assert not cg.tree._score_text_length([0],[])
 
     # check a node with content
-    assert node_content._filter_text_length([0],[])
-    assert node_content._filter_content([node_content.body],[])
+    assert test_node_content._score_text_length([0],[])
+    assert test_node_content._score_content([test_node_content.body.lower()],[])
 
 
 # ### 2. Content
@@ -71,8 +70,8 @@ def test_filtering():
 # In[6]:
 
 def test_lbl_filter():
-    assert node_content.apply_lbl_content_filter(
-        {"content": {"inc":[node_content.body], "exc":[]}}
+    assert test_node_content.apply_lbl_content_filter(
+        {"content": {"inc":[test_node_content.body.lower()], "exc":[]}}
     )
 
 
@@ -113,15 +112,11 @@ def test_merge_into_tree():
 
 def test_advanced_search():
     query_str = """
-    inc_name:symptom,ache
-    inc_ancestor:symptom
+    inc_name:symptom
+    inc_ancestor:nervous system symptom
     """
-    print()
-    print(cg.build_query(query_str))
-    print()
-
-    result_cg = cg.advanced_search(query_str, node_type=ComorbidGraphNode, with_children=True)
-    print(result_cg.pretty_print_tree())
+    result_cg = cg.advanced_search(query_str, base_name="search", node_type=ComorbidGraphNode, with_children=True)
+    print(result_cg.explore())
 # test case - check if search is complementary
 # disorder = 6
 # disease = 18

@@ -4,7 +4,7 @@ from .ontology_reader import OntologyReader
 class OntologyGraphMixin(object):
     @classmethod
     def from_ontology(cls, json_data, node_type, name="Source", id=1):
-        ontology_graph = cls(dict(), node_type=node_type)
+        ontology_graph = cls(dict(name=name), node_type=node_type)
         ontology_graph._load_from_ontology(
             json_data=json_data, name=name, id=id, node_type=node_type
         )

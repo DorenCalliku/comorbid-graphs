@@ -1,6 +1,7 @@
-from .mixins.tree_mixin import AnyTreeMixin, AnyTreeIOMixin
+
 from .from_ontology.ontology_graph_mixin import OntologyGraphMixin
-from .searchable import FilterableSubgraphMixin, SearchableMixin, LBLGraphMixin
+from .mixins.tree_mixin import AnyTreeMixin, AnyTreeIOMixin
+from .searchable import FilterableSubgraphMixin, SearchableMixin, LBLGraphMixin, SimpleSearchMixin, OrderableMixin
 from anytree import PreOrderIter, LevelOrderIter
 
 
@@ -9,6 +10,8 @@ class ComorbidGraph(
     AnyTreeIOMixin,
     OntologyGraphMixin,
     SearchableMixin,
+    SimpleSearchMixin,
+    OrderableMixin,
     FilterableSubgraphMixin,
     LBLGraphMixin,
 ):

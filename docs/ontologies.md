@@ -30,7 +30,7 @@ done
 ... 
 >>> og = OntologyGraph()
 >>> og.load_from_ontology(json_data)
->>> pprint.pprint(og.pretty_print_tree(max_level=4))
+>>> pprint.pprint(og.explore(max_level=4))
 ('Source\n'
  '├── symptom\n'
  '│   ├── urinary system symptom\n'
@@ -118,7 +118,7 @@ done
 ... 
 >>> og = OntologyGraph()
 >>> og.load_from_json(json_data)
->>> pprint.pprint(og.pretty_print_tree(max_level=4))
+>>> pprint.pprint(og.explore(max_level=4))
 ('Source\n'
  '├── symptom\n'
  '│   ├── urinary system symptom\n'

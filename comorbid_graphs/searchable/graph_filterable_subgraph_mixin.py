@@ -113,7 +113,7 @@ class FilterableSubgraphMixin(object):
         result_node = node_type(name=base_name)
 
         if not with_children:
-            for i, node in enumerate(node_list):
+            for node in node_list:
                 # deal with children stuff
                 included_children = set(node.children) & set(node_list)
                 node.children = [i for i in node.children if i in included_children]

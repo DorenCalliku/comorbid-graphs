@@ -16,7 +16,7 @@ class LBLNodeMixin(object):
         """In case the lbl-loading-filter hasnt been updated, this will be run.
         Preparing in case there is an error."""
 
-        if "content" in query_dict and not self._filter_content(
+        if "content" in query_dict and not self._score_content(
             query_dict["content"]["inc"], query_dict["content"]["exc"]
         ):
             return False

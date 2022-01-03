@@ -30,7 +30,6 @@ def test_load_from_json():
     for ontology_file in fixtures['json']:
         with open(ontology_file) as f:
             data = json.load(f)
-
         og = ComorbidGraph(data, node_type=ComorbidGraphNode)
         assert og.tree != None
         # assert og.tree.name == 'Source'

@@ -57,7 +57,7 @@ inc_text_longer:300
 exc_ancestor:Neurodevelopmental Disorders
 """, full_match=True)
 
-results.pretty_print_tree()
+results.explore()
 ```
 
 ## Levels of Search

@@ -102,16 +102,11 @@ class SearchableMixin(object):
             nodes.append(self.apply_lbl_filters(query_dict, late_body_loading=True))
 
         # nodes based on other filters
-        nodes.append(
-            set(
-                findall(
-                    self.tree,
-                    filter_=lambda node: node.apply_filters(
-                        query_dict, late_body_loading=late_body_loading
-                    ),
-                )
+        for node in PostOrderIter(self.tree):
+            node.advanced_scoring(
+                query_dict, late_body_loading=late_body_loading
             )
-        )
+        nodes.append(set([i for i in PostOrderIter(self.tree) if i.score]))
 
         # ancestor filtering
         if "ancestor" in query_dict:
@@ -128,7 +123,6 @@ class SearchableMixin(object):
         # merging
         # get count of nodes found
         all_nodes = [i.name for j in nodes for i in j]
-
         # filter out nodes that appear less than expected
         baseline = {node.name: node for node in nodes[-1]}
         count_nodes = len(nodes)
@@ -146,6 +140,6 @@ class SearchableMixin(object):
             strict=True,
             with_children=with_children,
         )
-        result_cg = type(self)({}, node_type=node_type)
+        result_cg = type(self)({"name": base_name}, node_type=node_type)
         result_cg.tree = ancestor_node
         return result_cg

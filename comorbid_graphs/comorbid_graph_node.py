@@ -1,25 +1,29 @@
-from anytree import AnyNode
+from anytree import Node
 from .mixins.visualizable_mixin import VisualizableMixin
-from .searchable import LBLNodeMixin, FilterableNodeMixin
+from .searchable import LBLNodeMixin, ScorableNodeMixin
 
 
-class ComorbidGraphNode(AnyNode, VisualizableMixin, FilterableNodeMixin, LBLNodeMixin):
+class ComorbidGraphNode(Node, VisualizableMixin, ScorableNodeMixin, LBLNodeMixin):
     def __init__(self, *args, **kwargs):
         u"""Quick Initializer for testing and defaulting"""
 
         super().__init__(*args, **kwargs)
         if not hasattr(self, "type"):
             self.type = "default"
+        if not hasattr(self, "score"):
+            self.score = 0
 
     def to_dict(self):
         dict_val = {
             "id": self.__dict__["id"],
             "name": self.__dict__["name"],
             "type": self.__dict__["type"],
+            "score": self.__dict__["score"],
         }
         return dict_val
 
     def generate_link(self, *args, **kwargs):
+        # OVERWRITE THIS FOR APPLICATION PURPOSES
         if not hasattr(self, "type"):
             return "/"
         return "/" + str(self.type)
@@ -51,6 +55,7 @@ class ComorbidGraphNode(AnyNode, VisualizableMixin, FilterableNodeMixin, LBLNode
                 "id",
                 "name",
                 "type",
+                "score",
                 "body",
                 "description",
             ]:
