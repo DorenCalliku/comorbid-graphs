@@ -24,7 +24,7 @@ class ProcessableNodeMixin(object):
                 {
                     "name": node.name,
                     "parent": node.parent.name,
-                    "category": node.ancestors[0].name if len(node.ancestors) else None,
+                    "ancestor": node.ancestors[0].name if len(node.ancestors) else None,
                     "start": int(i.span()[0]),
                     "end": int(i.span()[1]),
                 }

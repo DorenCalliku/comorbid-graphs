@@ -124,12 +124,8 @@ class ScorableNodeMixin(object):
 
     def _score_content(self, inc_list: list, exc_list: list) -> bool:
         """Filters content that has the phrases put in the included list."""
-        if not hasattr(self, "body"):
+        if not hasattr(self, "body") or not self.body:
             return False
         if not any(i in self.body for i in exc_list):
             return sum([self.body.lower().count(i)*len(i) for i in inc_list])/len(self.body)
         return False
-
-    @staticmethod
-    def order_by_score(items):
-        return sorted(items, key=lambda item: item.score + sum(i.score for i in item.children))

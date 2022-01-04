@@ -24,11 +24,8 @@ class SimpleSearchMixin(object):
         ancestor_node = self.filter_subgraph(
             inc_list=incl_list,
             exc_list=list(set(all_nodes) - incl_list),
-            node_type=node_type,
             base_name=base_name,
             strict=True,
             with_children=with_children,
         )
-        result_cg = type(self)(dict(name=base_name), node_type=node_type)
-        result_cg.tree = ancestor_node
-        return result_cg
+        return type(self).from_tree(ancestor_node, parent_name=base_name)

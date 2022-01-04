@@ -1,5 +1,5 @@
 
-### Story
+### Why to create something like this?
 I am a Ms. student of psychology and neuroscience. I am interested in neuro-psychology and related fields, and had difficulties in mentally visualizing the field, and differentiating scopes. Questions that I am trying to answer:  
 - What are the main elements in neuropsychology? 
     - Can I automatically discover them through analyzing text and combining it with pre-existing Ontologies?
@@ -44,3 +44,18 @@ These are the simple descriptors for now, will enrich with time.
         - `disorders`
         - `diseases`
         - `syndrome`
+
+### Why a new tool
+
+This tool is here to help with:  
+- *Informed decision making* on direction of research.
+- *Mental Knowledge Graph* to understand where is your contribution and how that impacts.
+- *Maintaining dependencies* of information.
+
+Who should use this?
+- *mentors* for showing students where they can contribute
+- *academicians* doing meta-review, but want a quick-tool before going all-in for an ontology.
+
+What this tool is **not**?
+- Ontology-Viewer - we simplify ontologies into hierarchical structures. Check [Other options](#other-options).
+- Knowledge-Graph automatic creator.

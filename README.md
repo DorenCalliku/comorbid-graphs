@@ -1,17 +1,18 @@
+| Searching | Exploring |
+| --- | --- |
+|![Search](./docs/imgs/search.png)|![Resources](./docs/imgs/resources.png)  | 
+<div style="text-align: right"> Using Comorbid-Graphs in <a href="http://garden-of-graphs.herokuapp.com/"> Comorbid (aka Garden of Graphs)</a> </div>
+
 # Comorbid-Graphs
-Create a mental map of resources.  
-A *batteries-included easy-to-use tool* for <ins>search, compare, analyse and visualize</ins> hierarchically-oriented text-resources (mainly on neuro-psychology).   
+Create a mental map of resources with simple code.   
 
-Read how this started: [Story](./docs/story.md).  
-Used by: [ComorbidLab]().   
-Previous apps: [Garden-of-Graphs](http://garden-of-graphs.herokuapp.com/), [DiseasePainter](https://diseasepainter.herokuapp.com/).
+Why create this tool and who should use it - [quick intro](./docs/story.md).  
+Looking for examples - [examples](./examples).  
+Under heavy development. Please [report bug](https://github.com/DorenCalliku/comorbid-graphs/issues) if something doesnt work.
 
-> **Warning**: Under heavy development. Please [report bug]() if something doesnt work.
-<br>
 
 ### Table of Contents
 * [Getting Started](#getting-started)
-    - [Why a new tool](#why-a-new-tool)
     - [Installation](#installation)
     - [Comorbid-Graphs 101](#comorbid-graphs-101)
 * [Usage](#usage)
@@ -21,68 +22,39 @@ Previous apps: [Garden-of-Graphs](http://garden-of-graphs.herokuapp.com/), [Dise
     - [Stats](#stats)
     - [Language Processing](#analytics)
     - [Compare](#compare)
-* [Examples](#examples)
-    - [Load from Ontology](./examples/Ontologies.md)
-    - [DSM-V Exploration (Book-to-CG)](./examples/DSM-V.ipynb)
-    - [Wikipedia Categories](./examples/Wikipedia.ipynb)
-    - [CourtListener Cases](./examples/CourtListener.ipynb)
-    - [Case Transcript Analysis](./examples/Case-Analysis.ipynb)
 * [References](#references)
+    - [Applications using this tool](#applications-using-this-tool)
     - [Libraries](#libraries)
     - [Other options](#other-options)
     - [Contribute](#contribute)
-<br><br>
 
 ## Getting Started
 
-### Why a new tool
-
-This tool is here to help with:  
-- *Informed decision making* on direction of research.
-- *Mental Knowledge Graph* to understand where is your contribution and how that impacts.
-- *Maintaining dependencies* of information.
-
-For whom?
-- *mentors* for showing students where they can contribute
-- *academicians* doing meta-review, but want a quick-tool before going all-in for an ontology.
-
-Existential problem this tool?
-- Is this a *comorbid* tool - which seems like its solving problems but actually adding more confusion?
-- Aim: Reduce self's *comorbidity* level.
-
-What this tool is **not**?
-- Ontology-Viewer - we simplify ontologies into hierarchical structures. Check [Other options](#other-options).
-- Knowledge-Graph automatic creator.
-
 ### Installation
-
-Setup: For using `Comorbid-Graphs` you need [python]() installed in your computer.  
-Together with `python` comes the `pip` installer for installing this package.  
-For installing python and jupyter and more, you can follow [this guide](). 
-
-Then write in your terminal or jupyter notebook:  
 `!pip install git+https://github.com/DorenCalliku/comorbid-graphs`
 
 ### Comorbid-Graphs 101
+For this example you can use one of [example data files](https://github.com/DorenCalliku/comorbid-graphs/examples/data) in the docs.  
+Example structure of data:  
+```json
+{"name": "Default", "children":[{"name": "Default Child", "children":[]}]}
+```
 
-For this example you can use one of [data files](https://github.com/DorenCalliku/comorbid-graphs/examples/data) in the docs.
-
-#### Loading from file
+Loading from file:  
 ```python
 # import libraries needed
 import json
+import pprint
 from comorbid_graphs import ComorbidGraph, ComorbidGraphNode
 
 with open('example.json') as f:
     data = json.load(f)
-# example: data = {"name": "Default", "children":[{"name": "Default Child", "children":[]}]}
 
 cg = ComorbidGraph(json_data=data, node_type=ComorbidGraphNode)
-cg.explore()
-```
+pprint.pprint(cg.explore())
+``` 
 
-#### Saving for later
-
+Saving for later:  
 ```python
 with open('exported_data.json', 'w+') as f:
     json.dump(cg.export(), f)
@@ -117,7 +89,7 @@ results_cg.explore()
 
 ### Advanced Search
 For users who are looking for specifics in a hierarchical graph.  
-For a full guide and explanation check the page [search](docs/search.md) in the documentation.
+For a full guide and explanation check the page [search](./docs/search.md) in the documentation.
 
 ```python
 # Example: Which Disorders in 'DSM-V' contain the term anxiety?
@@ -133,9 +105,19 @@ results_cg = cg.advanced_search(query_str, node_type=ComorbidGraphNode)
 results_cg.explore()
 ```
 
-### Stats
-
 ### Language Processing
+For now we are using a bag-of-words method for extracting cross references.
+
+```python
+# tool-graphs, for example: ontology
+tool_graphs = []
+for file_name in ['tools_1.json', 'tools_2.json']:
+    with open(filename) as f:
+        tool_graphs.append(ComorbidGraph(json_data=json.load(f), node_type=ComorbidGraphNode))
+
+# extract all related labels (cross-referencing)
+cg.process_graph(tool_graphs)
+```
 
 ### Compare
 
@@ -151,6 +133,10 @@ Here you can find notebooks of analysis. They are found under the [examples](./e
 For a web-application and ease of usage you can check [ComorbidLab]().
 
 ## References
+
+### Applications using this tool
+- [Garden-of-Graphs](http://garden-of-graphs.herokuapp.com/)
+- [DiseasePainter](https://diseasepainter.herokuapp.com/)
 
 ### Libraries
 These are libraries that I am using for the project.  

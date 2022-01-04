@@ -81,10 +81,10 @@ def test_lbl_filter():
 # In[7]:
 
 subgraph = cg.filter_subgraph(
-    inc_list=['nervous system'], exc_list=['pain'], node_type=ComorbidGraphNode, base_name='subgraph results'
+    inc_list=['nervous system'], exc_list=['pain'], base_name='subgraph results'
 )
 def test_subgraph():
-    for pre, fill, node in RenderTree(subgraph):
+    for pre, _, node in RenderTree(subgraph):
         if hasattr(node, 'old_parent') and hasattr(node.old_parent, 'name'):
             print("%s%s - %s" % (pre, node.name, node.old_parent.name))
         else:

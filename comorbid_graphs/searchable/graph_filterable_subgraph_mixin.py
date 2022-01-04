@@ -23,7 +23,6 @@ class FilterableSubgraphMixin(object):
         self,
         inc_list,
         exc_list,
-        node_type,
         base_name,
         strict: bool = False,
         with_children: bool = True,
@@ -69,7 +68,7 @@ class FilterableSubgraphMixin(object):
                 # deleting its reference just in case
                 del node
         return self.merge_nodes_into_tree(
-            include_nodes, base_name=base_name, node_type=node_type, with_children=with_children
+            include_nodes, base_name=base_name, node_type=type(self.tree), with_children=with_children
         )
 
     @staticmethod

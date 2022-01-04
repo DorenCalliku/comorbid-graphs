@@ -43,23 +43,23 @@ class AnyTreeMixin(object):
 class AnyTreeIOMixin(object):
 
     @classmethod
-    def generate_tree_from_node(cls, node, max_level):
+    def generate_tree_from_node(cls, node, maxlevel):
         """ 
         print all nodes to be able to
         see which ones are the ones we need
         """
         with io.StringIO() as buf, redirect_stdout(buf):
-            for pre, _, node in RenderTree(node, maxlevel=max_level):
+            for pre, _, node in RenderTree(node, maxlevel=maxlevel):
                 print("%s%s" % (pre, node.name))
             return buf.getvalue()
 
-    def explore(self, node_name=None, max_level=None):
+    def explore(self, node_name=None, maxlevel=None):
         if not node_name:
             node_name = self.tree.name
         node = self.find_node(node_name)
         if not node:
             return ""
-        return self.generate_tree_from_node(node, max_level=max_level)
+        return self.generate_tree_from_node(node, maxlevel=maxlevel)
 
     def graph(self, node_name=None):
         # check if not starting from center

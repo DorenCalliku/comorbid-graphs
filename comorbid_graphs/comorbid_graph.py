@@ -38,27 +38,44 @@ class ComorbidGraph(
                     node.id = id
                     id += 1
 
-    def set_options(self):
-        self.options = [node.name for node in PreOrderIter(self.tree)]
+    def get_names(self):
+        return [node.name for node in PreOrderIter(self.tree)]
 
-    def get_nodes_n_edges(self, node=None, max_level=3):
+    def get_nodes(self):
+        return [node for node in PreOrderIter(self.tree)]
+
+    def get_nodes_n_edges(self, node=None, maxlevel=3):
         if not node:
             node = self.tree
         # filter children
         return [
             j
-            for n in LevelOrderIter(node, maxlevel=max_level)
+            for n in LevelOrderIter(node, maxlevel=maxlevel)
             for j in n.get_node_edge()
         ]
+
+    def describe(self):
+        count, label_count = 0, 0
+        for i in PreOrderIter(self.tree):
+            count += 1 
+            label_count += len(i.annotation_list)
+
+        stats = {
+            "count": count,
+            "label count": label_count,
+        }
+        stats['leaves count'] = len(self.tree.leaves)
+        stats['height'] = self.tree.height
+        return stats
 
     @classmethod
     def merge_trees(
         cls,
         json_list,
+        node_type,
         parent_name="Source",
         parent_type="annotation",
         assign_ids=False,
-        node_type=None,
     ):
         tree = cls(
             {"name": parent_name, "id": 0, "type": parent_type, "children": json_list},
@@ -66,3 +83,20 @@ class ComorbidGraph(
             node_type=node_type,
         )
         return tree
+
+    @classmethod
+    def from_tree(
+        cls,
+        tree_node,
+        parent_name="Source",
+    ):
+        new_cg = cls(dict(name=parent_name), node_type=type(tree_node))
+        new_cg.tree = tree_node
+        return new_cg
+
+    def select(self, node_name):
+        node = self.find_node(node_name)
+        if not node:
+            return
+        type(self).from_tree(node, parent_name=node_name)
+        return node
