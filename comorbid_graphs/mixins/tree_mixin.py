@@ -1,6 +1,5 @@
 #!/usr/bin/env python
 # coding: utf-8
-
 import io
 from anytree import Node, RenderTree, PreOrderIter, findall
 from contextlib import redirect_stdout

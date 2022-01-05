@@ -1,0 +1,5947 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.7), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://purl.obolibrary.org/obo", "http://www.w3.org/2000/01/rdf-schema", "http://www.geneontology.org/formats/oboInOwl", "http://www.w3.org/2001/XMLSchema" ],
+    "prefixList" : {
+      "owl" : "http://www.w3.org/2002/07/owl#",
+      "terms" : "http://purl.org/dc/terms/",
+      "xsd" : "http://www.w3.org/2001/XMLSchema#",
+      "obo" : "http://purl.obolibrary.org/obo/",
+      "rdfs" : "http://www.w3.org/2000/01/rdf-schema#",
+      "oboInOwl" : "http://www.geneontology.org/formats/oboInOwl#",
+      "ace_lexicon" : "http://attempto.ifi.uzh.ch/ace_lexicon#",
+      "iao" : "http://purl.obolibrary.org/obo/iao/",
+      "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "protege" : "http://protege.stanford.edu/plugins/owl/protege#",
+      "" : "http://purl.obolibrary.org/obo/iao/ontology-metadata.owl#",
+      "dc" : "http://purl.org/dc/elements/1.1/",
+      "xml" : "http://www.w3.org/XML/1998/namespace",
+      "foaf" : "http://xmlns.com/foaf/0.1/"
+    },
+    "iri" : "http://purl.obolibrary.org/obo/MF/internal/MF-core.owl",
+    "comments" : {
+      "undefined" : "To be imported into the full MF.owl"
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "22",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "28",
+    "type" : "owl:Class"
+  }, {
+    "id" : "31",
+    "type" : "owl:Class"
+  }, {
+    "id" : "29",
+    "type" : "owl:Class"
+  }, {
+    "id" : "34",
+    "type" : "owl:Class"
+  }, {
+    "id" : "35",
+    "type" : "owl:Class"
+  }, {
+    "id" : "25",
+    "type" : "owl:Class"
+  }, {
+    "id" : "38",
+    "type" : "owl:Class"
+  }, {
+    "id" : "26",
+    "type" : "owl:Class"
+  }, {
+    "id" : "39",
+    "type" : "owl:Class"
+  }, {
+    "id" : "66",
+    "type" : "owl:Class"
+  }, {
+    "id" : "68",
+    "type" : "owl:Class"
+  }, {
+    "id" : "77",
+    "type" : "owl:Class"
+  }, {
+    "id" : "24",
+    "type" : "owl:Class"
+  }, {
+    "id" : "86",
+    "type" : "owl:Class"
+  }, {
+    "id" : "91",
+    "type" : "owl:Class"
+  }, {
+    "id" : "27",
+    "type" : "owl:Class"
+  }, {
+    "id" : "93",
+    "type" : "owl:Class"
+  }, {
+    "id" : "94",
+    "type" : "owl:Class"
+  }, {
+    "id" : "32",
+    "type" : "owl:Class"
+  }, {
+    "id" : "36",
+    "type" : "owl:Class"
+  }, {
+    "id" : "37",
+    "type" : "owl:Class"
+  }, {
+    "id" : "33",
+    "type" : "owl:Class"
+  }, {
+    "id" : "30",
+    "type" : "owl:Class"
+  }, {
+    "id" : "92",
+    "type" : "owl:Class"
+  }, {
+    "id" : "97",
+    "type" : "owl:Class"
+  }, {
+    "id" : "99",
+    "type" : "owl:Class"
+  }, {
+    "id" : "48",
+    "type" : "owl:Class"
+  }, {
+    "id" : "100",
+    "type" : "owl:Class"
+  }, {
+    "id" : "105",
+    "type" : "owl:Class"
+  }, {
+    "id" : "104",
+    "type" : "owl:Class"
+  }, {
+    "id" : "131",
+    "type" : "owl:Class"
+  }, {
+    "id" : "75",
+    "type" : "owl:Class"
+  }, {
+    "id" : "76",
+    "type" : "owl:Class"
+  }, {
+    "id" : "138",
+    "type" : "owl:Class"
+  }, {
+    "id" : "143",
+    "type" : "owl:Class"
+  }, {
+    "id" : "139",
+    "type" : "owl:Class"
+  }, {
+    "id" : "140",
+    "type" : "owl:Class"
+  }, {
+    "id" : "145",
+    "type" : "owl:Class"
+  }, {
+    "id" : "142",
+    "type" : "owl:Class"
+  }, {
+    "id" : "150",
+    "type" : "owl:Class"
+  }, {
+    "id" : "153",
+    "type" : "owl:Class"
+  }, {
+    "id" : "67",
+    "type" : "owl:Class"
+  }, {
+    "id" : "151",
+    "type" : "owl:Class"
+  }, {
+    "id" : "163",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "152",
+    "type" : "owl:Class"
+  }, {
+    "id" : "167",
+    "type" : "owl:Class"
+  }, {
+    "id" : "122",
+    "type" : "owl:Class"
+  }, {
+    "id" : "169",
+    "type" : "owl:Class"
+  }, {
+    "id" : "171",
+    "type" : "owl:Class"
+  }, {
+    "id" : "170",
+    "type" : "owl:Class"
+  }, {
+    "id" : "50",
+    "type" : "owl:Class"
+  }, {
+    "id" : "72",
+    "type" : "owl:Class"
+  }, {
+    "id" : "154",
+    "type" : "owl:Class"
+  }, {
+    "id" : "61",
+    "type" : "owl:Class"
+  }, {
+    "id" : "146",
+    "type" : "owl:Class"
+  }, {
+    "id" : "41",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "98",
+    "type" : "owl:Class"
+  }, {
+    "id" : "187",
+    "type" : "owl:Class"
+  }, {
+    "id" : "188",
+    "type" : "owl:Class"
+  }, {
+    "id" : "189",
+    "type" : "owl:Class"
+  }, {
+    "id" : "79",
+    "type" : "owl:Class"
+  }, {
+    "id" : "119",
+    "type" : "owl:Class"
+  }, {
+    "id" : "85",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "52",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "144",
+    "type" : "owl:Class"
+  }, {
+    "id" : "130",
+    "type" : "owl:Class"
+  }, {
+    "id" : "101",
+    "type" : "owl:Class"
+  }, {
+    "id" : "69",
+    "type" : "owl:Class"
+  }, {
+    "id" : "83",
+    "type" : "owl:Class"
+  }, {
+    "id" : "202",
+    "type" : "owl:Class"
+  }, {
+    "id" : "168",
+    "type" : "owl:Class"
+  }, {
+    "id" : "70",
+    "type" : "owl:Class"
+  }, {
+    "id" : "180",
+    "type" : "owl:Class"
+  }, {
+    "id" : "43",
+    "type" : "owl:Class"
+  }, {
+    "id" : "59",
+    "type" : "owl:Class"
+  }, {
+    "id" : "63",
+    "type" : "owl:Class"
+  }, {
+    "id" : "44",
+    "type" : "owl:Class"
+  }, {
+    "id" : "107",
+    "type" : "owl:Class"
+  }, {
+    "id" : "109",
+    "type" : "owl:Class"
+  }, {
+    "id" : "113",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "46",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "103",
+    "type" : "owl:Class"
+  }, {
+    "id" : "147",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "65",
+    "type" : "owl:Class"
+  }, {
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "87",
+    "type" : "owl:Class"
+  }, {
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "133",
+    "type" : "owl:Class"
+  }, {
+    "id" : "135",
+    "type" : "owl:Class"
+  }, {
+    "id" : "115",
+    "type" : "owl:Class"
+  }, {
+    "id" : "190",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "117",
+    "type" : "owl:Class"
+  }, {
+    "id" : "81",
+    "type" : "owl:Class"
+  }, {
+    "id" : "186",
+    "type" : "owl:Class"
+  }, {
+    "id" : "58",
+    "type" : "owl:Class"
+  }, {
+    "id" : "204",
+    "type" : "owl:Class"
+  }, {
+    "id" : "205",
+    "type" : "owl:Class"
+  }, {
+    "id" : "172",
+    "type" : "owl:Class"
+  }, {
+    "id" : "120",
+    "type" : "owl:Class"
+  }, {
+    "id" : "206",
+    "type" : "owl:Class"
+  }, {
+    "id" : "125",
+    "type" : "owl:Class"
+  }, {
+    "id" : "127",
+    "type" : "owl:Class"
+  }, {
+    "id" : "123",
+    "type" : "owl:Class"
+  }, {
+    "id" : "129",
+    "type" : "owl:Class"
+  }, {
+    "id" : "166",
+    "type" : "owl:Class"
+  }, {
+    "id" : "201",
+    "type" : "owl:Class"
+  }, {
+    "id" : "203",
+    "type" : "owl:Class"
+  }, {
+    "id" : "141",
+    "type" : "owl:Class"
+  }, {
+    "id" : "111",
+    "type" : "owl:Class"
+  }, {
+    "id" : "71",
+    "type" : "owl:Class"
+  }, {
+    "id" : "73",
+    "type" : "owl:Class"
+  }, {
+    "id" : "54",
+    "type" : "owl:Class"
+  }, {
+    "id" : "74",
+    "type" : "owl:Class"
+  }, {
+    "id" : "207",
+    "type" : "owl:Class"
+  }, {
+    "id" : "56",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://purl.obolibrary.org/obo/IAO_0000078",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : {
+      "IAO_0000111" : [ {
+        "identifier" : "IAO_0000111",
+        "language" : "en",
+        "value" : "curation status specification",
+        "type" : "label"
+      } ],
+      "IAO_0000115" : [ {
+        "identifier" : "IAO_0000115",
+        "language" : "en",
+        "value" : "The curation status of the term. The allowed values come from an enumerated list of predefined terms. See the specification of these instances for more detailed definitions of each enumerated value.",
+        "type" : "label"
+      } ],
+      "IAO_0000114" : [ {
+        "identifier" : "IAO_0000114",
+        "language" : "undefined",
+        "value" : "http://purl.obolibrary.org/obo/IAO_0000125",
+        "type" : "iri"
+      } ],
+      "IAO_0000117" : [ {
+        "identifier" : "IAO_0000117",
+        "language" : "en",
+        "value" : "PERSON:Bill Bug",
+        "type" : "label"
+      } ],
+      "IAO_0000116" : [ {
+        "identifier" : "IAO_0000116",
+        "language" : "en",
+        "value" : "Better to represent curation as a process with parts and then relate labels to that process (in IAO meeting)",
+        "type" : "label"
+      } ],
+      "IAO_0000119" : [ {
+        "identifier" : "IAO_0000119",
+        "language" : "en",
+        "value" : "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>",
+        "type" : "label"
+      }, {
+        "identifier" : "IAO_0000119",
+        "language" : "en",
+        "value" : "OBI_0000266",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "IAO_0000078",
+      "en" : "curation status specification"
+    },
+    "individuals" : [ {
+      "iri" : "http://purl.obolibrary.org/obo/IAO_0000125",
+      "baseIri" : "http://purl.obolibrary.org/obo",
+      "annotations" : {
+        "IAO_0000115" : [ {
+          "identifier" : "IAO_0000115",
+          "language" : "en",
+          "value" : "All definitions, placement in the asserted IS_A hierarchy and required minimal metadata are complete. The class is awaiting a final review by someone other than the term editor.",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "IAO_0000125",
+        "en" : "pending final vetting"
+      }
+    }, {
+      "iri" : "http://purl.obolibrary.org/obo/IAO_0000423",
+      "baseIri" : "http://purl.obolibrary.org/obo",
+      "annotations" : {
+        "IAO_0000115" : [ {
+          "identifier" : "IAO_0000115",
+          "language" : "en",
+          "value" : "Terms with this status should eventually replaced with a term from another ontology.",
+          "type" : "label"
+        } ],
+        "IAO_0000117" : [ {
+          "identifier" : "IAO_0000117",
+          "language" : "en",
+          "value" : "Alan Ruttenberg",
+          "type" : "label"
+        } ],
+        "IAO_0000119" : [ {
+          "identifier" : "IAO_0000119",
+          "language" : "en",
+          "value" : "group:OBI",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "IAO_0000423",
+        "en" : "to be replaced with external ontology term"
+      }
+    }, {
+      "iri" : "http://purl.obolibrary.org/obo/IAO_0000121",
+      "baseIri" : "http://purl.obolibrary.org/obo",
+      "annotations" : {
+        "IAO_0000115" : [ {
+          "identifier" : "IAO_0000115",
+          "language" : "en",
+          "value" : "term created to ease viewing/sort terms for development purpose, and will not be included in a release",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "IAO_0000121",
+        "en" : "organizational term"
+      }
+    }, {
+      "iri" : "http://purl.obolibrary.org/obo/IAO_0000122",
+      "baseIri" : "http://purl.obolibrary.org/obo",
+      "annotations" : {
+        "IAO_0000115" : [ {
+          "identifier" : "IAO_0000115",
+          "language" : "en",
+          "value" : "Class has undergone final review, is ready for use, and will be included in the next release. Any class lacking \"ready_for_release\" should be considered likely to change place in hierarchy, have its definition refined, or be obsoleted in the next release.  Those classes deemed \"ready_for_release\" will also derived from a chain of ancestor classes that are also \"ready_for_release.\"",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "IAO_0000122",
+        "en" : "ready for release"
+      }
+    }, {
+      "iri" : "http://purl.obolibrary.org/obo/IAO_0000002",
+      "baseIri" : "http://purl.obolibrary.org/obo",
+      "labels" : {
+        "IRI-based" : "IAO_0000002",
+        "en" : "example to be eventually removed"
+      }
+    }, {
+      "iri" : "http://purl.obolibrary.org/obo/IAO_0000123",
+      "baseIri" : "http://purl.obolibrary.org/obo",
+      "annotations" : {
+        "IAO_0000115" : [ {
+          "identifier" : "IAO_0000115",
+          "language" : "en",
+          "value" : "Class is being worked on; however, the metadata (including definition) are not complete or sufficiently clear to the branch editors.",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "IAO_0000123",
+        "en" : "metadata incomplete"
+      }
+    }, {
+      "iri" : "http://purl.obolibrary.org/obo/IAO_0000124",
+      "baseIri" : "http://purl.obolibrary.org/obo",
+      "annotations" : {
+        "IAO_0000115" : [ {
+          "identifier" : "IAO_0000115",
+          "language" : "en",
+          "value" : "Nothing done yet beyond assigning a unique class ID and proposing a preferred term.",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "IAO_0000124",
+        "en" : "uncurated"
+      }
+    }, {
+      "iri" : "http://purl.obolibrary.org/obo/IAO_0000120",
+      "baseIri" : "http://purl.obolibrary.org/obo",
+      "annotations" : {
+        "IAO_0000115" : [ {
+          "identifier" : "IAO_0000115",
+          "language" : "en",
+          "value" : "Class has all its metadata, but is either not guaranteed to be in its final location in the asserted IS_A hierarchy or refers to another class that is not complete.",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "IAO_0000120",
+        "en" : "metadata complete"
+      }
+    }, {
+      "iri" : "http://purl.obolibrary.org/obo/IAO_0000428",
+      "baseIri" : "http://purl.obolibrary.org/obo",
+      "annotations" : {
+        "IAO_0000115" : [ {
+          "identifier" : "IAO_0000115",
+          "language" : "en",
+          "value" : "A term that is metadata complete, has been reviewed, and problems have been identified that require discussion before release. Such a term requires editor note(s) to identify the outstanding issues.",
+          "type" : "label"
+        } ],
+        "IAO_0000117" : [ {
+          "identifier" : "IAO_0000117",
+          "language" : "en",
+          "value" : "Alan Ruttenberg",
+          "type" : "label"
+        } ],
+        "IAO_0000119" : [ {
+          "identifier" : "IAO_0000119",
+          "language" : "en",
+          "value" : "group:OBI",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "IAO_0000428",
+        "en" : "requires discussion"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "13",
+    "superClasses" : [ "14" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/IAO_8000008",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : {
+      "IAO_0000115" : [ {
+        "identifier" : "IAO_0000115",
+        "language" : "undefined",
+        "value" : "An ontology module that is intended for usage in analysis or discovery applications.",
+        "type" : "label"
+      } ],
+      "creation_date" : [ {
+        "identifier" : "creation_date",
+        "language" : "undefined",
+        "value" : "2018-05-20T20:58:49Z",
+        "type" : "label"
+      } ],
+      "created_by" : [ {
+        "identifier" : "created_by",
+        "language" : "undefined",
+        "value" : "cjm",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "IAO_8000008",
+      "undefined" : "analysis subset ontology module"
+    },
+    "attributes" : [ "external" ],
+    "id" : "17",
+    "superClasses" : [ "18" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/IAO_8000009",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : {
+      "IAO_0000115" : [ {
+        "identifier" : "IAO_0000115",
+        "language" : "undefined",
+        "value" : "A subset ontology that is largely comprised of a single layer or strata in an ontology class hierarchy. The purpose is typically for rolling up for visualization. The classes in the layer need not be disjoint.",
+        "type" : "label"
+      } ],
+      "IAO_0000118" : [ {
+        "identifier" : "IAO_0000118",
+        "language" : "undefined",
+        "value" : "ribbon subset",
+        "type" : "label"
+      } ],
+      "creation_date" : [ {
+        "identifier" : "creation_date",
+        "language" : "undefined",
+        "value" : "2018-05-20T20:59:19Z",
+        "type" : "label"
+      } ],
+      "created_by" : [ {
+        "identifier" : "created_by",
+        "language" : "undefined",
+        "value" : "cjm",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "IAO_8000009",
+      "undefined" : "single layer subset ontology module"
+    },
+    "attributes" : [ "external" ],
+    "id" : "22",
+    "superClasses" : [ "18" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/IAO_8000006",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : {
+      "IAO_0000115" : [ {
+        "identifier" : "IAO_0000115",
+        "language" : "undefined",
+        "value" : "An ontology module that is extracted from a main ontology module and includes only a subset of entities or axioms.",
+        "type" : "label"
+      } ],
+      "IAO_0000118" : [ {
+        "identifier" : "IAO_0000118",
+        "language" : "undefined",
+        "value" : "ontology slim",
+        "type" : "label"
+      }, {
+        "identifier" : "IAO_0000118",
+        "language" : "undefined",
+        "value" : "subset ontology",
+        "type" : "label"
+      } ],
+      "creation_date" : [ {
+        "identifier" : "creation_date",
+        "language" : "undefined",
+        "value" : "2018-05-20T20:58:11Z",
+        "type" : "label"
+      } ],
+      "created_by" : [ {
+        "identifier" : "created_by",
+        "language" : "undefined",
+        "value" : "cjm",
+        "type" : "label"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://robot.obolibrary.org/filter",
+        "type" : "iri"
+      }, {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://www.geneontology.org/page/go-slim-and-subset-guide",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "IAO_8000006",
+      "undefined" : "subset ontology module"
+    },
+    "subClasses" : [ "26", "17", "22", "27", "28", "29", "30" ],
+    "attributes" : [ "external" ],
+    "id" : "18",
+    "superClasses" : [ "25" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/IAO_8000007",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : {
+      "IAO_0000115" : [ {
+        "identifier" : "IAO_0000115",
+        "language" : "undefined",
+        "value" : "A subset ontology that is intended as a whitelist for curators using the ontology. Such a subset will exclude classes that curators should not use for curation.",
+        "type" : "label"
+      } ],
+      "creation_date" : [ {
+        "identifier" : "creation_date",
+        "language" : "undefined",
+        "value" : "2018-05-20T20:58:38Z",
+        "type" : "label"
+      } ],
+      "created_by" : [ {
+        "identifier" : "created_by",
+        "language" : "undefined",
+        "value" : "cjm",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "IAO_8000007",
+      "undefined" : "curation subset ontology module"
+    },
+    "attributes" : [ "external" ],
+    "id" : "28",
+    "superClasses" : [ "18" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/IAO_8000004",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : {
+      "IAO_0000115" : [ {
+        "identifier" : "IAO_0000115",
+        "language" : "undefined",
+        "value" : "An ontology module that consists entirely of axioms that connect or bridge two distinct ontology modules. For example, the Uberon-to-ZFA bridge module.",
+        "type" : "label"
+      } ],
+      "creation_date" : [ {
+        "identifier" : "creation_date",
+        "language" : "undefined",
+        "value" : "2018-05-20T20:56:23Z",
+        "type" : "label"
+      } ],
+      "created_by" : [ {
+        "identifier" : "created_by",
+        "language" : "undefined",
+        "value" : "cjm",
+        "type" : "label"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "https://github.com/obophenotype/uberon/wiki/inter-anatomy-ontology-bridge-ontologies",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "IAO_8000004",
+      "undefined" : "bridge ontology module"
+    },
+    "subClasses" : [ "32" ],
+    "attributes" : [ "external" ],
+    "id" : "31",
+    "superClasses" : [ "25" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/IAO_8000005",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : {
+      "IAO_0000115" : [ {
+        "identifier" : "IAO_0000115",
+        "language" : "undefined",
+        "value" : "A subset ontology module that is intended to be imported from another ontology.",
+        "type" : "label"
+      } ],
+      "IAO_0000116" : [ {
+        "identifier" : "IAO_0000116",
+        "language" : "undefined",
+        "value" : "TODO: add axioms that indicate this is the output of a module extraction process.",
+        "type" : "label"
+      } ],
+      "IAO_0000118" : [ {
+        "identifier" : "IAO_0000118",
+        "language" : "undefined",
+        "value" : "import file",
+        "type" : "label"
+      } ],
+      "creation_date" : [ {
+        "identifier" : "creation_date",
+        "language" : "undefined",
+        "value" : "2018-05-20T20:56:47Z",
+        "type" : "label"
+      } ],
+      "created_by" : [ {
+        "identifier" : "created_by",
+        "language" : "undefined",
+        "value" : "cjm",
+        "type" : "label"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://robot.obolibrary.org/extract",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "IAO_8000005",
+      "undefined" : "import ontology module"
+    },
+    "subClasses" : [ "33" ],
+    "attributes" : [ "external" ],
+    "id" : "29",
+    "superClasses" : [ "18" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/IAO_8000002",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : {
+      "IAO_0000115" : [ {
+        "identifier" : "IAO_0000115",
+        "language" : "undefined",
+        "value" : "An ontology module that is intended to be directly edited, typically managed in source control, and typically not intended for direct consumption by end-users.",
+        "type" : "label"
+      } ],
+      "IAO_0000118" : [ {
+        "identifier" : "IAO_0000118",
+        "language" : "undefined",
+        "value" : "source ontology module",
+        "type" : "label"
+      } ],
+      "creation_date" : [ {
+        "identifier" : "creation_date",
+        "language" : "undefined",
+        "value" : "2018-05-20T20:55:47Z",
+        "type" : "label"
+      } ],
+      "created_by" : [ {
+        "identifier" : "created_by",
+        "language" : "undefined",
+        "value" : "cjm",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "IAO_8000002",
+      "undefined" : "editors ontology module"
+    },
+    "attributes" : [ "external" ],
+    "id" : "34",
+    "superClasses" : [ "25" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/IAO_8000003",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : {
+      "IAO_0000115" : [ {
+        "identifier" : "IAO_0000115",
+        "language" : "undefined",
+        "value" : "An ontology module that is intended to be the primary release product and the one consumed by the majority of tools.",
+        "type" : "label"
+      } ],
+      "IAO_0000116" : [ {
+        "identifier" : "IAO_0000116",
+        "language" : "undefined",
+        "value" : "TODO: Add logical axioms that state that a main release ontology module is derived from (directly or indirectly) an editors module",
+        "type" : "label"
+      } ],
+      "creation_date" : [ {
+        "identifier" : "creation_date",
+        "language" : "undefined",
+        "value" : "2018-05-20T20:56:13Z",
+        "type" : "label"
+      } ],
+      "created_by" : [ {
+        "identifier" : "created_by",
+        "language" : "undefined",
+        "value" : "cjm",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "IAO_8000003",
+      "undefined" : "main release ontology module"
+    },
+    "attributes" : [ "external" ],
+    "id" : "35",
+    "superClasses" : [ "25" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/IAO_8000000",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : {
+      "IAO_0000232" : [ {
+        "identifier" : "IAO_0000232",
+        "language" : "undefined",
+        "value" : "This class and it's subclasses are applied to OWL ontologies. Using an rdf:type triple will result in problems with OWL-DL. I propose that dcterms:type is instead used to connect an ontology URI with a class from this hierarchy. The class hierarchy is not disjoint, so multiple assertions can be made about a single ontology.",
+        "type" : "label"
+      } ],
+      "IAO_0000116" : [ {
+        "identifier" : "IAO_0000116",
+        "language" : "undefined",
+        "value" : "I have placed this under 'data about an ontology part', but this can be discussed. I think this is OK if 'part' is interpreted reflexively, as an ontology module is the whole ontology rather than part of it.",
+        "type" : "label"
+      } ],
+      "IAO_0000118" : [ {
+        "identifier" : "IAO_0000118",
+        "language" : "undefined",
+        "value" : "ontology file",
+        "type" : "label"
+      } ],
+      "creation_date" : [ {
+        "identifier" : "creation_date",
+        "language" : "undefined",
+        "value" : "2018-05-20T20:55:03Z",
+        "type" : "label"
+      } ],
+      "created_by" : [ {
+        "identifier" : "created_by",
+        "language" : "undefined",
+        "value" : "cjm",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "IAO_8000000",
+      "undefined" : "ontology module"
+    },
+    "subClasses" : [ "18", "31", "36", "34", "37", "35", "38" ],
+    "attributes" : [ "external" ],
+    "id" : "25",
+    "superClasses" : [ "14" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/IAO_8000001",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : {
+      "IAO_0000115" : [ {
+        "identifier" : "IAO_0000115",
+        "language" : "undefined",
+        "value" : "An ontology module that comprises only of asserted axioms local to the ontology, excludes import directives, and excludes axioms or declarations from external ontologies.",
+        "type" : "label"
+      } ],
+      "creation_date" : [ {
+        "identifier" : "creation_date",
+        "language" : "undefined",
+        "value" : "2018-05-20T20:55:30Z",
+        "type" : "label"
+      } ],
+      "created_by" : [ {
+        "identifier" : "created_by",
+        "language" : "undefined",
+        "value" : "cjm",
+        "type" : "label"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "https://github.com/INCATools/ontology-starter-kit/issues/50",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "IAO_8000001",
+      "undefined" : "base ontology module"
+    },
+    "attributes" : [ "external" ],
+    "id" : "38",
+    "superClasses" : [ "25" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/IAO_8000010",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : {
+      "IAO_0000115" : [ {
+        "identifier" : "IAO_0000115",
+        "language" : "undefined",
+        "value" : "A subset of an ontology that is intended to be excluded for some purpose. For example, a blacklist of classes.",
+        "type" : "label"
+      } ],
+      "IAO_0000118" : [ {
+        "identifier" : "IAO_0000118",
+        "language" : "undefined",
+        "value" : "antislim",
+        "type" : "label"
+      } ],
+      "creation_date" : [ {
+        "identifier" : "creation_date",
+        "language" : "undefined",
+        "value" : "2018-05-20T20:59:57Z",
+        "type" : "label"
+      } ],
+      "created_by" : [ {
+        "identifier" : "created_by",
+        "language" : "undefined",
+        "value" : "cjm",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "IAO_8000010",
+      "undefined" : "exclusion subset ontology module"
+    },
+    "attributes" : [ "external" ],
+    "id" : "26",
+    "superClasses" : [ "18" ]
+  }, {
+    "iri" : "http://www.geneontology.org/formats/oboInOwl#Definition",
+    "baseIri" : "http://www.geneontology.org/formats/oboInOwl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Definition"
+    },
+    "attributes" : [ "external" ],
+    "id" : "39",
+    "superClasses" : [ "14" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/MF_0000202",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : {
+      "IAO_0000115" : [ {
+        "identifier" : "IAO_0000115",
+        "language" : "undefined",
+        "value" : "A personality is a complex sum of dispositions and predispositions towards mental processes and behaviour. It inheres in a person.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MF_0000202",
+      "en" : "personality"
+    },
+    "comment" : {
+      "undefined" : "Personality is not the same as mood, although a person may have a personality that includes a predisposition to moods of certain types, moods may come and go but a personality stays relatively constant, not appearing and disappearing. Personality typically changes slowly over time."
+    },
+    "attributes" : [ "external" ],
+    "id" : "66",
+    "superClasses" : [ "67" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/MF_0000203",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : {
+      "IAO_0000115" : [ {
+        "identifier" : "IAO_0000115",
+        "language" : "undefined",
+        "value" : "A personality trait is an individual disposition or predisposition that forms part of an overall personality and is realized in repeated occurrences of a specific mental process type or behavioural profile. ",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MF_0000203",
+      "en" : "personality trait"
+    },
+    "subClasses" : [ "69", "70", "71", "72", "73", "74", "75", "76" ],
+    "attributes" : [ "external" ],
+    "id" : "68",
+    "superClasses" : [ "67" ]
+  }, {
+    "iri" : "http://www.geneontology.org/formats/oboInOwl#DbXref",
+    "baseIri" : "http://www.geneontology.org/formats/oboInOwl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DbXref"
+    },
+    "attributes" : [ "external" ],
+    "id" : "77",
+    "superClasses" : [ "14" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/MF_0000091",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : {
+      "IAO_0000115" : [ {
+        "identifier" : "IAO_0000115",
+        "language" : "undefined",
+        "value" : "A non-linguistic communication process that involves the transmission of information by one participant interpreting the facial expressions of another participant.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MF_0000091",
+      "en" : "facial expression communication"
+    },
+    "attributes" : [ "external" ],
+    "id" : "24",
+    "superClasses" : [ "21" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/MF_0000090",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : {
+      "IAO_0000115" : [ {
+        "identifier" : "IAO_0000115",
+        "language" : "undefined",
+        "value" : "A linguistic communication in which the meaning units are encoded in a sign language.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MF_0000090",
+      "en" : "sign-language communication"
+    },
+    "attributes" : [ "external" ],
+    "id" : "86",
+    "superClasses" : [ "87" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/IAO_8000019",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : {
+      "creation_date" : [ {
+        "identifier" : "creation_date",
+        "language" : "undefined",
+        "value" : "2018-05-22T04:16:28Z",
+        "type" : "label"
+      } ],
+      "created_by" : [ {
+        "identifier" : "created_by",
+        "language" : "undefined",
+        "value" : "cjm",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "IAO_8000019",
+      "undefined" : "ontology module subsetted by OWL profile"
+    },
+    "subClasses" : [ "92" ],
+    "attributes" : [ "external" ],
+    "id" : "91",
+    "superClasses" : [ "27" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/IAO_8000017",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : {
+      "creation_date" : [ {
+        "identifier" : "creation_date",
+        "language" : "undefined",
+        "value" : "2018-05-22T04:15:54Z",
+        "type" : "label"
+      } ],
+      "created_by" : [ {
+        "identifier" : "created_by",
+        "language" : "undefined",
+        "value" : "cjm",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "IAO_8000017",
+      "undefined" : "ontology module subsetted by expressivity"
+    },
+    "subClasses" : [ "91", "93" ],
+    "attributes" : [ "external" ],
+    "id" : "27",
+    "superClasses" : [ "18" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/IAO_8000018",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : {
+      "IAO_0000115" : [ {
+        "identifier" : "IAO_0000115",
+        "language" : "undefined",
+        "value" : "A subset ontology that is designed for basic applications to continue to make certain simplifying assumptions; many of these simplifying assumptions were based on the initial version of the Gene Ontology, and have become enshrined in many popular and useful tools such as term enrichment tools.\n\nExamples of such assumptions include: traversing the ontology graph ignoring relationship types using a naive algorithm will not lead to cycles (i.e. the ontology is a DAG); every referenced term is declared in the ontology (i.e. there are no dangling clauses).\n\nAn ontology is OBO Basic if and only if it has the following characteristics:\nDAG\nUnidirectional\nNo Dangling Clauses\nFully Asserted\nFully Labeled\nNo equivalence axioms\nSingly labeled edges\nNo qualifier lists\nNo disjointness axioms\nNo owl-axioms header\nNo imports",
+        "type" : "label"
+      } ],
+      "creation_date" : [ {
+        "identifier" : "creation_date",
+        "language" : "undefined",
+        "value" : "2018-05-22T04:16:10Z",
+        "type" : "label"
+      } ],
+      "created_by" : [ {
+        "identifier" : "created_by",
+        "language" : "undefined",
+        "value" : "cjm",
+        "type" : "label"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://owlcollab.github.io/oboformat/doc/obo-syntax.html#6.2",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "IAO_8000018",
+      "undefined" : "obo basic subset ontology module"
+    },
+    "attributes" : [ "external" ],
+    "id" : "93",
+    "superClasses" : [ "27" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/IAO_8000015",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : {
+      "IAO_0000115" : [ {
+        "identifier" : "IAO_0000115",
+        "language" : "undefined",
+        "value" : "An ontology module that is automatically generated from a template specification and fillers for slots in that template.",
+        "type" : "label"
+      } ],
+      "creation_date" : [ {
+        "identifier" : "creation_date",
+        "language" : "undefined",
+        "value" : "2018-05-20T21:21:21Z",
+        "type" : "label"
+      } ],
+      "created_by" : [ {
+        "identifier" : "created_by",
+        "language" : "undefined",
+        "value" : "cjm",
+        "type" : "label"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "https://doi.org/10.1186/s13326-017-0126-0",
+        "type" : "iri"
+      }, {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://robot.obolibrary.org/template",
+        "type" : "iri"
+      }, {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "https://github.com/dosumis/dead_simple_owl_design_patterns/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "IAO_8000015",
+      "undefined" : "template generated ontology module"
+    },
+    "attributes" : [ "external" ],
+    "id" : "94",
+    "superClasses" : [ "37" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/IAO_8000016",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : {
+      "creation_date" : [ {
+        "identifier" : "creation_date",
+        "language" : "undefined",
+        "value" : "2018-05-20T21:28:15Z",
+        "type" : "label"
+      } ],
+      "created_by" : [ {
+        "identifier" : "created_by",
+        "language" : "undefined",
+        "value" : "cjm",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "IAO_8000016",
+      "undefined" : "taxonomic bridge ontology module"
+    },
+    "attributes" : [ "external" ],
+    "id" : "32",
+    "superClasses" : [ "31" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/IAO_8000013",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : {
+      "IAO_0000115" : [ {
+        "identifier" : "IAO_0000115",
+        "language" : "undefined",
+        "value" : "An ontology module that contains axioms generated by a reasoner. The generated axioms are typically direct SubClassOf axioms, but other possibilities are available.",
+        "type" : "label"
+      } ],
+      "creation_date" : [ {
+        "identifier" : "creation_date",
+        "language" : "undefined",
+        "value" : "2018-05-20T21:20:33Z",
+        "type" : "label"
+      } ],
+      "created_by" : [ {
+        "identifier" : "created_by",
+        "language" : "undefined",
+        "value" : "cjm",
+        "type" : "label"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://robot.obolibrary.org/reason",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "IAO_8000013",
+      "undefined" : "reasoned ontology module"
+    },
+    "attributes" : [ "external" ],
+    "id" : "36",
+    "superClasses" : [ "25" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/IAO_8000014",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : {
+      "IAO_0000115" : [ {
+        "identifier" : "IAO_0000115",
+        "language" : "undefined",
+        "value" : "An ontology module that is automatically generated, for example via a SPARQL query or via template and a CSV.",
+        "type" : "label"
+      } ],
+      "IAO_0000116" : [ {
+        "identifier" : "IAO_0000116",
+        "language" : "undefined",
+        "value" : "TODO: Add axioms (using PROV-O?) that indicate this is the output-of some reasoning process",
+        "type" : "label"
+      } ],
+      "creation_date" : [ {
+        "identifier" : "creation_date",
+        "language" : "undefined",
+        "value" : "2018-05-20T21:21:12Z",
+        "type" : "label"
+      } ],
+      "created_by" : [ {
+        "identifier" : "created_by",
+        "language" : "undefined",
+        "value" : "cjm",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "IAO_8000014",
+      "undefined" : "generated ontology module"
+    },
+    "subClasses" : [ "94" ],
+    "attributes" : [ "external" ],
+    "id" : "37",
+    "superClasses" : [ "25" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/IAO_8000011",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : {
+      "IAO_0000115" : [ {
+        "identifier" : "IAO_0000115",
+        "language" : "undefined",
+        "value" : "An imported ontology module that is derived from an external ontology. Derivation methods include the OWLAPI SLME approach.",
+        "type" : "label"
+      } ],
+      "IAO_0000118" : [ {
+        "identifier" : "IAO_0000118",
+        "language" : "undefined",
+        "value" : "external import",
+        "type" : "label"
+      } ],
+      "creation_date" : [ {
+        "identifier" : "creation_date",
+        "language" : "undefined",
+        "value" : "2018-05-20T21:00:14Z",
+        "type" : "label"
+      } ],
+      "created_by" : [ {
+        "identifier" : "created_by",
+        "language" : "undefined",
+        "value" : "cjm",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "IAO_8000011",
+      "undefined" : "external import ontology module"
+    },
+    "attributes" : [ "external" ],
+    "id" : "33",
+    "superClasses" : [ "29" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/IAO_8000012",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : {
+      "IAO_0000115" : [ {
+        "identifier" : "IAO_0000115",
+        "language" : "undefined",
+        "value" : "A subset ontology that is crafted to either include or exclude a taxonomic grouping of species.",
+        "type" : "label"
+      } ],
+      "IAO_0000118" : [ {
+        "identifier" : "IAO_0000118",
+        "language" : "undefined",
+        "value" : "taxon subset",
+        "type" : "label"
+      } ],
+      "creation_date" : [ {
+        "identifier" : "creation_date",
+        "language" : "undefined",
+        "value" : "2018-05-20T21:14:16Z",
+        "type" : "label"
+      } ],
+      "created_by" : [ {
+        "identifier" : "created_by",
+        "language" : "undefined",
+        "value" : "cjm",
+        "type" : "label"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "https://github.com/obophenotype/uberon/wiki/Taxon-constraints",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "IAO_8000012",
+      "undefined" : "species subset ontology module"
+    },
+    "attributes" : [ "external" ],
+    "id" : "30",
+    "superClasses" : [ "18" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/IAO_8000020",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : {
+      "creation_date" : [ {
+        "identifier" : "creation_date",
+        "language" : "undefined",
+        "value" : "2018-05-22T04:16:48Z",
+        "type" : "label"
+      } ],
+      "created_by" : [ {
+        "identifier" : "created_by",
+        "language" : "undefined",
+        "value" : "cjm",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "IAO_8000020",
+      "undefined" : "EL++ ontology module"
+    },
+    "attributes" : [ "external" ],
+    "id" : "92",
+    "superClasses" : [ "91" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/MF_0000004",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : {
+      "IAO_0000115" : [ {
+        "identifier" : "IAO_0000115",
+        "language" : "undefined",
+        "value" : "A cognitive process that involves the mental representation of sequential numbers.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MF_0000004",
+      "en" : "mental counting"
+    },
+    "attributes" : [ "external" ],
+    "id" : "97",
+    "superClasses" : [ "98" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/MF_0000005",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : {
+      "IAO_0000115" : [ {
+        "identifier" : "IAO_0000115",
+        "language" : "undefined",
+        "value" : "A cognitive process that involves the manipulation of mental representations of numeric entities in order to compute the outcome of a mathematical function.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MF_0000005",
+      "en" : "mental calculation"
+    },
+    "attributes" : [ "external" ],
+    "id" : "99",
+    "superClasses" : [ "98" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/MF_0000002",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : {
+      "IAO_0000115" : [ {
+        "identifier" : "IAO_0000115",
+        "language" : "undefined",
+        "value" : "(for the case of remembering X, where X is an event in the organism’s history) a mental process that is a) about X, and b) made possible by the physical traces left by a causal process involving the organism during the event X",
+        "type" : "label"
+      } ],
+      "IAO_0000118" : [ {
+        "identifier" : "IAO_0000118",
+        "language" : "undefined",
+        "value" : "act of remembering",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MF_0000002",
+      "en" : "remembering"
+    },
+    "attributes" : [ "external" ],
+    "id" : "48",
+    "superClasses" : [ "43" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/MF_0000003",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : {
+      "priorVersion" : [ {
+        "identifier" : "priorVersion",
+        "language" : "undefined",
+        "value" : "MFOMD_0000176",
+        "type" : "label"
+      } ],
+      "IAO_0000115" : [ {
+        "identifier" : "IAO_0000115",
+        "language" : "undefined",
+        "value" : "State of active attention by high sensory awareness such as being watchful and prompt to meet danger or emergency, or being quick to perceive and act.\n\n http://en.wikipedia.org/wiki/Alertness",
+        "type" : "label"
+      } ],
+      "IAO_0000118" : [ {
+        "identifier" : "IAO_0000118",
+        "language" : "undefined",
+        "value" : "state of alertness",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MF_0000003",
+      "en" : "alertness"
+    },
+    "attributes" : [ "external" ],
+    "id" : "100",
+    "superClasses" : [ "101" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/IAO_0000409",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : {
+      "IAO_0000112" : [ {
+        "identifier" : "IAO_0000112",
+        "language" : "undefined",
+        "value" : "The Basic Formal Ontology ontology makes a distinction between Universals and defined classes, where the formal are \"natural kinds\" and the latter arbitrary collections of entities.",
+        "type" : "label"
+      } ],
+      "IAO_0000115" : [ {
+        "identifier" : "IAO_0000115",
+        "language" : "undefined",
+        "value" : "A denotator type indicates how a term should be interpreted from an ontological perspective.",
+        "type" : "label"
+      } ],
+      "IAO_0000117" : [ {
+        "identifier" : "IAO_0000117",
+        "language" : "undefined",
+        "value" : "Alan Ruttenberg",
+        "type" : "label"
+      } ],
+      "IAO_0000119" : [ {
+        "identifier" : "IAO_0000119",
+        "language" : "undefined",
+        "value" : "Barry Smith, Werner Ceusters",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "IAO_0000409",
+      "undefined" : "denotator type"
+    },
+    "individuals" : [ {
+      "iri" : "http://purl.obolibrary.org/obo/IAO_0000420",
+      "baseIri" : "http://purl.obolibrary.org/obo",
+      "annotations" : {
+        "IAO_0000115" : [ {
+          "identifier" : "IAO_0000115",
+          "language" : "undefined",
+          "value" : "A defined class is a class that is defined by a set of logically necessary and sufficient conditions but is not a universal",
+          "type" : "label"
+        } ],
+        "IAO_0000117" : [ {
+          "identifier" : "IAO_0000117",
+          "language" : "undefined",
+          "value" : "Alan Ruttenberg",
+          "type" : "label"
+        } ],
+        "IAO_0000116" : [ {
+          "identifier" : "IAO_0000116",
+          "language" : "undefined",
+          "value" : "\"definitions\", in some readings, always are given by necessary and sufficient conditions. So one must be careful (and this is difficult sometimes) to distinguish between defined classes and universal.",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "IAO_0000420",
+        "undefined" : "defined class"
+      }
+    }, {
+      "iri" : "http://purl.obolibrary.org/obo/IAO_0000410",
+      "baseIri" : "http://purl.obolibrary.org/obo",
+      "annotations" : {
+        "IAO_0000117" : [ {
+          "identifier" : "IAO_0000117",
+          "language" : "undefined",
+          "value" : "Alan Ruttenberg",
+          "type" : "label"
+        } ],
+        "IAO_0000116" : [ {
+          "identifier" : "IAO_0000116",
+          "language" : "undefined",
+          "value" : "Hard to give a definition for. Intuitively a \"natural kind\" rather than a collection of any old things, which a class is able to be, formally. At the meta level, universals are defined as positives, are disjoint with their siblings, have single asserted parents.",
+          "type" : "label"
+        } ],
+        "IAO_0000119" : [ {
+          "identifier" : "IAO_0000119",
+          "language" : "undefined",
+          "value" : "A Formal Theory of Substances, Qualities, and Universals, http://ontology.buffalo.edu/bfo/SQU.pdf",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "IAO_0000410",
+        "undefined" : "universal"
+      }
+    }, {
+      "iri" : "http://purl.obolibrary.org/obo/IAO_0000421",
+      "baseIri" : "http://purl.obolibrary.org/obo",
+      "annotations" : {
+        "IAO_0000115" : [ {
+          "identifier" : "IAO_0000115",
+          "language" : "undefined",
+          "value" : "A named class expression is a logical expression that is given a name. The name can be used in place of the expression.",
+          "type" : "label"
+        } ],
+        "IAO_0000117" : [ {
+          "identifier" : "IAO_0000117",
+          "language" : "undefined",
+          "value" : "Alan Ruttenberg",
+          "type" : "label"
+        } ],
+        "IAO_0000116" : [ {
+          "identifier" : "IAO_0000116",
+          "language" : "undefined",
+          "value" : "named class expressions are used in order to have more concise logical definition but their extensions may not be interesting classes on their own. In languages such as OWL, with no provisions for macros, these show up as actuall classes. Tools may with to not show them as such, and to replace uses of the macros with their expansions",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "IAO_0000421",
+        "undefined" : "named class expression"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "105",
+    "superClasses" : [ "14" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/MF_0000101",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : {
+      "IAO_0000115" : [ {
+        "identifier" : "IAO_0000115",
+        "language" : "undefined",
+        "value" : "Higher order consciousness is consciousness of one's own mental states, a self-reflexive consciousness of the experience of being conscious, of having mental processes ongoing.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MF_0000101",
+      "en" : "higher order consciousness"
+    },
+    "subClasses" : [ "107", "109", "111", "113", "103" ],
+    "attributes" : [ "external" ],
+    "id" : "104",
+    "superClasses" : [ "130" ]
+  }, {
+    "iri" : "http://www.geneontology.org/formats/oboInOwl#SynonymType",
+    "baseIri" : "http://www.geneontology.org/formats/oboInOwl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SynonymType"
+    },
+    "attributes" : [ "external" ],
+    "id" : "131",
+    "superClasses" : [ "14" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/MF_0000028",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : {
+      "IAO_0000115" : [ {
+        "identifier" : "IAO_0000115",
+        "language" : "en",
+        "value" : "A personality trait manifesting itself in individual behavioral characteristics that are perceived as careful, self-disciplined, dependable, vigilant, dutiful, and goal-oriented.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MF_0000028",
+      "en" : "conscientiousness"
+    },
+    "comment" : {
+      "en" : "Associated adjectives: efficient, organized, planful, reliable, responsible, and thorough."
+    },
+    "attributes" : [ "external" ],
+    "id" : "75",
+    "superClasses" : [ "68" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/MF_0000029",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : {
+      "IAO_0000115" : [ {
+        "identifier" : "IAO_0000115",
+        "language" : "undefined",
+        "value" : "A mental disposition to frequent or easily incited outbursts of anger. ",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MF_0000029",
+      "en" : "irascibility"
+    },
+    "attributes" : [ "external" ],
+    "id" : "76",
+    "superClasses" : [ "68" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/MF_0000037",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : {
+      "IAO_0000115" : [ {
+        "identifier" : "IAO_0000115",
+        "language" : "undefined",
+        "value" : "Direct consciousness is consciousness of phenomenal experience, it is the given experience in consciousness of (for example) sounds, tastes, emotions and bodily feelings.",
+        "type" : "label"
+      } ],
+      "IAO_0000118" : [ {
+        "identifier" : "IAO_0000118",
+        "language" : "undefined",
+        "value" : "pre-reflexive consciousness",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MF_0000037",
+      "en" : "direct consciousness"
+    },
+    "subClasses" : [ "139", "140", "141", "142" ],
+    "attributes" : [ "external" ],
+    "id" : "138",
+    "superClasses" : [ "130" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/MF_0000038",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : {
+      "IAO_0000115" : [ {
+        "identifier" : "IAO_0000115",
+        "language" : "undefined",
+        "value" : "Hearing (auditory perception) is a mental process that is\na) produced by a causal process involving sound waves from a part of the environment of the subject being absorbed by detectors in the ear, and\nb) is experienced by the subject as being so caused, and\nc) in which the relevant part of the environment is thereby represented to the subject",
+        "type" : "label"
+      } ],
+      "IAO_0000118" : [ {
+        "identifier" : "IAO_0000118",
+        "language" : "undefined",
+        "value" : "auditory perception",
+        "type" : "label"
+      }, {
+        "identifier" : "IAO_0000118",
+        "language" : "undefined",
+        "value" : "act of hearing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MF_0000038",
+      "en" : "hearing"
+    },
+    "attributes" : [ "external" ],
+    "id" : "143",
+    "superClasses" : [ "144" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/MF_0000035",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : {
+      "IAO_0000115" : [ {
+        "identifier" : "IAO_0000115",
+        "language" : "undefined",
+        "value" : "Auditory consciousness is consciousness of an auditory stimulus, as a part of a conscious process of hearing.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MF_0000035",
+      "en" : "auditory consciousness"
+    },
+    "attributes" : [ "external" ],
+    "id" : "139",
+    "superClasses" : [ "138" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/MF_0000036",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : {
+      "IAO_0000115" : [ {
+        "identifier" : "IAO_0000115",
+        "language" : "undefined",
+        "value" : "Tactile consciousness is consciousness that is experienced in the tactile sensory medium, through the sensory medium of touch and pressure sensation.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MF_0000036",
+      "en" : "tactile consciousness"
+    },
+    "attributes" : [ "external" ],
+    "id" : "140",
+    "superClasses" : [ "138" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/MF_0000033",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : {
+      "IAO_0000115" : [ {
+        "identifier" : "IAO_0000115",
+        "language" : "undefined",
+        "value" : "A mental disposition is a bodily disposition that is realized in a mental process. ",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MF_0000033",
+      "en" : "mental disposition"
+    },
+    "subClasses" : [ "2", "146", "147" ],
+    "comment" : {
+      "undefined" : "'Mental disposition' is a subclass of 'bodily disposition', as mental dispositions occur in the body."
+    },
+    "attributes" : [ "external" ],
+    "id" : "145",
+    "superClasses" : [ "67" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/MF_0000034",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : {
+      "IAO_0000115" : [ {
+        "identifier" : "IAO_0000115",
+        "language" : "undefined",
+        "value" : "Visual consciousness is consciousness of a visual stimulus, as experienced through the visual sensory medium as a part of a process of seeing.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MF_0000034",
+      "en" : "visual consciousness"
+    },
+    "attributes" : [ "external" ],
+    "id" : "142",
+    "superClasses" : [ "138" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/MF_0000031",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : {
+      "IAO_0000115" : [ {
+        "identifier" : "IAO_0000115",
+        "language" : "undefined",
+        "value" : "A representation which specifically depends on an anatomical structure in the cognitive system of an organism.",
+        "type" : "label"
+      } ],
+      "IAO_0000119" : [ {
+        "identifier" : "IAO_0000119",
+        "language" : "undefined",
+        "value" : "http://www.jbiomedsem.com/content/1/1/10",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MF_0000031",
+      "undefined" : "cognitive representation"
+    },
+    "subClasses" : [ "152" ],
+    "attributes" : [ "external" ],
+    "id" : "150",
+    "superClasses" : [ "151" ]
+  }, {
+    "iri" : "http://www.geneontology.org/formats/oboInOwl#Subset",
+    "baseIri" : "http://www.geneontology.org/formats/oboInOwl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Subset"
+    },
+    "individuals" : [ {
+      "iri" : "http://purl.obolibrary.org/obo/IAO_0000224",
+      "baseIri" : "http://purl.obolibrary.org/obo",
+      "annotations" : {
+        "IAO_0000115" : [ {
+          "identifier" : "IAO_0000115",
+          "language" : "en",
+          "value" : "Core is an instance of a grouping of terms from an ontology or ontologies. It is used by the ontology to identify main classes.",
+          "type" : "label"
+        } ],
+        "IAO_0000117" : [ {
+          "identifier" : "IAO_0000117",
+          "language" : "en",
+          "value" : "PERSON: Melanie Courtot",
+          "type" : "label"
+        }, {
+          "identifier" : "IAO_0000117",
+          "language" : "en",
+          "value" : "PERSON: Alan Ruttenberg",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "IAO_0000224",
+        "en" : "core"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "153",
+    "superClasses" : [ "14" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/MF_0000032",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : {
+      "IAO_0000115" : [ {
+        "identifier" : "IAO_0000115",
+        "language" : "undefined",
+        "value" : "A bodily disposition is a disposition that inheres in some extended organism. Examples are: my disposition to catch a cold when exposed to a virus, my ability to speak the English language.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MF_0000032",
+      "en" : "bodily disposition"
+    },
+    "subClasses" : [ "66", "68", "145", "154" ],
+    "comment" : {
+      "undefined" : "Extended organism refers to an organism and its microbiome (e.g., the bacteria that live in one's digestive system)."
+    },
+    "attributes" : [ "external" ],
+    "id" : "67"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/MF_0000030",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : {
+      "IAO_0000115" : [ {
+        "identifier" : "IAO_0000115",
+        "language" : "undefined",
+        "value" : "A dependent continuant which is about a portion of reality.",
+        "type" : "label"
+      } ],
+      "IAO_0000119" : [ {
+        "identifier" : "IAO_0000119",
+        "language" : "undefined",
+        "value" : "http://www.jbiomedsem.com/content/1/1/10",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MF_0000030",
+      "undefined" : "representation"
+    },
+    "subClasses" : [ "150" ],
+    "attributes" : [ "external" ],
+    "id" : "151"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/IAO_0000225",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : {
+      "IAO_0000111" : [ {
+        "identifier" : "IAO_0000111",
+        "language" : "en",
+        "value" : "obsolescence reason specification",
+        "type" : "label"
+      } ],
+      "IAO_0000115" : [ {
+        "identifier" : "IAO_0000115",
+        "language" : "en",
+        "value" : "The reason for which a term has been deprecated. The allowed values come from an enumerated list of predefined terms. See the specification of these instances for more detailed definitions of each enumerated value.",
+        "type" : "label"
+      } ],
+      "IAO_0000114" : [ {
+        "identifier" : "IAO_0000114",
+        "language" : "undefined",
+        "value" : "http://purl.obolibrary.org/obo/IAO_0000125",
+        "type" : "iri"
+      } ],
+      "IAO_0000117" : [ {
+        "identifier" : "IAO_0000117",
+        "language" : "en",
+        "value" : "PERSON: Melanie Courtot",
+        "type" : "label"
+      }, {
+        "identifier" : "IAO_0000117",
+        "language" : "en",
+        "value" : "PERSON: Alan Ruttenberg",
+        "type" : "label"
+      } ],
+      "IAO_0000116" : [ {
+        "identifier" : "IAO_0000116",
+        "language" : "en",
+        "value" : "The creation of this class has been inspired in part by Werner Ceusters' paper, Applying evolutionary terminology auditing to the Gene Ontology.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "IAO_0000225",
+      "en" : "obsolescence reason specification"
+    },
+    "individuals" : [ {
+      "iri" : "http://purl.obolibrary.org/obo/IAO_0000103",
+      "baseIri" : "http://purl.obolibrary.org/obo",
+      "annotations" : {
+        "IAO_0000115" : [ {
+          "identifier" : "IAO_0000115",
+          "language" : "en",
+          "value" : "The term was used in an attempt to structure part of the ontology but in retrospect failed to do a good job",
+          "type" : "label"
+        } ],
+        "IAO_0000117" : [ {
+          "identifier" : "IAO_0000117",
+          "language" : "undefined",
+          "value" : "Person:Alan Ruttenberg",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "IAO_0000103",
+        "en" : "failed exploratory term"
+      }
+    }, {
+      "iri" : "http://purl.obolibrary.org/obo/IAO_0000226",
+      "baseIri" : "http://purl.obolibrary.org/obo",
+      "labels" : {
+        "IRI-based" : "IAO_0000226",
+        "en" : "placeholder removed"
+      }
+    }, {
+      "iri" : "http://purl.obolibrary.org/obo/IAO_0000227",
+      "baseIri" : "http://purl.obolibrary.org/obo",
+      "annotations" : {
+        "IAO_0000116" : [ {
+          "identifier" : "IAO_0000116",
+          "language" : "en",
+          "value" : "An editor note should explain what were the merged terms and the reason for the merge.",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "IAO_0000227",
+        "en" : "terms merged"
+      }
+    }, {
+      "iri" : "http://purl.obolibrary.org/obo/IAO_0000228",
+      "baseIri" : "http://purl.obolibrary.org/obo",
+      "annotations" : {
+        "IAO_0000116" : [ {
+          "identifier" : "IAO_0000116",
+          "language" : "en",
+          "value" : "This is to be used when the original term has been replaced by a term imported from an other ontology. An editor note should indicate what is the URI of the new term to use.",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "IAO_0000228",
+        "en" : "term imported"
+      }
+    }, {
+      "iri" : "http://purl.obolibrary.org/obo/IAO_0000229",
+      "baseIri" : "http://purl.obolibrary.org/obo",
+      "annotations" : {
+        "IAO_0000116" : [ {
+          "identifier" : "IAO_0000116",
+          "language" : "en",
+          "value" : "This is to be used when a term has been split in two or more new terms. An editor note should indicate the reason for the split and indicate the URIs of the new terms created.",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "IAO_0000229",
+        "en" : "term split"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "163",
+    "superClasses" : [ "14" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/IAO_0000102",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : {
+      "IAO_0000115" : [ {
+        "identifier" : "IAO_0000115",
+        "language" : "en",
+        "value" : "data about an ontology part is a data item about a part of an ontology, for example a term",
+        "type" : "label"
+      } ],
+      "IAO_0000117" : [ {
+        "identifier" : "IAO_0000117",
+        "language" : "undefined",
+        "value" : "Person:Alan Ruttenberg",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "IAO_0000102",
+      "en" : "data about an ontology part"
+    },
+    "subClasses" : [ "163", "13", "153", "77", "105", "166", "39", "131", "25" ],
+    "attributes" : [ "external" ],
+    "id" : "14",
+    "superClasses" : [ "16" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/MF_0000039",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : {
+      "IAO_0000115" : [ {
+        "identifier" : "IAO_0000115",
+        "language" : "undefined",
+        "value" : "A cognitive representation sustained by an organsim about its own emotions.",
+        "type" : "label"
+      } ],
+      "IAO_0000119" : [ {
+        "identifier" : "IAO_0000119",
+        "language" : "undefined",
+        "value" : "http://www.jbiomedsem.com/content/1/1/10",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MF_0000039",
+      "undefined" : "affective representation"
+    },
+    "attributes" : [ "external" ],
+    "id" : "152",
+    "superClasses" : [ "150" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/MF_0000048",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : {
+      "IAO_0000115" : [ {
+        "identifier" : "IAO_0000115",
+        "language" : "undefined",
+        "value" : "A personal capability that includes mental processes in its realisation.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MF_0000048",
+      "en" : "mental capability"
+    },
+    "subClasses" : [ "168", "123" ],
+    "attributes" : [ "external" ],
+    "id" : "167",
+    "superClasses" : [ "154" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/MF_0000049",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : {
+      "IAO_0000115" : [ {
+        "identifier" : "IAO_0000115",
+        "language" : "undefined",
+        "value" : "A linguistic capability that is realised by processes in which textual concretisations of linguistic expressions are processed and understood.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MF_0000049",
+      "en" : "capability to read"
+    },
+    "attributes" : [ "external" ],
+    "id" : "122",
+    "superClasses" : [ "123" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/MF_0000046",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : {
+      "IAO_0000115" : [ {
+        "identifier" : "IAO_0000115",
+        "language" : "undefined",
+        "value" : "A musical capability that is realised in the production of music using a piano.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MF_0000046",
+      "en" : "capability to play piano"
+    },
+    "attributes" : [ "external" ],
+    "id" : "169",
+    "superClasses" : [ "170" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/MF_0000047",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : {
+      "IAO_0000115" : [ {
+        "identifier" : "IAO_0000115",
+        "language" : "undefined",
+        "value" : "A musical capability that is realised in the production of music using a violin.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MF_0000047",
+      "en" : "capability to play violin"
+    },
+    "attributes" : [ "external" ],
+    "id" : "171",
+    "superClasses" : [ "170" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/MF_0000044",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : {
+      "IAO_0000115" : [ {
+        "identifier" : "IAO_0000115",
+        "language" : "undefined",
+        "value" : "A capability that is realised in an activity of producing or interpreting music.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MF_0000044",
+      "en" : "musical capability"
+    },
+    "subClasses" : [ "169", "171", "172" ],
+    "attributes" : [ "external" ],
+    "id" : "170",
+    "superClasses" : [ "154" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/MF_0000045",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : {
+      "IAO_0000115" : [ {
+        "identifier" : "IAO_0000115",
+        "language" : "undefined",
+        "value" : "A mental process that involves thinking about a state of affairs that is not yet the case together with a desire for that state of affairs to come about.",
+        "type" : "label"
+      } ],
+      "IAO_0000118" : [ {
+        "identifier" : "IAO_0000118",
+        "language" : "undefined",
+        "value" : "act of wanting",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MF_0000045",
+      "undefined" : "wanting"
+    },
+    "attributes" : [ "external" ],
+    "id" : "50",
+    "superClasses" : [ "43" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/MF_0000042",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MF_0000042",
+      "en" : "preference"
+    },
+    "attributes" : [ "external" ],
+    "id" : "72",
+    "superClasses" : [ "68" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/MF_0000043",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : {
+      "IAO_0000115" : [ {
+        "identifier" : "IAO_0000115",
+        "language" : "undefined",
+        "value" : "A bodily disposition whose realization ordinarily brings benefits to an organism or group of organisms, where \"ordinarily\" means within a typical range or context.",
+        "type" : "label"
+      } ],
+      "IAO_0000119" : [ {
+        "identifier" : "IAO_0000119",
+        "language" : "undefined",
+        "value" : "https://github.com/NCOR-US/Capabilities/wiki/The-Account-of-Capabilities",
+        "type" : "label"
+      } ],
+      "IAO_0000118" : [ {
+        "identifier" : "IAO_0000118",
+        "language" : "undefined",
+        "value" : "personal capability",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MF_0000043",
+      "en" : "capability"
+    },
+    "subClasses" : [ "167", "170" ],
+    "comment" : {
+      "undefined" : "The phrase 'ordinarily brings benefits to an organism or group of organism' is used to explain that capabilities normally provide a benefit. For exampoe, having a musical ability is usually an ability that is positive for a person (e.g., they enjoy playing music, they receive positive feedback about their ability). However, in certain exceptional cases (e.g., a neighbour becoming annoyed with a person playing the piano and expressing this annoyance), the ability might not bring benefits."
+    },
+    "attributes" : [ "external" ],
+    "id" : "154",
+    "superClasses" : [ "67" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/MF_0000040",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : {
+      "IAO_0000115" : [ {
+        "identifier" : "IAO_0000115",
+        "language" : "undefined",
+        "value" : "A communication process is an interpersonal process that involves the transmission of information between two organisms.",
+        "type" : "label"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://purl.obolibrary.org/obo/OMRSE_00000192",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MF_0000040",
+      "en" : "communication"
+    },
+    "subClasses" : [ "21", "87" ],
+    "attributes" : [ "external" ],
+    "id" : "61",
+    "superClasses" : [ "59" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/MF_0000041",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : {
+      "IAO_0000115" : [ {
+        "identifier" : "IAO_0000115",
+        "language" : "undefined",
+        "value" : "A mental disposition to represent a proposition to be true.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MF_0000041",
+      "en" : "belief"
+    },
+    "comment" : {
+      "undefined" : "Judging is a mental process that brings a belief into existence. Judging differently may also bring that belief out of existence.\n\nAn act of believing is just thinking about a belief.\n\nBeliefs typically cause us to behave in ways that are characteristic with the content of that belief. However, this is not a necessary feature for the existence of the belief."
+    },
+    "attributes" : [ "external" ],
+    "id" : "146",
+    "superClasses" : [ "145" ]
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "41",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/MF_0000008",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : {
+      "IAO_0000115" : [ {
+        "identifier" : "IAO_0000115",
+        "language" : "undefined",
+        "value" : "A mental process that creates, modifies or has as participant some cognitive representation.",
+        "type" : "label"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "GO:0050890, cognition, defined as  `The operation of the mind by which an organism becomes aware of objects of thought or perception; it includes the mental activities associated with thinking, learning, and memory.' ",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MF_0000008",
+      "undefined" : "cognitive process"
+    },
+    "subClasses" : [ "97", "99", "186" ],
+    "attributes" : [ "external" ],
+    "id" : "98",
+    "superClasses" : [ "43" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/MF_0000009",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : {
+      "IAO_0000115" : [ {
+        "identifier" : "IAO_0000115",
+        "language" : "undefined",
+        "value" : "A judging that involves the determination of the orientation of some object.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MF_0000009",
+      "en" : "determining orientation"
+    },
+    "attributes" : [ "external" ],
+    "id" : "187",
+    "superClasses" : [ "188" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/MF_0000006",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : {
+      "IAO_0000115" : [ {
+        "identifier" : "IAO_0000115",
+        "language" : "undefined",
+        "value" : "A mental process during which information is evaluated, the outcome of which is a belief or opinion.",
+        "type" : "label"
+      } ],
+      "IAO_0000118" : [ {
+        "identifier" : "IAO_0000118",
+        "language" : "undefined",
+        "value" : "act of judging",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MF_0000006",
+      "en" : "judging"
+    },
+    "subClasses" : [ "187", "189" ],
+    "attributes" : [ "external" ],
+    "id" : "188",
+    "superClasses" : [ "43" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/MF_0000007",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : {
+      "IAO_0000115" : [ {
+        "identifier" : "IAO_0000115",
+        "language" : "undefined",
+        "value" : "A judging that involves forming an opinion about the gender of a person.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MF_0000007",
+      "en" : "determining gender"
+    },
+    "attributes" : [ "external" ],
+    "id" : "189",
+    "superClasses" : [ "188" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/MF_0000015",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : {
+      "IAO_0000115" : [ {
+        "identifier" : "IAO_0000115",
+        "language" : "undefined",
+        "value" : "A mental process that manipulates mental images and words that go beyond mere memory and thoughts about the objects and entities that the person has encountered, to visualise or consider entities and states of affairs that the person has never encountered and which may not yet exist or obtain in the world. Imagination is the capacity to produce images, ideas and sensations in the mind without any immediate input of the senses.",
+        "type" : "label"
+      } ],
+      "IAO_0000119" : [ {
+        "identifier" : "IAO_0000119",
+        "language" : "undefined",
+        "value" : "https://en.wikipedia.org/wiki/Imagination",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MF_0000015",
+      "en" : "imagination"
+    },
+    "subClasses" : [ "190" ],
+    "attributes" : [ "external" ],
+    "id" : "79",
+    "superClasses" : [ "43" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/MF_0000016",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : {
+      "IAO_0000115" : [ {
+        "identifier" : "IAO_0000115",
+        "language" : "undefined",
+        "value" : "A member of the species Homo Sapiens.",
+        "type" : "label"
+      } ],
+      "IAO_0000118" : [ {
+        "identifier" : "IAO_0000118",
+        "language" : "undefined",
+        "value" : "person",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MF_0000016",
+      "undefined" : "human being"
+    },
+    "attributes" : [ "external" ],
+    "id" : "119",
+    "superClasses" : [ "120" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/MF_0000013",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : {
+      "IAO_0000115" : [ {
+        "identifier" : "IAO_0000115",
+        "language" : "undefined",
+        "value" : "a mental process that involves the manipulation of mental language and/or mental images",
+        "type" : "label"
+      } ],
+      "IAO_0000118" : [ {
+        "identifier" : "IAO_0000118",
+        "language" : "undefined",
+        "value" : "act of thinking",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MF_0000013",
+      "undefined" : "thinking"
+    },
+    "subClasses" : [ "186" ],
+    "attributes" : [ "external" ],
+    "id" : "85",
+    "superClasses" : [ "43" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/MF_0000014",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MF_0000014",
+      "en" : "language problem solving behavior"
+    },
+    "attributes" : [ "external" ],
+    "id" : "7",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/MF_0000011",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MF_0000011",
+      "en" : "visual problem solving behavior"
+    },
+    "attributes" : [ "external" ],
+    "id" : "10",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/MF_0000012",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : {
+      "priorVersion" : [ {
+        "identifier" : "priorVersion",
+        "language" : "undefined",
+        "value" : "MFOMD_0000146",
+        "type" : "label"
+      } ],
+      "IAO_0000115" : [ {
+        "identifier" : "IAO_0000115",
+        "language" : "undefined",
+        "value" : "A mental process that is the psychological and physiological state of being awake and reactive to stimuli.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MF_0000012",
+      "en" : "arousal"
+    },
+    "attributes" : [ "external" ],
+    "id" : "52",
+    "superClasses" : [ "43" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/MF_0000010",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MF_0000010",
+      "en" : "mathematical problem solving behavior"
+    },
+    "attributes" : [ "external" ],
+    "id" : "12",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/MF_0000019",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : {
+      "IAO_0000115" : [ {
+        "identifier" : "IAO_0000115",
+        "language" : "undefined",
+        "value" : "A mental process which is \na) produced by a causal process involving a part of the environment of the organism, and \nb) is experienced by the organism as being so caused, and \nc) in which the relevant part of the environment is thereby represented to the organism.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MF_0000019",
+      "undefined" : "perception"
+    },
+    "subClasses" : [ "143", "201", "202", "203", "204", "205", "206" ],
+    "comment" : {
+      "undefined" : "Examples for 'causal processes involving a part of the environment of an organism' that can be perceived are light rays and air vibrations."
+    },
+    "attributes" : [ "external" ],
+    "id" : "144",
+    "superClasses" : [ "43" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/MF_0000017",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : {
+      "IAO_0000115" : [ {
+        "identifier" : "IAO_0000115",
+        "language" : "undefined",
+        "value" : "Consciousness is an inseparable part of all mental processes. It is that part of the mental process that:\na) confers a subjective perspective, a phenomenology, an experience of the mental process of which it is a part; and\nb) intends the object or event that the mental process is about, should such exist; i.e., it confers intentionality on the mental process.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MF_0000017",
+      "en" : "consciousness"
+    },
+    "subClasses" : [ "138", "104" ],
+    "comment" : {
+      "undefined" : "Note that while there are different modes of consciousness corresponding to the different senses, the whole of conscious experience at any one time is largely experienced as a unity, that is, as a fused whole. Mental processes which are simultaneously ongoing are separable only in fiat, not in essence. "
+    },
+    "attributes" : [ "external" ],
+    "id" : "130"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/MF_0000018",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : {
+      "IAO_0000115" : [ {
+        "identifier" : "IAO_0000115",
+        "language" : "undefined",
+        "value" : "the process whereby relevant aspects of our mental experience are focused on specific targets",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MF_0000018",
+      "en" : "attending"
+    },
+    "subClasses" : [ "100", "207" ],
+    "attributes" : [ "external" ],
+    "id" : "101",
+    "superClasses" : [ "43" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/MF_0000026",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MF_0000026",
+      "en" : "introversion"
+    },
+    "attributes" : [ "external" ],
+    "id" : "69",
+    "superClasses" : [ "68" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/MF_0000027",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : {
+      "IAO_0000115" : [ {
+        "identifier" : "IAO_0000115",
+        "language" : "undefined",
+        "value" : "A mental process that involves mentally manipulating representations of steps in an imagined process which has some goal.",
+        "type" : "label"
+      } ],
+      "IAO_0000118" : [ {
+        "identifier" : "IAO_0000118",
+        "language" : "undefined",
+        "value" : "act of planning",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MF_0000027",
+      "undefined" : "planning"
+    },
+    "comment" : {
+      "undefined" : "The outcome of this mental process is a plan which has the potential to be followed to bring about the desired outcome."
+    },
+    "attributes" : [ "external" ],
+    "id" : "83",
+    "superClasses" : [ "43" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/MF_0000024",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : {
+      "IAO_0000115" : [ {
+        "identifier" : "IAO_0000115",
+        "language" : "undefined",
+        "value" : "Seeing (visual perception) is a mental process that is\na) produced by a causal process involving light rays from a part of the environment of the subject being absorbed by photoreceptors in the retina, and\nb) is experienced by the subject as being so caused, and\nc) in which the relevant part of the environment is thereby represented to the subject",
+        "type" : "label"
+      } ],
+      "IAO_0000118" : [ {
+        "identifier" : "IAO_0000118",
+        "language" : "undefined",
+        "value" : "act of seeing",
+        "type" : "label"
+      }, {
+        "identifier" : "IAO_0000118",
+        "language" : "undefined",
+        "value" : "visual perception",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MF_0000024",
+      "en" : "seeing"
+    },
+    "attributes" : [ "external" ],
+    "id" : "202",
+    "superClasses" : [ "144" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/MF_0000025",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : {
+      "IAO_0000115" : [ {
+        "identifier" : "IAO_0000115",
+        "language" : "undefined",
+        "value" : "A mental capability realised in processes involving understanding complex ideas, adapting effectively to the environment, learning from experience, engaging in various forms of reasoning, and overcome obstacles through the outcome of thinking processes.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MF_0000025",
+      "en" : "intelligence"
+    },
+    "attributes" : [ "external" ],
+    "id" : "168",
+    "superClasses" : [ "167" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/MF_0000022",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : {
+      "IAO_0000115" : [ {
+        "identifier" : "IAO_0000115",
+        "language" : "en",
+        "value" : "A personality trait manifesting itself in individual behavioral characteristics that are perceived as kind, sympathetic, cooperative, warm, and considerate.",
+        "type" : "label"
+      } ],
+      "IAO_0000119" : [ {
+        "identifier" : "IAO_0000119",
+        "language" : "en",
+        "value" : "Development and Validation of International English Big-Five Mini-Markers. Edmund R. Thomspson. Personality and Individual Differences, Volume 45, Issue 6, October 2008.  http://www.sciencedirect.com/science/article/pii/S0191886908002195",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MF_0000022",
+      "en" : "agreeableness"
+    },
+    "comment" : {
+      "en" : "Associated adjectives: appreciative, forgiving, generous, kind, sympathetic, and trusting."
+    },
+    "attributes" : [ "external" ],
+    "id" : "70",
+    "superClasses" : [ "68" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/MF_0000023",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : {
+      "IAO_0000115" : [ {
+        "identifier" : "IAO_0000115",
+        "language" : "undefined",
+        "value" : "Behavior having interpersonal processes as parts, each involving the same instances of human being.",
+        "type" : "label"
+      } ],
+      "IAO_0000119" : [ {
+        "identifier" : "IAO_0000119",
+        "language" : "undefined",
+        "value" : "http://www.jbiomedsem.com/content/1/1/10",
+        "type" : "label"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "GO:0051705, multi-organism behaviour, defined as: \n    \"Any process in which an organism has a behavioral effect on another organism of the same or different species\" (http://amigo.geneontology.org/cgi-bin/amigo/term_details?term=GO:0051705#lineage)",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MF_0000023",
+      "undefined" : "interpersonal behavior"
+    },
+    "attributes" : [ "external" ],
+    "id" : "180"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/MF_0000020",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : {
+      "IAO_0000115" : [ {
+        "identifier" : "IAO_0000115",
+        "language" : "undefined",
+        "value" : "A bodily process that occurs in the brain, and that can of itself be conscious, or can give rise to a process that can of itself be conscious or can give rise to behaviour.",
+        "type" : "label"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "GO:0050890, cognition, defined as  `The operation of the mind by which an organism becomes aware of objects of thought or perception; it includes the mental activities associated with thinking, learning, and memory.' ",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MF_0000020",
+      "undefined" : "mental process"
+    },
+    "subClasses" : [ "144", "98", "188", "101", "81", "79", "83", "85", "48", "50", "52", "54", "56" ],
+    "comment" : {
+      "undefined" : "A 'mental process' is a subclass of 'bodily process', as mental processes occur within the body, specifically involving the brain."
+    },
+    "attributes" : [ "external" ],
+    "id" : "43",
+    "superClasses" : [ "44" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/MF_0000021",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : {
+      "IAO_0000115" : [ {
+        "identifier" : "IAO_0000115",
+        "language" : "undefined",
+        "value" : "A process in which at least two human beings are agents.",
+        "type" : "label"
+      } ],
+      "IAO_0000119" : [ {
+        "identifier" : "IAO_0000119",
+        "language" : "undefined",
+        "value" : "http://www.jbiomedsem.com/content/1/1/10",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MF_0000021",
+      "undefined" : "interpersonal process"
+    },
+    "subClasses" : [ "58", "61" ],
+    "attributes" : [ "external" ],
+    "id" : "59"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/IAO_0000030",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "IAO_0000030",
+      "en" : "information content entity"
+    },
+    "subClasses" : [ "16" ],
+    "attributes" : [ "external" ],
+    "id" : "63",
+    "superClasses" : [ "129" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/OGMS_0000060",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : {
+      "IAO_0000115" : [ {
+        "identifier" : "IAO_0000115",
+        "language" : "undefined",
+        "value" : "A process in which at least one bodily component of an organsim participates.",
+        "type" : "label"
+      } ],
+      "IAO_0000119" : [ {
+        "identifier" : "IAO_0000119",
+        "language" : "undefined",
+        "value" : "http://www.jbiomedsem.com/content/1/1/10",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "OGMS_0000060",
+      "undefined" : "bodily process"
+    },
+    "subClasses" : [ "65", "43" ],
+    "comment" : {
+      "undefined" : "From OGMS: http://purl.obolibrary.org/obo/OGMS_0000060"
+    },
+    "attributes" : [ "external" ],
+    "id" : "44"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/MF_0000079",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : {
+      "IAO_0000115" : [ {
+        "identifier" : "IAO_0000115",
+        "language" : "undefined",
+        "value" : "The subjective experience of other beings as self-aware entities.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MF_0000079",
+      "en" : "intersubjectivity"
+    },
+    "attributes" : [ "external" ],
+    "id" : "107",
+    "superClasses" : [ "104" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/MF_0000077",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : {
+      "IAO_0000115" : [ {
+        "identifier" : "IAO_0000115",
+        "language" : "undefined",
+        "value" : "The subjective experience of the spatial surroundings one inhabits as an embodied entity.",
+        "type" : "label"
+      } ],
+      "IAO_0000118" : [ {
+        "identifier" : "IAO_0000118",
+        "language" : "undefined",
+        "value" : "space awareness",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MF_0000077",
+      "en" : "consciousness of space"
+    },
+    "attributes" : [ "external" ],
+    "id" : "109",
+    "superClasses" : [ "104" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/MF_0000078",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : {
+      "IAO_0000115" : [ {
+        "identifier" : "IAO_0000115",
+        "language" : "undefined",
+        "value" : "The subjective experience of being an embodied entity.",
+        "type" : "label"
+      } ],
+      "IAO_0000118" : [ {
+        "identifier" : "IAO_0000118",
+        "language" : "undefined",
+        "value" : "body awareness",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MF_0000078",
+      "en" : "consciousness of the body"
+    },
+    "attributes" : [ "external" ],
+    "id" : "113",
+    "superClasses" : [ "104" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/MF_0000075",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : {
+      "IAO_0000115" : [ {
+        "identifier" : "IAO_0000115",
+        "language" : "undefined",
+        "value" : "A mental quality is a bodily quality that inheres in those structures of the extended organism that are essential for mental functioning.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MF_0000075",
+      "en" : "mental quality"
+    },
+    "subClasses" : [ "46" ],
+    "attributes" : [ "external" ],
+    "id" : "4",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/MF_0000076",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : {
+      "IAO_0000112" : [ {
+        "identifier" : "IAO_0000112",
+        "language" : "undefined",
+        "value" : "An example of an intentional modality is the capacity to represent objects of intentionality as unfolding in time or being time contingent.",
+        "type" : "label"
+      } ],
+      "IAO_0000115" : [ {
+        "identifier" : "IAO_0000115",
+        "language" : "undefined",
+        "value" : "A structural capacity that shapes how an object of intentionality is represented for the subject.",
+        "type" : "label"
+      } ],
+      "IAO_0000118" : [ {
+        "identifier" : "IAO_0000118",
+        "language" : "undefined",
+        "value" : "intentional structure",
+        "type" : "label"
+      }, {
+        "identifier" : "IAO_0000118",
+        "language" : "undefined",
+        "value" : "intentional mode",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MF_0000076",
+      "en" : "intentional modality"
+    },
+    "subClasses" : [ "1" ],
+    "attributes" : [ "external" ],
+    "id" : "2",
+    "superClasses" : [ "145" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/MF_0000073",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : {
+      "IAO_0000115" : [ {
+        "identifier" : "IAO_0000115",
+        "language" : "undefined",
+        "value" : "Intentionality is the fundamental quality of conscious mental processes of always having content, of being directed towards, or about something.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MF_0000073",
+      "en" : "intentionality"
+    },
+    "attributes" : [ "external" ],
+    "id" : "46",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/MF_0000074",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : {
+      "IAO_0000115" : [ {
+        "identifier" : "IAO_0000115",
+        "language" : "undefined",
+        "value" : "A bodily quality is a quality that inheres in some extended organism.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MF_0000074",
+      "en" : "bodily quality"
+    },
+    "subClasses" : [ "4" ],
+    "attributes" : [ "external" ],
+    "id" : "5"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/MF_0000071",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MF_0000071",
+      "en" : "problem solving behaviour"
+    },
+    "subClasses" : [ "7", "10", "12" ],
+    "attributes" : [ "external" ],
+    "id" : "8"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/MF_0000072",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : {
+      "IAO_0000115" : [ {
+        "identifier" : "IAO_0000115",
+        "language" : "undefined",
+        "value" : "The subjective experience of time as a coherent process inhabited by oneself as an embodied thinking being",
+        "type" : "label"
+      } ],
+      "IAO_0000118" : [ {
+        "identifier" : "IAO_0000118",
+        "language" : "undefined",
+        "value" : "time awareness",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MF_0000072",
+      "en" : "consciousness of time"
+    },
+    "attributes" : [ "external" ],
+    "id" : "103",
+    "superClasses" : [ "104" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/MF_0000070",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : {
+      "IAO_0000115" : [ {
+        "identifier" : "IAO_0000115",
+        "language" : "undefined",
+        "value" : "A memory is a mental disposition that is realized in a process of remembering, i.e. a memory of X is a disposition realized in the process of remembering X.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MF_0000070",
+      "en" : "a memory"
+    },
+    "attributes" : [ "external" ],
+    "id" : "147",
+    "superClasses" : [ "145" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/IAO_0000027",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "IAO_0000027",
+      "en" : "data item"
+    },
+    "subClasses" : [ "14" ],
+    "attributes" : [ "external" ],
+    "id" : "16",
+    "superClasses" : [ "63" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/MF_0000088",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : {
+      "IAO_0000115" : [ {
+        "identifier" : "IAO_0000115",
+        "language" : "undefined",
+        "value" : "A mental process that involves neuronal activity in response to a sensory stimuli but which is not the subject of consciousness.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MF_0000088",
+      "en" : "subliminal process"
+    },
+    "attributes" : [ "external" ],
+    "id" : "65",
+    "superClasses" : [ "44" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/MF_0000089",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : {
+      "IAO_0000115" : [ {
+        "identifier" : "IAO_0000115",
+        "language" : "undefined",
+        "value" : "A communication process in which information is transmitted without being encoded in the meaning units of any language.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MF_0000089",
+      "en" : "non-linguistic communication"
+    },
+    "subClasses" : [ "20", "24" ],
+    "attributes" : [ "external" ],
+    "id" : "21",
+    "superClasses" : [ "61" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/MF_0000086",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : {
+      "IAO_0000115" : [ {
+        "identifier" : "IAO_0000115",
+        "language" : "undefined",
+        "value" : "A linguistic communication process is a communication process in which the information that is communicated is encoded in language.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MF_0000086",
+      "en" : "linguistic communication"
+    },
+    "subClasses" : [ "133", "135", "86" ],
+    "attributes" : [ "external" ],
+    "id" : "87",
+    "superClasses" : [ "61" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/MF_0000087",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : {
+      "IAO_0000115" : [ {
+        "identifier" : "IAO_0000115",
+        "language" : "undefined",
+        "value" : "A gestural communication process is a communication process in which information is transferred by means of physical movements.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MF_0000087",
+      "en" : "gestural communication"
+    },
+    "attributes" : [ "external" ],
+    "id" : "20",
+    "superClasses" : [ "21" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/MF_0000084",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : {
+      "IAO_0000115" : [ {
+        "identifier" : "IAO_0000115",
+        "language" : "undefined",
+        "value" : "A spoken communication process is a linguistic communication process that:\n(a) involves as participant at least two linguistically capable organisms;\n(b) one of whom produces an utterance that is well-formed in a given spoken language;\n(c) the other of whom perceives and understands that utterance by virtue of their\nrecognition of the meaning of the utterance through their knowledge of the language.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MF_0000084",
+      "en" : "spoken communication"
+    },
+    "attributes" : [ "external" ],
+    "id" : "133",
+    "superClasses" : [ "87" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/MF_0000085",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : {
+      "IAO_0000115" : [ {
+        "identifier" : "IAO_0000115",
+        "language" : "undefined",
+        "value" : "A written communication process is an interpersonal process that:\n(a) involves as participant at least two organisms,\n(b) one of whom produces a message in writing that is well-formed in a given language;\n(c) the other of whom reads the message and understands it.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MF_0000085",
+      "en" : "written communication"
+    },
+    "attributes" : [ "external" ],
+    "id" : "135",
+    "superClasses" : [ "87" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/MF_0000082",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : {
+      "IAO_0000115" : [ {
+        "identifier" : "IAO_0000115",
+        "language" : "undefined",
+        "value" : "The partial structure of time consciousness that relates to retaining past events in memory and linking them to present events (e.g. how the individual tones in a melody is intuitively linked together to form a whole).",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MF_0000082",
+      "en" : "retention"
+    },
+    "attributes" : [ "external" ],
+    "id" : "115",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/MF_0000083",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : {
+      "IAO_0000115" : [ {
+        "identifier" : "IAO_0000115",
+        "language" : "undefined",
+        "value" : "A mental process that evokes the representation of the sensory characteristics of objects or events when these are not immediately present to the senses.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MF_0000083",
+      "en" : "mental imagery"
+    },
+    "attributes" : [ "external" ],
+    "id" : "190",
+    "superClasses" : [ "79" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/MF_0000080",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : {
+      "IAO_0000115" : [ {
+        "identifier" : "IAO_0000115",
+        "language" : "undefined",
+        "value" : "The intentional structural capacity to experience lived time.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MF_0000080",
+      "en" : "time intentional modality"
+    },
+    "subClasses" : [ "115", "117" ],
+    "attributes" : [ "external" ],
+    "id" : "1",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/MF_0000081",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : {
+      "IAO_0000115" : [ {
+        "identifier" : "IAO_0000115",
+        "language" : "undefined",
+        "value" : "The partial structure of time consciousness that relates to linking and projecting the content of immediate moments to future moments (e.g. how the path of a moving object is intuitively projected).",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MF_0000081",
+      "en" : "protention"
+    },
+    "attributes" : [ "external" ],
+    "id" : "117",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/MF_0000059",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : {
+      "priorVersion" : [ {
+        "identifier" : "priorVersion",
+        "language" : "undefined",
+        "value" : "MFOMD_0000148",
+        "type" : "label"
+      } ],
+      "IAO_0000115" : [ {
+        "identifier" : "IAO_0000115",
+        "language" : "undefined",
+        "value" : "Short-term detachment from one's immediate surroundings, during which a person's contact with reality is blurred and partially substituted by a visionary fantasy, especially one of happy, pleasant thoughts, hopes or ambitions, imagined as coming to pass, and experienced while awake.",
+        "type" : "label"
+      } ],
+      "IAO_0000119" : [ {
+        "identifier" : "IAO_0000119",
+        "language" : "undefined",
+        "value" : "http://en.wikipedia.org/wiki/Daydream",
+        "type" : "label"
+      } ],
+      "IAO_0000118" : [ {
+        "identifier" : "IAO_0000118",
+        "language" : "undefined",
+        "value" : "act of daydreaming",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MF_0000059",
+      "en" : "daydreaming"
+    },
+    "attributes" : [ "external" ],
+    "id" : "81",
+    "superClasses" : [ "43" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/MF_0000057",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : {
+      "IAO_0000115" : [ {
+        "identifier" : "IAO_0000115",
+        "language" : "undefined",
+        "value" : "A cognitive process that involves the manipulation of mental language.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MF_0000057",
+      "en" : "thinking with language"
+    },
+    "attributes" : [ "external" ],
+    "id" : "186",
+    "superClasses" : [ "85", "98" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/MF_0000058",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : {
+      "priorVersion" : [ {
+        "identifier" : "priorVersion",
+        "language" : "undefined",
+        "value" : "MFOMF_0000177",
+        "type" : "label"
+      } ],
+      "IAO_0000115" : [ {
+        "identifier" : "IAO_0000115",
+        "language" : "undefined",
+        "value" : "Affectional tie that one person or animal forms between himself and another specific one, a tie that binds them together emotionally and endures over time.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MF_0000058",
+      "en" : "attachment"
+    },
+    "attributes" : [ "external" ],
+    "id" : "58",
+    "superClasses" : [ "59" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/MF_0000055",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : {
+      "IAO_0000115" : [ {
+        "identifier" : "IAO_0000115",
+        "language" : "undefined",
+        "value" : "Smelling (olfactory perception) is a mental process which is\na) produced by a causal process involving xenobiotic molecules from a part of the environment of the subject binding with specialized sensory cells in the nasal cavity, and\nb) is experienced by the subject as being so caused, and\nc) in which the relevant part of the environment is thereby represented to the subject",
+        "type" : "label"
+      } ],
+      "IAO_0000118" : [ {
+        "identifier" : "IAO_0000118",
+        "language" : "undefined",
+        "value" : "olfactory perception",
+        "type" : "label"
+      }, {
+        "identifier" : "IAO_0000118",
+        "language" : "undefined",
+        "value" : "act of smelling",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MF_0000055",
+      "en" : "smelling"
+    },
+    "attributes" : [ "external" ],
+    "id" : "204",
+    "superClasses" : [ "144" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/MF_0000056",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : {
+      "IAO_0000115" : [ {
+        "identifier" : "IAO_0000115",
+        "language" : "undefined",
+        "value" : "Touching (tactile perception) is a mental process which is\na) produced by a causal process involving pressure on the organism’s skin from a part of the environment of the subject, and\nb) is experienced by the subject as being so caused, and\nc) in which the relevant part of the environment is thereby represented to the subject",
+        "type" : "label"
+      } ],
+      "IAO_0000118" : [ {
+        "identifier" : "IAO_0000118",
+        "language" : "undefined",
+        "value" : "act of touching",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MF_0000056",
+      "en" : "touching"
+    },
+    "attributes" : [ "external" ],
+    "id" : "205",
+    "superClasses" : [ "144" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/MF_0000053",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : {
+      "IAO_0000115" : [ {
+        "identifier" : "IAO_0000115",
+        "language" : "undefined",
+        "value" : "A musical capability that is the ability to interpret the musical instructions represented in a musical score.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MF_0000053",
+      "en" : "capability to read music"
+    },
+    "attributes" : [ "external" ],
+    "id" : "172",
+    "superClasses" : [ "170" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/OGMS_0000087",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "OGMS_0000087",
+      "undefined" : "extended organism"
+    },
+    "subClasses" : [ "119" ],
+    "comment" : {
+      "undefined" : "From OGMS: http://purl.obolibrary.org/obo/OGMS_0000087"
+    },
+    "attributes" : [ "external" ],
+    "id" : "120"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/MF_0000054",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : {
+      "IAO_0000115" : [ {
+        "identifier" : "IAO_0000115",
+        "language" : "undefined",
+        "value" : "Taste perception is a mental process which is\na) produced by a causal process involving xenobiotic molecules from a part of the environment of the subject binding with specialized sensory cells in the tongue and nasal cavity, and\nb) is experienced by the subject as being so caused, and\nc) in which the relevant part of the environment is thereby represented to the subject",
+        "type" : "label"
+      } ],
+      "IAO_0000118" : [ {
+        "identifier" : "IAO_0000118",
+        "language" : "undefined",
+        "value" : "act of tasting",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MF_0000054",
+      "en" : "tasting"
+    },
+    "attributes" : [ "external" ],
+    "id" : "206",
+    "superClasses" : [ "144" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/MF_0000051",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : {
+      "IAO_0000115" : [ {
+        "identifier" : "IAO_0000115",
+        "language" : "undefined",
+        "value" : "A linguistic capability that is realised in processes in which well-formed expressions in a given language are understood.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MF_0000051",
+      "en" : "capability to understand language"
+    },
+    "attributes" : [ "external" ],
+    "id" : "125",
+    "superClasses" : [ "123" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/MF_0000052",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : {
+      "IAO_0000115" : [ {
+        "identifier" : "IAO_0000115",
+        "language" : "undefined",
+        "value" : "A linguistic capability that is realised in processes in which well-formed vocal expressions in a given language are produced.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MF_0000052",
+      "en" : "capability to speak"
+    },
+    "attributes" : [ "external" ],
+    "id" : "127",
+    "superClasses" : [ "123" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/MF_0000050",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : {
+      "IAO_0000115" : [ {
+        "identifier" : "IAO_0000115",
+        "language" : "undefined",
+        "value" : "A mental capability that is realised in processes of communication involving language or in expressions of language.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MF_0000050",
+      "en" : "linguistic capability"
+    },
+    "subClasses" : [ "122", "125", "127" ],
+    "attributes" : [ "external" ],
+    "id" : "123",
+    "superClasses" : [ "167" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/BFO_0000031",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BFO_0000031"
+    },
+    "subClasses" : [ "63" ],
+    "attributes" : [ "external" ],
+    "id" : "129"
+  }, {
+    "iri" : "http://www.geneontology.org/formats/oboInOwl#Synonym",
+    "baseIri" : "http://www.geneontology.org/formats/oboInOwl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Synonym"
+    },
+    "attributes" : [ "external" ],
+    "id" : "166",
+    "superClasses" : [ "14" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/MF_0000068",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : {
+      "IAO_0000115" : [ {
+        "identifier" : "IAO_0000115",
+        "language" : "undefined",
+        "value" : "Proprioception is a mental process which is\na) produced by a causal process specialized internal sensory cells in, for example, skin, muscles and joints, and\nb) by which their location and state of motion and/or balance are represented to the organism, and\nc) which is experienced by the subject as being so caused",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MF_0000068",
+      "en" : "proprioception"
+    },
+    "attributes" : [ "external" ],
+    "id" : "201",
+    "superClasses" : [ "144" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/MF_0000069",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : {
+      "IAO_0000115" : [ {
+        "identifier" : "IAO_0000115",
+        "language" : "undefined",
+        "value" : "Nociception is a mental process which is\na) produced by a causal process specialized internal sensory cells in, for example, skin, muscles and joints, and\nb) by which actual or immanent tissue damage are reported to the organism, and\nc) which is experienced by the subject as being so caused",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MF_0000069",
+      "en" : "nociception"
+    },
+    "attributes" : [ "external" ],
+    "id" : "203",
+    "superClasses" : [ "144" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/MF_0000066",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : {
+      "IAO_0000115" : [ {
+        "identifier" : "IAO_0000115",
+        "language" : "undefined",
+        "value" : "Olfactory consciousness is consciousness of an olfactory stimulus (scent), as experienced through the olfactory sensory medium as a part of a process of smelling.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MF_0000066",
+      "en" : "olfactory consciousness"
+    },
+    "attributes" : [ "external" ],
+    "id" : "141",
+    "superClasses" : [ "138" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/MF_0000067",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : {
+      "IAO_0000115" : [ {
+        "identifier" : "IAO_0000115",
+        "language" : "undefined",
+        "value" : "Consciousness of self is the higher order consciousness that reflexively includes the awareness that the organism that is the subject of the conscious experience exists.",
+        "type" : "label"
+      } ],
+      "IAO_0000118" : [ {
+        "identifier" : "IAO_0000118",
+        "language" : "undefined",
+        "value" : "selfhood",
+        "type" : "label"
+      }, {
+        "identifier" : "IAO_0000118",
+        "language" : "undefined",
+        "value" : "consciousness of the existence of the self",
+        "type" : "label"
+      }, {
+        "identifier" : "IAO_0000118",
+        "language" : "undefined",
+        "value" : "self-consciousness",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MF_0000067",
+      "en" : "consciousness of self"
+    },
+    "comment" : {
+      "undefined" : "The implication of Descartes' famous \"Cogito ergo sum\" is that awareness of one's own existence entails that one exists. This is because consciousness creates a perspective, and awareness of this is a self-reflexive perspective of oneself. This is one aspect of intentionality that cannot fail. Intentionality can fail at all levels of content, but not at the level of intending through awareness the existence of the self that is consciously intending."
+    },
+    "attributes" : [ "external" ],
+    "id" : "111",
+    "superClasses" : [ "104" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/MF_0000064",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : {
+      "IAO_0000115" : [ {
+        "identifier" : "IAO_0000115",
+        "language" : "en",
+        "value" : "A personality trait manifesting itself in individual behavioral characteristics that are perceived as angry, anxious, depressed, unstable, and vulnerable.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MF_0000064",
+      "en" : "neuroticism"
+    },
+    "comment" : {
+      "en" : "Associated adjectives: anxious, self-pitying, tense, touchy unstable, and worrying."
+    },
+    "attributes" : [ "external" ],
+    "id" : "71",
+    "superClasses" : [ "68" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/MF_0000065",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : {
+      "IAO_0000115" : [ {
+        "identifier" : "IAO_0000115",
+        "language" : "en",
+        "value" : "A personality trait manifesting itself in individual behavioral characteristics that are perceived as revealing, curiosity, an appreciation of novelty and variety of experiences and ideas, invention, and unpredictability.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MF_0000065",
+      "en" : "openness to experience"
+    },
+    "comment" : {
+      "en" : "Associated adjectives: artistic, curious, imaginative, insightful, original, and wide interests."
+    },
+    "attributes" : [ "external" ],
+    "id" : "73",
+    "superClasses" : [ "68" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/MF_0000062",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : {
+      "priorVersion" : [ {
+        "identifier" : "priorVersion",
+        "language" : "undefined",
+        "value" : "MFOMD_0000130",
+        "type" : "label"
+      } ],
+      "IAO_0000115" : [ {
+        "identifier" : "IAO_0000115",
+        "language" : "undefined",
+        "value" : "\nThe psychic energy that drives individuals toward sensual pleasures of all types, especially sexual ones.\n\n\nhttp://www.apa.org/research/action/glossary.aspx",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MF_0000062",
+      "en" : "libido"
+    },
+    "attributes" : [ "external" ],
+    "id" : "54",
+    "superClasses" : [ "43" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/MF_0000063",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : {
+      "IAO_0000115" : [ {
+        "identifier" : "IAO_0000115",
+        "language" : "en",
+        "value" : "A personality trait manifesting itself in individual behavioral characteristics that are perceived as positive, assertive, social, and outgoing.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MF_0000063",
+      "en" : "extraversion"
+    },
+    "comment" : {
+      "en" : "Associated Adjectives: active, assertive, energetic, enthusiastic, outgoing, talkative."
+    },
+    "attributes" : [ "external" ],
+    "id" : "74",
+    "superClasses" : [ "68" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/MF_0000060",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : {
+      "priorVersion" : [ {
+        "identifier" : "priorVersion",
+        "language" : "undefined",
+        "value" : "MFOMD_0000140",
+        "type" : "label"
+      } ],
+      "IAO_0000115" : [ {
+        "identifier" : "IAO_0000115",
+        "language" : "undefined",
+        "value" : "The ability to maintain attention and alertness over prolonged periods of time.\n\n\nhttp://en.wikipedia.org/wiki/Vigilance_%28psychology%29",
+        "type" : "label"
+      } ],
+      "IAO_0000118" : [ {
+        "identifier" : "IAO_0000118",
+        "language" : "undefined",
+        "value" : "state of vigilance",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MF_0000060",
+      "en" : "vigilance"
+    },
+    "attributes" : [ "external" ],
+    "id" : "207",
+    "superClasses" : [ "101" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/MF_0000061",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "annotations" : {
+      "priorVersion" : [ {
+        "identifier" : "priorVersion",
+        "language" : "undefined",
+        "value" : "MFOMD_0000207",
+        "type" : "label"
+      } ],
+      "IAO_0000115" : [ {
+        "identifier" : "IAO_0000115",
+        "language" : "undefined",
+        "value" : "Orgasm is the sudden discharge of accumulated sexual tension during the sexual response cycle, resulting in rhythmic muscular contractions in the pelvic region characterized by sexual pleasure.\n\nhttp://en.wikipedia.org/wiki/Orgasm",
+        "type" : "label"
+      } ],
+      "IAO_0000118" : [ {
+        "identifier" : "IAO_0000118",
+        "language" : "undefined",
+        "value" : "sexual climax",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MF_0000061",
+      "en" : "orgasm"
+    },
+    "attributes" : [ "external" ],
+    "id" : "56",
+    "superClasses" : [ "43" ]
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "3",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "6",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "9",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "11",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "15",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "19",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "23",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "40",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "42",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "45",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "47",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "49",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "51",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "53",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "55",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "57",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "60",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "62",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "64",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "78",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "80",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "82",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "84",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "88",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "89",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "90",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "95",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "102",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "106",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "108",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "110",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "112",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "114",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "116",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "118",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "121",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "124",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "126",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "128",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "132",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "134",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "136",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "137",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "148",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "149",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "155",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "156",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "157",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "158",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "159",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "160",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "161",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "162",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "164",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "165",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "173",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "174",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "175",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "176",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "177",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "178",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "179",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "181",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "182",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "183",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "184",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "185",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "191",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "192",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "193",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "194",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "195",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "196",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "197",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "198",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "199",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "200",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "208",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "209",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "210",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "211",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "212",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "213",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "214",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "215",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "216",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "217",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "218",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "219",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "220",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "221",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "222",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "223",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "224",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "225",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "226",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "227",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "228",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "229",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "230",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "231",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "232",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "233",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "234",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "235",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "236",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "237",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "238",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "239",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "240",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "241",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "242",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "243",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "244",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "245",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "246",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "247",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "248",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "249",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "250",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "251",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "252",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "253",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "254",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "255",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "256",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "257",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "258",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "259",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "260",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "261",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "262",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "263",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "264",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "265",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "266",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "267",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "268",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "269",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "270",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "271",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "272",
+    "type" : "rdfs:SubClassOf"
+  } ],
+  "propertyAttribute" : [ {
+    "range" : "2",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "0"
+  }, {
+    "range" : "5",
+    "domain" : "4",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "3"
+  }, {
+    "range" : "8",
+    "domain" : "7",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "6"
+  }, {
+    "range" : "8",
+    "domain" : "10",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "9"
+  }, {
+    "range" : "8",
+    "domain" : "12",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "11"
+  }, {
+    "range" : "16",
+    "domain" : "14",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "15"
+  }, {
+    "range" : "21",
+    "domain" : "20",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "19"
+  }, {
+    "range" : "21",
+    "domain" : "24",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "23"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/BFO_0000107",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "range" : "41",
+    "annotations" : {
+      "TV_pl" : [ {
+        "identifier" : "TV_pl",
+        "language" : "undefined",
+        "value" : "BFO_0000107",
+        "type" : "label"
+      }, {
+        "identifier" : "TV_pl",
+        "language" : "undefined",
+        "value" : "BFO_0000107",
+        "type" : "label"
+      } ],
+      "TV_vbg" : [ {
+        "identifier" : "TV_vbg",
+        "language" : "undefined",
+        "value" : "BFO_0000107ed",
+        "type" : "label"
+      }, {
+        "identifier" : "TV_vbg",
+        "language" : "undefined",
+        "value" : "BFO_0000107ed",
+        "type" : "label"
+      } ],
+      "TV_sg" : [ {
+        "identifier" : "TV_sg",
+        "language" : "undefined",
+        "value" : "BFO_0000107s",
+        "type" : "label"
+      }, {
+        "identifier" : "TV_sg",
+        "language" : "undefined",
+        "value" : "BFO_0000107s",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "BFO_0000107",
+      "en" : "disposition of at all times"
+    },
+    "domain" : "41",
+    "attributes" : [ "external", "object" ],
+    "id" : "40"
+  }, {
+    "range" : "44",
+    "domain" : "43",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "42"
+  }, {
+    "range" : "4",
+    "domain" : "46",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "45"
+  }, {
+    "range" : "43",
+    "domain" : "48",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "47"
+  }, {
+    "range" : "43",
+    "domain" : "50",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "49"
+  }, {
+    "range" : "43",
+    "domain" : "52",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "51"
+  }, {
+    "range" : "43",
+    "domain" : "54",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "53"
+  }, {
+    "range" : "43",
+    "domain" : "56",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "55"
+  }, {
+    "range" : "59",
+    "domain" : "58",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "57"
+  }, {
+    "range" : "59",
+    "domain" : "61",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "60"
+  }, {
+    "range" : "63",
+    "domain" : "16",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "62"
+  }, {
+    "range" : "44",
+    "domain" : "65",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "64"
+  }, {
+    "range" : "43",
+    "domain" : "79",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "78"
+  }, {
+    "range" : "43",
+    "domain" : "81",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "80"
+  }, {
+    "range" : "43",
+    "domain" : "83",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "82"
+  }, {
+    "range" : "43",
+    "domain" : "85",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "84"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/BFO_0000112",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "range" : "41",
+    "annotations" : {
+      "TV_vbg" : [ {
+        "identifier" : "TV_vbg",
+        "language" : "undefined",
+        "value" : "BFO_0000112ed",
+        "type" : "label"
+      }, {
+        "identifier" : "TV_vbg",
+        "language" : "undefined",
+        "value" : "BFO_0000112ed",
+        "type" : "label"
+      } ],
+      "TV_pl" : [ {
+        "identifier" : "TV_pl",
+        "language" : "undefined",
+        "value" : "BFO_0000112",
+        "type" : "label"
+      }, {
+        "identifier" : "TV_pl",
+        "language" : "undefined",
+        "value" : "BFO_0000112",
+        "type" : "label"
+      } ],
+      "TV_sg" : [ {
+        "identifier" : "TV_sg",
+        "language" : "undefined",
+        "value" : "BFO_0000112s",
+        "type" : "label"
+      }, {
+        "identifier" : "TV_sg",
+        "language" : "undefined",
+        "value" : "BFO_0000112s",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "BFO_0000112",
+      "en" : "has disposition at some time"
+    },
+    "domain" : "41",
+    "attributes" : [ "external", "object" ],
+    "id" : "88"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/BFO_0000110",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "range" : "41",
+    "annotations" : {
+      "TV_vbg" : [ {
+        "identifier" : "TV_vbg",
+        "language" : "undefined",
+        "value" : "BFO_0000110ed",
+        "type" : "label"
+      }, {
+        "identifier" : "TV_vbg",
+        "language" : "undefined",
+        "value" : "BFO_0000110ed",
+        "type" : "label"
+      } ],
+      "TV_pl" : [ {
+        "identifier" : "TV_pl",
+        "language" : "undefined",
+        "value" : "BFO_0000110",
+        "type" : "label"
+      }, {
+        "identifier" : "TV_pl",
+        "language" : "undefined",
+        "value" : "BFO_0000110",
+        "type" : "label"
+      } ],
+      "TV_sg" : [ {
+        "identifier" : "TV_sg",
+        "language" : "undefined",
+        "value" : "BFO_0000110s",
+        "type" : "label"
+      }, {
+        "identifier" : "TV_sg",
+        "language" : "undefined",
+        "value" : "BFO_0000110s",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "BFO_0000110",
+      "en" : "has continuant part at all times"
+    },
+    "domain" : "41",
+    "subproperty" : [ "90" ],
+    "attributes" : [ "external", "transitive", "object" ],
+    "id" : "89"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/BFO_0000111",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "range" : "41",
+    "annotations" : {
+      "TV_pl" : [ {
+        "identifier" : "TV_pl",
+        "language" : "undefined",
+        "value" : "BFO_0000111",
+        "type" : "label"
+      } ],
+      "TV_vbg" : [ {
+        "identifier" : "TV_vbg",
+        "language" : "undefined",
+        "value" : "BFO_0000111ed",
+        "type" : "label"
+      } ],
+      "TV_sg" : [ {
+        "identifier" : "TV_sg",
+        "language" : "undefined",
+        "value" : "BFO_0000111s",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "BFO_0000111",
+      "en" : "has proper continuant part at all times"
+    },
+    "superproperty" : [ "89" ],
+    "domain" : "41",
+    "attributes" : [ "external", "transitive", "object" ],
+    "id" : "90"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/BFO_0000118",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "range" : "41",
+    "annotations" : {
+      "TV_pl" : [ {
+        "identifier" : "TV_pl",
+        "language" : "undefined",
+        "value" : "BFO_0000118",
+        "type" : "label"
+      } ],
+      "TV_vbg" : [ {
+        "identifier" : "TV_vbg",
+        "language" : "undefined",
+        "value" : "BFO_0000118ed",
+        "type" : "label"
+      } ],
+      "TV_sg" : [ {
+        "identifier" : "TV_sg",
+        "language" : "undefined",
+        "value" : "BFO_0000118s",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "BFO_0000118",
+      "en" : "has proper occurrent part"
+    },
+    "superproperty" : [ "96" ],
+    "domain" : "41",
+    "attributes" : [ "external", "transitive", "object" ],
+    "id" : "95"
+  }, {
+    "range" : "104",
+    "domain" : "103",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "102"
+  }, {
+    "range" : "104",
+    "domain" : "107",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "106"
+  }, {
+    "range" : "104",
+    "domain" : "109",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "108"
+  }, {
+    "range" : "104",
+    "domain" : "111",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "110"
+  }, {
+    "range" : "104",
+    "domain" : "113",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "112"
+  }, {
+    "range" : "1",
+    "domain" : "115",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "114"
+  }, {
+    "range" : "1",
+    "domain" : "117",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "116"
+  }, {
+    "range" : "120",
+    "domain" : "119",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "118"
+  }, {
+    "range" : "123",
+    "domain" : "122",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "121"
+  }, {
+    "range" : "123",
+    "domain" : "125",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "124"
+  }, {
+    "range" : "123",
+    "domain" : "127",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "126"
+  }, {
+    "range" : "129",
+    "domain" : "63",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "128"
+  }, {
+    "range" : "87",
+    "domain" : "133",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "132"
+  }, {
+    "range" : "87",
+    "domain" : "135",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "134"
+  }, {
+    "range" : "87",
+    "domain" : "86",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "136"
+  }, {
+    "range" : "25",
+    "domain" : "35",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "137"
+  }, {
+    "range" : "25",
+    "domain" : "37",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "148"
+  }, {
+    "range" : "25",
+    "domain" : "34",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "149"
+  }, {
+    "range" : "25",
+    "domain" : "18",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "155"
+  }, {
+    "range" : "29",
+    "domain" : "33",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "156"
+  }, {
+    "range" : "25",
+    "domain" : "36",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "157"
+  }, {
+    "range" : "25",
+    "domain" : "31",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "158"
+  }, {
+    "range" : "18",
+    "domain" : "29",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "159"
+  }, {
+    "range" : "18",
+    "domain" : "28",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "160"
+  }, {
+    "range" : "31",
+    "domain" : "32",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "161"
+  }, {
+    "range" : "18",
+    "domain" : "30",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "162"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/BFO_0000057",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "range" : "41",
+    "annotations" : {
+      "TV_pl" : [ {
+        "identifier" : "TV_pl",
+        "language" : "undefined",
+        "value" : "BFO_0000057",
+        "type" : "label"
+      }, {
+        "identifier" : "TV_pl",
+        "language" : "undefined",
+        "value" : "BFO_0000057",
+        "type" : "label"
+      } ],
+      "TV_vbg" : [ {
+        "identifier" : "TV_vbg",
+        "language" : "undefined",
+        "value" : "BFO_0000057ed",
+        "type" : "label"
+      }, {
+        "identifier" : "TV_vbg",
+        "language" : "undefined",
+        "value" : "BFO_0000057ed",
+        "type" : "label"
+      } ],
+      "TV_sg" : [ {
+        "identifier" : "TV_sg",
+        "language" : "undefined",
+        "value" : "BFO_0000057s",
+        "type" : "label"
+      }, {
+        "identifier" : "TV_sg",
+        "language" : "undefined",
+        "value" : "BFO_0000057s",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "BFO_0000057",
+      "en" : "has participant at some time"
+    },
+    "domain" : "41",
+    "attributes" : [ "external", "object" ],
+    "id" : "164"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/BFO_0000056",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "range" : "41",
+    "annotations" : {
+      "TV_pl" : [ {
+        "identifier" : "TV_pl",
+        "language" : "undefined",
+        "value" : "BFO_0000056",
+        "type" : "label"
+      } ],
+      "TV_vbg" : [ {
+        "identifier" : "TV_vbg",
+        "language" : "undefined",
+        "value" : "BFO_0000056ed",
+        "type" : "label"
+      } ],
+      "TV_sg" : [ {
+        "identifier" : "TV_sg",
+        "language" : "undefined",
+        "value" : "BFO_0000056s",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "BFO_0000056",
+      "en" : "participates in at some time"
+    },
+    "domain" : "41",
+    "attributes" : [ "external", "object" ],
+    "id" : "165"
+  }, {
+    "range" : "18",
+    "domain" : "22",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "173"
+  }, {
+    "range" : "18",
+    "domain" : "17",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "174"
+  }, {
+    "range" : "18",
+    "domain" : "27",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "175"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/BFO_0000167",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "range" : "150",
+    "annotations" : {
+      "TV_vbg" : [ {
+        "identifier" : "TV_vbg",
+        "language" : "undefined",
+        "value" : "BFO_0000167ed",
+        "type" : "label"
+      }, {
+        "identifier" : "TV_vbg",
+        "language" : "undefined",
+        "value" : "BFO_0000167ed",
+        "type" : "label"
+      } ],
+      "TV_pl" : [ {
+        "identifier" : "TV_pl",
+        "language" : "undefined",
+        "value" : "BFO_0000167",
+        "type" : "label"
+      }, {
+        "identifier" : "TV_pl",
+        "language" : "undefined",
+        "value" : "BFO_0000167",
+        "type" : "label"
+      } ],
+      "TV_sg" : [ {
+        "identifier" : "TV_sg",
+        "language" : "undefined",
+        "value" : "BFO_0000167s",
+        "type" : "label"
+      }, {
+        "identifier" : "TV_sg",
+        "language" : "undefined",
+        "value" : "BFO_0000167s",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "BFO_0000167",
+      "en" : "has participant at all times"
+    },
+    "domain" : "98",
+    "attributes" : [ "someValues", "external", "object" ],
+    "id" : "176"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/BFO_0000054",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "range" : "103",
+    "annotations" : {
+      "TV_vbg" : [ {
+        "identifier" : "TV_vbg",
+        "language" : "undefined",
+        "value" : "BFO_0000054ed",
+        "type" : "label"
+      } ],
+      "TV_pl" : [ {
+        "identifier" : "TV_pl",
+        "language" : "undefined",
+        "value" : "BFO_0000054",
+        "type" : "label"
+      } ],
+      "TV_sg" : [ {
+        "identifier" : "TV_sg",
+        "language" : "undefined",
+        "value" : "BFO_0000054s",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "BFO_0000054",
+      "en" : "realized in"
+    },
+    "domain" : "1",
+    "attributes" : [ "someValues", "external", "object" ],
+    "id" : "177"
+  }, {
+    "range" : "18",
+    "domain" : "26",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "178"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/BFO_0000117",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "range" : "59",
+    "annotations" : {
+      "TV_vbg" : [ {
+        "identifier" : "TV_vbg",
+        "language" : "undefined",
+        "value" : "BFO_0000117ed",
+        "type" : "label"
+      }, {
+        "identifier" : "TV_vbg",
+        "language" : "undefined",
+        "value" : "BFO_0000117ed",
+        "type" : "label"
+      } ],
+      "TV_pl" : [ {
+        "identifier" : "TV_pl",
+        "language" : "undefined",
+        "value" : "BFO_0000117",
+        "type" : "label"
+      }, {
+        "identifier" : "TV_pl",
+        "language" : "undefined",
+        "value" : "BFO_0000117",
+        "type" : "label"
+      } ],
+      "TV_sg" : [ {
+        "identifier" : "TV_sg",
+        "language" : "undefined",
+        "value" : "BFO_0000117s",
+        "type" : "label"
+      }, {
+        "identifier" : "TV_sg",
+        "language" : "undefined",
+        "value" : "BFO_0000117s",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "BFO_0000117",
+      "en" : "has occurrent part"
+    },
+    "domain" : "180",
+    "subproperty" : [ "95" ],
+    "attributes" : [ "someValues", "external", "transitive", "object" ],
+    "id" : "179"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/BFO_0000055",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "range" : "145",
+    "annotations" : {
+      "TV_pl" : [ {
+        "identifier" : "TV_pl",
+        "language" : "undefined",
+        "value" : "BFO_0000055",
+        "type" : "label"
+      }, {
+        "identifier" : "TV_pl",
+        "language" : "undefined",
+        "value" : "BFO_0000055",
+        "type" : "label"
+      } ],
+      "TV_vbg" : [ {
+        "identifier" : "TV_vbg",
+        "language" : "undefined",
+        "value" : "BFO_0000055ed",
+        "type" : "label"
+      }, {
+        "identifier" : "TV_vbg",
+        "language" : "undefined",
+        "value" : "BFO_0000055ed",
+        "type" : "label"
+      } ],
+      "TV_sg" : [ {
+        "identifier" : "TV_sg",
+        "language" : "undefined",
+        "value" : "BFO_0000055s",
+        "type" : "label"
+      }, {
+        "identifier" : "TV_sg",
+        "language" : "undefined",
+        "value" : "BFO_0000055s",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "BFO_0000055",
+      "en" : "realizes"
+    },
+    "domain" : "43",
+    "attributes" : [ "someValues", "external", "object" ],
+    "id" : "181"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/BFO_0000117",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "range" : "130",
+    "annotations" : {
+      "TV_vbg" : [ {
+        "identifier" : "TV_vbg",
+        "language" : "undefined",
+        "value" : "BFO_0000117ed",
+        "type" : "label"
+      }, {
+        "identifier" : "TV_vbg",
+        "language" : "undefined",
+        "value" : "BFO_0000117ed",
+        "type" : "label"
+      } ],
+      "TV_pl" : [ {
+        "identifier" : "TV_pl",
+        "language" : "undefined",
+        "value" : "BFO_0000117",
+        "type" : "label"
+      }, {
+        "identifier" : "TV_pl",
+        "language" : "undefined",
+        "value" : "BFO_0000117",
+        "type" : "label"
+      } ],
+      "TV_sg" : [ {
+        "identifier" : "TV_sg",
+        "language" : "undefined",
+        "value" : "BFO_0000117s",
+        "type" : "label"
+      }, {
+        "identifier" : "TV_sg",
+        "language" : "undefined",
+        "value" : "BFO_0000117s",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "BFO_0000117",
+      "en" : "has occurrent part"
+    },
+    "domain" : "43",
+    "subproperty" : [ "95" ],
+    "attributes" : [ "someValues", "external", "transitive", "object" ],
+    "id" : "182"
+  }, {
+    "range" : "14",
+    "domain" : "166",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "183"
+  }, {
+    "range" : "14",
+    "domain" : "131",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "184"
+  }, {
+    "range" : "14",
+    "domain" : "39",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "185"
+  }, {
+    "range" : "14",
+    "domain" : "153",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "191"
+  }, {
+    "range" : "14",
+    "domain" : "13",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "192"
+  }, {
+    "range" : "14",
+    "domain" : "105",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "193"
+  }, {
+    "range" : "14",
+    "domain" : "77",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "194"
+  }, {
+    "range" : "67",
+    "domain" : "154",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "195"
+  }, {
+    "range" : "67",
+    "domain" : "145",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "196"
+  }, {
+    "range" : "14",
+    "domain" : "163",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "197"
+  }, {
+    "range" : "151",
+    "domain" : "150",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "198"
+  }, {
+    "range" : "67",
+    "domain" : "68",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "199"
+  }, {
+    "range" : "67",
+    "domain" : "66",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "200"
+  }, {
+    "range" : "150",
+    "domain" : "152",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "208"
+  }, {
+    "range" : "145",
+    "domain" : "2",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "209"
+  }, {
+    "range" : "138",
+    "domain" : "142",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "210"
+  }, {
+    "range" : "145",
+    "domain" : "147",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "211"
+  }, {
+    "range" : "145",
+    "domain" : "146",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "212"
+  }, {
+    "range" : "138",
+    "domain" : "139",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "213"
+  }, {
+    "range" : "25",
+    "domain" : "38",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "214"
+  }, {
+    "range" : "138",
+    "domain" : "141",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "215"
+  }, {
+    "range" : "138",
+    "domain" : "140",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "216"
+  }, {
+    "range" : "98",
+    "domain" : "99",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "217"
+  }, {
+    "range" : "98",
+    "domain" : "97",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "218"
+  }, {
+    "range" : "188",
+    "domain" : "187",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "219"
+  }, {
+    "range" : "98",
+    "domain" : "186",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "220"
+  }, {
+    "range" : "61",
+    "domain" : "87",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "221"
+  }, {
+    "range" : "61",
+    "domain" : "21",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "222"
+  }, {
+    "range" : "154",
+    "domain" : "170",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "223"
+  }, {
+    "range" : "170",
+    "domain" : "171",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "224"
+  }, {
+    "range" : "170",
+    "domain" : "169",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "225"
+  }, {
+    "range" : "154",
+    "domain" : "167",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "226"
+  }, {
+    "range" : "170",
+    "domain" : "172",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "227"
+  }, {
+    "range" : "68",
+    "domain" : "74",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "228"
+  }, {
+    "range" : "68",
+    "domain" : "73",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "229"
+  }, {
+    "range" : "68",
+    "domain" : "76",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "230"
+  }, {
+    "range" : "68",
+    "domain" : "75",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "231"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/BFO_0000132",
+    "inverse" : "96",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "range" : "41",
+    "annotations" : {
+      "TV_pl" : [ {
+        "identifier" : "TV_pl",
+        "language" : "undefined",
+        "value" : "BFO_0000132",
+        "type" : "label"
+      }, {
+        "identifier" : "TV_pl",
+        "language" : "undefined",
+        "value" : "BFO_0000132",
+        "type" : "label"
+      } ],
+      "TV_vbg" : [ {
+        "identifier" : "TV_vbg",
+        "language" : "undefined",
+        "value" : "BFO_0000132ed",
+        "type" : "label"
+      }, {
+        "identifier" : "TV_vbg",
+        "language" : "undefined",
+        "value" : "BFO_0000132ed",
+        "type" : "label"
+      } ],
+      "TV_sg" : [ {
+        "identifier" : "TV_sg",
+        "language" : "undefined",
+        "value" : "BFO_0000132s",
+        "type" : "label"
+      }, {
+        "identifier" : "TV_sg",
+        "language" : "undefined",
+        "value" : "BFO_0000132s",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "BFO_0000132",
+      "en" : "part of occurrent"
+    },
+    "domain" : "41",
+    "attributes" : [ "external", "transitive", "object" ],
+    "id" : "232"
+  }, {
+    "range" : "68",
+    "domain" : "71",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "233"
+  }, {
+    "range" : "68",
+    "domain" : "70",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "234"
+  }, {
+    "range" : "68",
+    "domain" : "72",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "235"
+  }, {
+    "range" : "167",
+    "domain" : "168",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "236"
+  }, {
+    "range" : "14",
+    "domain" : "25",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "237"
+  }, {
+    "range" : "68",
+    "domain" : "69",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "238"
+  }, {
+    "range" : "167",
+    "domain" : "123",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "239"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/BFO_0000163",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "range" : "41",
+    "annotations" : {
+      "TV_pl" : [ {
+        "identifier" : "TV_pl",
+        "language" : "undefined",
+        "value" : "BFO_0000163",
+        "type" : "label"
+      } ],
+      "TV_vbg" : [ {
+        "identifier" : "TV_vbg",
+        "language" : "undefined",
+        "value" : "BFO_0000163ed",
+        "type" : "label"
+      } ],
+      "TV_sg" : [ {
+        "identifier" : "TV_sg",
+        "language" : "undefined",
+        "value" : "BFO_0000163s",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "BFO_0000163",
+      "en" : "material basis of at all times"
+    },
+    "domain" : "41",
+    "attributes" : [ "external", "object" ],
+    "id" : "240"
+  }, {
+    "range" : "43",
+    "domain" : "98",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "241"
+  }, {
+    "range" : "43",
+    "domain" : "144",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "242"
+  }, {
+    "range" : "43",
+    "domain" : "101",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "243"
+  }, {
+    "range" : "43",
+    "domain" : "188",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "244"
+  }, {
+    "range" : "130",
+    "domain" : "104",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "245"
+  }, {
+    "range" : "101",
+    "domain" : "207",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "246"
+  }, {
+    "range" : "101",
+    "domain" : "100",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "247"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/BFO_0000167",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "range" : "120",
+    "annotations" : {
+      "TV_vbg" : [ {
+        "identifier" : "TV_vbg",
+        "language" : "undefined",
+        "value" : "BFO_0000167ed",
+        "type" : "label"
+      }, {
+        "identifier" : "TV_vbg",
+        "language" : "undefined",
+        "value" : "BFO_0000167ed",
+        "type" : "label"
+      } ],
+      "TV_pl" : [ {
+        "identifier" : "TV_pl",
+        "language" : "undefined",
+        "value" : "BFO_0000167",
+        "type" : "label"
+      }, {
+        "identifier" : "TV_pl",
+        "language" : "undefined",
+        "value" : "BFO_0000167",
+        "type" : "label"
+      } ],
+      "TV_sg" : [ {
+        "identifier" : "TV_sg",
+        "language" : "undefined",
+        "value" : "BFO_0000167s",
+        "type" : "label"
+      }, {
+        "identifier" : "TV_sg",
+        "language" : "undefined",
+        "value" : "BFO_0000167s",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "BFO_0000167",
+      "en" : "has participant at all times"
+    },
+    "domain" : "44",
+    "attributes" : [ "someValues", "external", "object" ],
+    "id" : "248"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/BFO_0000054",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "range" : "43",
+    "annotations" : {
+      "TV_vbg" : [ {
+        "identifier" : "TV_vbg",
+        "language" : "undefined",
+        "value" : "BFO_0000054ed",
+        "type" : "label"
+      } ],
+      "TV_pl" : [ {
+        "identifier" : "TV_pl",
+        "language" : "undefined",
+        "value" : "BFO_0000054",
+        "type" : "label"
+      } ],
+      "TV_sg" : [ {
+        "identifier" : "TV_sg",
+        "language" : "undefined",
+        "value" : "BFO_0000054s",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "BFO_0000054",
+      "en" : "realized in"
+    },
+    "domain" : "145",
+    "attributes" : [ "allValues", "external", "object" ],
+    "id" : "249"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/BFO_0000052",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "range" : "120",
+    "annotations" : {
+      "TV_pl" : [ {
+        "identifier" : "TV_pl",
+        "language" : "undefined",
+        "value" : "BFO_0000052",
+        "type" : "label"
+      }, {
+        "identifier" : "TV_pl",
+        "language" : "undefined",
+        "value" : "BFO_0000052",
+        "type" : "label"
+      } ],
+      "TV_vbg" : [ {
+        "identifier" : "TV_vbg",
+        "language" : "undefined",
+        "value" : "BFO_0000052ed",
+        "type" : "label"
+      }, {
+        "identifier" : "TV_vbg",
+        "language" : "undefined",
+        "value" : "BFO_0000052ed",
+        "type" : "label"
+      } ],
+      "TV_sg" : [ {
+        "identifier" : "TV_sg",
+        "language" : "undefined",
+        "value" : "BFO_0000052s",
+        "type" : "label"
+      }, {
+        "identifier" : "TV_sg",
+        "language" : "undefined",
+        "value" : "BFO_0000052s",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "BFO_0000052",
+      "en" : "inheres in at all times"
+    },
+    "domain" : "67",
+    "attributes" : [ "someValues", "external", "object" ],
+    "id" : "250"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/BFO_0000117",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "range" : "139",
+    "annotations" : {
+      "TV_vbg" : [ {
+        "identifier" : "TV_vbg",
+        "language" : "undefined",
+        "value" : "BFO_0000117ed",
+        "type" : "label"
+      }, {
+        "identifier" : "TV_vbg",
+        "language" : "undefined",
+        "value" : "BFO_0000117ed",
+        "type" : "label"
+      } ],
+      "TV_pl" : [ {
+        "identifier" : "TV_pl",
+        "language" : "undefined",
+        "value" : "BFO_0000117",
+        "type" : "label"
+      }, {
+        "identifier" : "TV_pl",
+        "language" : "undefined",
+        "value" : "BFO_0000117",
+        "type" : "label"
+      } ],
+      "TV_sg" : [ {
+        "identifier" : "TV_sg",
+        "language" : "undefined",
+        "value" : "BFO_0000117s",
+        "type" : "label"
+      }, {
+        "identifier" : "TV_sg",
+        "language" : "undefined",
+        "value" : "BFO_0000117s",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "BFO_0000117",
+      "en" : "has occurrent part"
+    },
+    "domain" : "143",
+    "subproperty" : [ "95" ],
+    "attributes" : [ "someValues", "external", "transitive", "object" ],
+    "id" : "251"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/BFO_0000176",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "range" : "66",
+    "annotations" : {
+      "TV_pl" : [ {
+        "identifier" : "TV_pl",
+        "language" : "undefined",
+        "value" : "BFO_0000176",
+        "type" : "label"
+      }, {
+        "identifier" : "TV_pl",
+        "language" : "undefined",
+        "value" : "BFO_0000176",
+        "type" : "label"
+      } ],
+      "TV_vbg" : [ {
+        "identifier" : "TV_vbg",
+        "language" : "undefined",
+        "value" : "BFO_0000176ed",
+        "type" : "label"
+      }, {
+        "identifier" : "TV_vbg",
+        "language" : "undefined",
+        "value" : "BFO_0000176ed",
+        "type" : "label"
+      } ],
+      "TV_sg" : [ {
+        "identifier" : "TV_sg",
+        "language" : "undefined",
+        "value" : "BFO_0000176s",
+        "type" : "label"
+      }, {
+        "identifier" : "TV_sg",
+        "language" : "undefined",
+        "value" : "BFO_0000176s",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "BFO_0000176",
+      "en" : "part of continuant at some time"
+    },
+    "domain" : "68",
+    "attributes" : [ "someValues", "external", "object" ],
+    "id" : "252"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/BFO_0000055",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "range" : "2",
+    "annotations" : {
+      "TV_pl" : [ {
+        "identifier" : "TV_pl",
+        "language" : "undefined",
+        "value" : "BFO_0000055",
+        "type" : "label"
+      }, {
+        "identifier" : "TV_pl",
+        "language" : "undefined",
+        "value" : "BFO_0000055",
+        "type" : "label"
+      } ],
+      "TV_vbg" : [ {
+        "identifier" : "TV_vbg",
+        "language" : "undefined",
+        "value" : "BFO_0000055ed",
+        "type" : "label"
+      }, {
+        "identifier" : "TV_vbg",
+        "language" : "undefined",
+        "value" : "BFO_0000055ed",
+        "type" : "label"
+      } ],
+      "TV_sg" : [ {
+        "identifier" : "TV_sg",
+        "language" : "undefined",
+        "value" : "BFO_0000055s",
+        "type" : "label"
+      }, {
+        "identifier" : "TV_sg",
+        "language" : "undefined",
+        "value" : "BFO_0000055s",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "BFO_0000055",
+      "en" : "realizes"
+    },
+    "domain" : "130",
+    "attributes" : [ "someValues", "external", "object" ],
+    "id" : "253"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/BFO_0000167",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "range" : "46",
+    "annotations" : {
+      "TV_vbg" : [ {
+        "identifier" : "TV_vbg",
+        "language" : "undefined",
+        "value" : "BFO_0000167ed",
+        "type" : "label"
+      }, {
+        "identifier" : "TV_vbg",
+        "language" : "undefined",
+        "value" : "BFO_0000167ed",
+        "type" : "label"
+      } ],
+      "TV_pl" : [ {
+        "identifier" : "TV_pl",
+        "language" : "undefined",
+        "value" : "BFO_0000167",
+        "type" : "label"
+      }, {
+        "identifier" : "TV_pl",
+        "language" : "undefined",
+        "value" : "BFO_0000167",
+        "type" : "label"
+      } ],
+      "TV_sg" : [ {
+        "identifier" : "TV_sg",
+        "language" : "undefined",
+        "value" : "BFO_0000167s",
+        "type" : "label"
+      }, {
+        "identifier" : "TV_sg",
+        "language" : "undefined",
+        "value" : "BFO_0000167s",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "BFO_0000167",
+      "en" : "has participant at all times"
+    },
+    "domain" : "130",
+    "attributes" : [ "someValues", "external", "object" ],
+    "id" : "254"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/BFO_0000117",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "range" : "142",
+    "annotations" : {
+      "TV_vbg" : [ {
+        "identifier" : "TV_vbg",
+        "language" : "undefined",
+        "value" : "BFO_0000117ed",
+        "type" : "label"
+      }, {
+        "identifier" : "TV_vbg",
+        "language" : "undefined",
+        "value" : "BFO_0000117ed",
+        "type" : "label"
+      } ],
+      "TV_pl" : [ {
+        "identifier" : "TV_pl",
+        "language" : "undefined",
+        "value" : "BFO_0000117",
+        "type" : "label"
+      }, {
+        "identifier" : "TV_pl",
+        "language" : "undefined",
+        "value" : "BFO_0000117",
+        "type" : "label"
+      } ],
+      "TV_sg" : [ {
+        "identifier" : "TV_sg",
+        "language" : "undefined",
+        "value" : "BFO_0000117s",
+        "type" : "label"
+      }, {
+        "identifier" : "TV_sg",
+        "language" : "undefined",
+        "value" : "BFO_0000117s",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "BFO_0000117",
+      "en" : "has occurrent part"
+    },
+    "domain" : "202",
+    "subproperty" : [ "95" ],
+    "attributes" : [ "someValues", "external", "transitive", "object" ],
+    "id" : "255"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/BFO_0000117",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "range" : "140",
+    "annotations" : {
+      "TV_vbg" : [ {
+        "identifier" : "TV_vbg",
+        "language" : "undefined",
+        "value" : "BFO_0000117ed",
+        "type" : "label"
+      }, {
+        "identifier" : "TV_vbg",
+        "language" : "undefined",
+        "value" : "BFO_0000117ed",
+        "type" : "label"
+      } ],
+      "TV_pl" : [ {
+        "identifier" : "TV_pl",
+        "language" : "undefined",
+        "value" : "BFO_0000117",
+        "type" : "label"
+      }, {
+        "identifier" : "TV_pl",
+        "language" : "undefined",
+        "value" : "BFO_0000117",
+        "type" : "label"
+      } ],
+      "TV_sg" : [ {
+        "identifier" : "TV_sg",
+        "language" : "undefined",
+        "value" : "BFO_0000117s",
+        "type" : "label"
+      }, {
+        "identifier" : "TV_sg",
+        "language" : "undefined",
+        "value" : "BFO_0000117s",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "BFO_0000117",
+      "en" : "has occurrent part"
+    },
+    "domain" : "205",
+    "subproperty" : [ "95" ],
+    "attributes" : [ "someValues", "external", "transitive", "object" ],
+    "id" : "256"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/BFO_0000117",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "range" : "141",
+    "annotations" : {
+      "TV_vbg" : [ {
+        "identifier" : "TV_vbg",
+        "language" : "undefined",
+        "value" : "BFO_0000117ed",
+        "type" : "label"
+      }, {
+        "identifier" : "TV_vbg",
+        "language" : "undefined",
+        "value" : "BFO_0000117ed",
+        "type" : "label"
+      } ],
+      "TV_pl" : [ {
+        "identifier" : "TV_pl",
+        "language" : "undefined",
+        "value" : "BFO_0000117",
+        "type" : "label"
+      }, {
+        "identifier" : "TV_pl",
+        "language" : "undefined",
+        "value" : "BFO_0000117",
+        "type" : "label"
+      } ],
+      "TV_sg" : [ {
+        "identifier" : "TV_sg",
+        "language" : "undefined",
+        "value" : "BFO_0000117s",
+        "type" : "label"
+      }, {
+        "identifier" : "TV_sg",
+        "language" : "undefined",
+        "value" : "BFO_0000117s",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "BFO_0000117",
+      "en" : "has occurrent part"
+    },
+    "domain" : "204",
+    "subproperty" : [ "95" ],
+    "attributes" : [ "someValues", "external", "transitive", "object" ],
+    "id" : "257"
+  }, {
+    "range" : "144",
+    "domain" : "206",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "258"
+  }, {
+    "range" : "144",
+    "domain" : "205",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "259"
+  }, {
+    "range" : "130",
+    "domain" : "138",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "260"
+  }, {
+    "range" : "37",
+    "domain" : "94",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "261"
+  }, {
+    "range" : "144",
+    "domain" : "202",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "262"
+  }, {
+    "range" : "144",
+    "domain" : "201",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "263"
+  }, {
+    "range" : "144",
+    "domain" : "204",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "264"
+  }, {
+    "range" : "144",
+    "domain" : "203",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "265"
+  }, {
+    "range" : "144",
+    "domain" : "143",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "266"
+  }, {
+    "range" : "27",
+    "domain" : "93",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "267"
+  }, {
+    "range" : "27",
+    "domain" : "91",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "268"
+  }, {
+    "range" : "79",
+    "domain" : "190",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "269"
+  }, {
+    "range" : "188",
+    "domain" : "189",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "270"
+  }, {
+    "range" : "91",
+    "domain" : "92",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "271"
+  }, {
+    "range" : "85",
+    "domain" : "186",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "272"
+  } ]
+}

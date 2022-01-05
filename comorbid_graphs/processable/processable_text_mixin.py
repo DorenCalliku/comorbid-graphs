@@ -10,15 +10,15 @@ class ProcessableNodeMixin(object):
     def extract_labels(self, graphs=[]):
         if not hasattr(self, 'body'):
             return
-        labels = flatten([self.extract_from_graphs(graph.tree) for graph in graphs])
+        labels = flatten([self.extract_from_graph_tree(graph.tree) for graph in graphs])
         self.annotation_list = self.remove_overlapping_labels(labels+self.annotation_list)
 
-    def extract_from_graphs(self, graph):
+    def extract_from_graph_tree(self, gtree):
         if not self.body:
             return []
         list_labels = []
-        for node in PostOrderIter(graph):
-            if node == graph:
+        for node in PostOrderIter(gtree):
+            if node == gtree:
                 continue
             list_labels += [
                 {

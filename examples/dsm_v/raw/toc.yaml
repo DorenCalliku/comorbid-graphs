@@ -1,0 +1,987 @@
+---
+- name: Neurodevelopmental Disorders
+  code: 31
+  children:
+  - name: Intellectual Disabilities
+    code: 33
+    children:
+    - name: 'Intellectual Disability (Intellectual Developmental Disorder) '
+      code: 33
+      specify if:
+      - - Mild
+        - Moderate
+        - Severe
+        - Profound
+    - name: Global Developmental Delay
+      code: 41
+    - name: Unspecified Intellectual Disabilit (Intellectual Developmental Disorder)
+      code: 41
+  - name: Communication Disorders
+    code: 41
+    children:
+    - name: Language Disorder
+      extended name: 'Intellectual Disability (Intellectual Developmental Disorder) '
+      code: 42
+      severity:
+      - Mild
+      - Moderate
+      - Severe
+      - Profound
+    - name: Speech Sound Disorder
+      code: 44
+    - name: Childhood-Onset Fluency Disorder (Stuttering)
+      code: 45
+    - name: Social (Pragmatic) Communication Disorder
+      code: 47
+    - name: Unspecified Communication Disorder
+      code: 49
+  - name: Autism Spectrum Disorder
+    code: 50
+    children:
+    - name: Autism Spectrum Disorder
+      code: 50
+      specify if:
+      - - medical
+        - genetic
+        - environmental
+      - - requiring very substantial support
+        - requiring substantial support
+        - requiring support
+      - - intellectual impairment
+        - language impairment
+        - catatonia
+  - name: Attention-Deficit/Hyperactivity Disorder 
+    code: 59
+    children:
+    - name: Attention-Deficit/Hyperactivity Disorder 
+      code: 59
+      specify if:
+      - - Combined presentation
+        - Predominantly inattentive presentation
+        - Predominantly hyperactive/impulsive presentation
+      - -  partial remission
+      - - Mild
+        - Moderate
+        - Severe
+    - name: Other Specified Attention-Deficit/Hyperactivity Disorder 
+      code: 65
+    - name: Unspecified Attention-Deficit/Hyperactivity Disorder  
+      code: 66
+  - name: Specific Learning  Disorder 
+    code: 66
+    children:
+    - name: Specific Learning Disorder 
+      code: 66
+      specify if:
+      - - word readingaccuracy
+        - reading rate or fluency
+        - reading comprehension
+      - - spelling accuracy
+        - grammar 
+        - punctuation accuracy
+        - clarity 
+        - organization of written expression
+      - - number sense
+        - memorization of arithmetic facts
+        - accurate math reasoning
+      - - Mild 
+        - Moderate
+        - Severe 
+  - name: Motor Disorders  
+    code: 74
+    children:
+    - name: Developmental Coordination Disorder   
+      code: 74
+    - name: Stereotypic Movement Disorder    
+      code: 77
+      specify if:
+      - - With self-injurious behavior
+        - Without self-injurious behavior
+      - - a known medical or genetic condition
+        - neuro­developmental disorder
+        - environmental factor 
+      - - Mild 
+        - Moderate
+        - Severe 
+    - name: Tourette's Disorder (Tic Disorders)    
+      code: 81
+    - name: Persistent (Chronic) Motor or Vocal Tic Disorder     
+      code: 81
+      specify if:
+      - - motor tics only
+        - vocal tics only
+    - name: Provisional Tic Disorder     
+      code: 81
+    - name: Other Specified Tic Disorder     
+      code: 85
+    - name: Unspecified Tic Disorder     
+      code: 85
+  - name: Other Neurodevelopmental  Disorders  
+    code: 86
+    children:
+    - name: Other Specified Neurodevelopmental Disorder    
+      code: 86
+    - name: Unspecified Neurodevelopmental Disorder    
+      code: 86
+- name: Schizophrenia  Spectrum and  Other Psychotic Disorders 
+  code: 87
+  children:
+  - name: Schizotypal (Personality) Disorder 
+    code: 90
+  - name: Delusional Disorder 
+    code: 90
+    specify whether: 
+    - -  Erotomanie type
+      -  Grandiose type
+      -  Jealous type
+      -  Persecu­tory type
+      -  Somatic type 
+      -  Mixed type
+      -  Unspecified type
+    specify if:
+    - -  bizarre content
+  - name: Brief Psychotic Disorder 
+    code: 94
+    specify if: 
+    - - with marked stressor(s)
+      - without marked stressor(s)
+      - with postpartum onset
+  - name: Schizophreniform Disorder 
+    code: 96
+    specify if:   
+    - - With good prognostic feature
+      - Without good prognostic feature
+  - name: Schizophrenia 
+    code: 99
+  - name: Schizoaffective Disorder
+    code: 105
+    Specify whether:
+    - - bipolar type
+      - depressive type
+  - name: Substance/Medication-Induced Psychotic Disorder
+    code: 110
+    specify if: 
+    - - With onset during intoxication
+      - With onset during withdrawal
+  - name: Psychotic Disorder Due to Another Medical Condition
+    code: 115
+    specify wether:
+    - - With delusions 
+      - With hallucinations
+  - name: Catatonia Associated With Another Mental Disorder (CatatoniaSpecifier)
+    code: 119
+  - name: Catatonic Disorder Due to Another Medical Condition 
+    code: 120
+  - name: Unspecified Catatonia  
+    code: 121
+  - name: Other Specified Schizophrenia Spectrum and Other Psychotic Disorder   
+    code: 122
+  - name: Unspecified Schizophrenia Spectrum and Other Psychotic Disorder    
+    code: 122
+- name: Bipolar and  Related  Disorders  
+  code: 123
+  children:
+  - name: Bipolar I Disorder
+    code: 123
+  - name: Bipolar II Disorder
+    code: 132
+  - name: Cyclothymic Disorder 
+    code: 139
+  - name: Substance/Medication-Induced Bipolar and Related Disorder 
+    code: 142
+  - name: Bipolar and Related Disorder Due to Another Medical Condition 
+    code: 145
+  - name: Other Specified Bipolar and Related Disorder  
+    code: 148
+  - name: Unspecified Bipolar and Related Disorder   
+    code: 149
+- name: Depressive  Disorders 
+  code: 155
+  children:
+    - name: Disruptive Mood Dysregulation Disorder    
+      code: 156
+    - name: Major Depressive Disorder
+      code: 160
+    - name: Persistent Depressive Disorder (Dysthymia)
+      code: 160
+    - name: Premenstrual Dysphoric Disorder 
+      code: 171
+    - name: Substance/Medication-Induced Depressive Disorder 
+      code: 175
+    - name: Depressive Disorder Due to Another Medical Condition  
+      code: 180
+    - name: Other Specified Depressive Disorder   
+      code: 183
+    - name: Unspecified Depressive Disorder   
+      code: 184
+- name: Anxiety  Disorders  
+  code: 189
+  children:
+    - name: Separation Anxiety Disorder     
+      code: 190
+    - name: Selective Mutism     
+      code: 195
+    - name: Specific Phobia      
+      code: 197
+    - name: Social Anxiety Disorder (Social Phobia)      
+      code: 202
+    - name: Panic Disorder      
+      code: 208
+    - name: Panic Attack Specifier       
+      code: 214
+    - name: Agoraphobia        
+      code: 217
+    - name: Generalized Anxiety Disorder         
+      code: 222
+    - name: Substance/Medication-Induced Anxiety Disorder          
+      code: 226
+    - name: Anxiety Disorder Due to Another Medical Condition           
+      code: 230
+    - name: Other Specified Anxiety Disorder            
+      code: 233
+    - name: Unspecified Anxiety Disorder             
+      code: 233
+- name: Obsessive-Compulsive  and  Related  Disorders    
+  code: 235
+  children:
+    - name: Obsessive-Compulsive Disorder             
+      code: 237
+    - name: Body Dysmorphic Disorder             
+      code: 242
+    - name: Hoarding Disorder             
+      code: 247
+    - name: Trichotillomania (Hair-Pulling Disorder)             
+      code: 251
+    - name: Excoriation (Skin-Picking) Disorder             
+      code: 254
+    - name: Substance/Medication-Induced Obsessive-Compulsive and Related Disorder             
+      code: 257
+    - name: Obsessive-Compulsive and Related Disorder Due to Another Medical Condition              
+      code: 260
+    - name: Other Specified Obsessive-Compulsive and Related Disorder              
+      code: 263
+    - name: Unspecified Obsessive-Compulsive and Related Disorder               
+      code: 264
+- name: Trauma and  Stressor-Related  Disorders     
+  code: 265
+  children:
+    - name: Reactive Attachment Disorder              
+      code: 265
+    - name: Disinhibited Social Engagement Disorder              
+      code: 268
+    - name: Posttraumatic Stress Disorder (includes Posttraumatic Stress Disorder for Children 6 Years and Younger)               
+      code: 271
+    - name: Acute Stress Disorder             
+      code: 280
+    - name: Adjustment Disorders              
+      code: 286
+    - name: Other Specified Trauma- and Stressor-Related Disorder           
+      code: 289
+    - name: Unspecified Trauma- and Stressor-Related Disorder             
+      code: 290
+- name: Dissociative  Disorders      
+  code: 291
+  children:
+    - name: Dissociative Identity Disorder               
+      code: 292
+    - name: Dissociative Amnesia              
+      code: 298
+    - name: Depersonalization/Derealization Disorder               
+      code: 302
+    - name: Other Specified Dissociative Disorder             
+      code: 306
+    - name: Unspecified Dissociative Disorder             
+      code: 307
+- name: Somatic  Symptom  and  Related  Disorders       
+  code: 309
+  children:
+    - name: Somatic Symptom Disorder               
+      code: 311
+    - name: Illness Anxiety Disorder                
+      code: 315
+    - name: Conversion Disorder (Functional Neurological SymptomDisorder)                 
+      code: 318
+    - name: Psychological Factors Affecting Other Medical Conditions                 
+      code: 322
+    - name: Factitious Disorder (includes Factitious Disorder Imposed on Self, Factitious Disorder Imposed on Another)                  
+      code: 324
+    - name: Other Specified Somatic Symptom and Related Disorder                
+      code: 327
+    - name: Unspecified Somatic Symptom and Related Disorder                 
+      code: 327
+- name: Feeding  and  Eating  Disorders        
+  code: 329
+  children:
+    - name: Pica                
+      code: 329
+    - name: Rumination Disorder              
+      code: 332
+    - name: Avoidant/Restrictive Food Intake Disorder              
+      code: 334
+    - name: Anorexia Nervosa             
+      code: 338
+    - name: Bulimia Nervosa          
+      code: 345
+    - name: Binge-Eating Disorder        
+      code: 350
+    - name: Other Specified Feeding or Eating Disorder       
+      code: 353
+    - name: Unspecified Feeding or Eating Disorder        
+      code: 354
+- name: Elimination  Disorders         
+  code: 355
+  children:
+    - name: Enuresis                 
+      code: 355
+    - name: Encopresis                 
+      code: 357
+    - name: Other Specified Elimination Disorder                  
+      code: 359
+    - name: Unspecified Elimination Disorder                  
+      code: 360
+- name: Sleep-Wake  Disorders         
+  code: 361
+  children:
+    - name: Insomnia Disorder                 
+      code: 362
+    - name: Hypersomnolence Disorder                
+      code: 368
+    - name: Narcolepsy            
+      code: 372
+    - name: Breathing-Related Sleep Disorders
+      code: 378
+      children:
+      - name: Obstructive Sleep Apnea Hypopnea            
+        code: 378
+      - name: Central Sleep Apnea             
+        code: 383
+      - name: Sleep-Related Hypoventilation              
+        code: 387
+      - name: Circadian Rhythm Sleep-Wake Disorders              
+        code: 390
+        children: 
+        - name: Delayed sleep phase type               
+          code: 391
+        - name: Advanced sleep phase type                
+          code: 393
+        - name: Irregular sleep-wake type                 
+          code: 394
+        - name: Non-24-hour sleep-wake type                
+          code: 396
+        - name: Shift work type                
+          code: 397
+        - name: Unspecified type              
+          code: 397
+      - name: Parasomnias               
+        code: 399
+        children: 
+        - name: Non-Rapid Eye Movement Sleep Arousal Disorders                
+          code: 399
+        - name: Nightmare Disorder              
+          code: 404
+        - name: Rapid Eye Movement Sleep Behavior Disorder             
+          code: 407
+        - name: Restless Legs Syndrome               
+          code: 410
+        - name: Substance/Medication-Induced Sleep Disorder                
+          code: 413
+        - name: Other Specified Insomnia Disorder              
+          code: 420
+        - name: Unspecified Insonmia Disorder              
+          code: 420
+        - name: Other Specified Hypersomnolence Disorder              
+          code: 421
+        - name: Unspecified Hypersomnolence Disorder            
+          code: 421
+        - name: Other Specified Sleep-Wake Disorder            
+          code: 421
+        - name: Unspecified Sleep-Wake Disorder               
+          code: 422
+- name: Sexual  Dysfunctions         
+  code: 423
+  children:
+    - name: Delayed Ejaculation                 
+      code: 424
+    - name: Erectile Disorder                 
+      code: 426
+    - name: Female Orgasmic Disorder                 
+      code: 429
+    - name: Female Sexual Interest/Arousal Disorder                 
+      code: 433
+    - name: Genito-Pelvic Pain/Penetration Disorder                 
+      code: 337
+    - name: Male Hypoactive Sexual Desire Disorder                 
+      code: 440
+    - name: Premature (Early) Ejaculation                 
+      code: 443
+    - name: Substance/Medication-Induced Sexual Dysfunction                 
+      code: 446
+    - name: Other Specified Sexual Dysfunction                  
+      code: 450
+    - name: Unspecified Sexual Dysfunction                
+      code: 450
+- name: Gender  Dysplioria          
+  code: 451
+  children:
+    - name: Gender Dysphoria                  
+      code: 452
+    - name: Other Specified Gender Dysphoria            
+      code: 459
+    - name: Unspecified Gender Dysphoria                  
+      code: 459
+- name: Disruptive,  Impulse-Control, and  Conduct  Disorders           
+  code: 461
+  children:
+    - name: Oppositional Defiant Disorder                   
+      code: 462
+    - name: Intermittent Explosive Disorder                 
+      code: 466
+    - name: Conduct Disorder                  
+      code: 469
+    - name: Antisocial Personality Disorder                   
+      code: 476
+    - name: Pyromania                    
+      code: 476
+    - name: Kleptomania                  
+      code: 478
+    - name: Other Specified Disruptive, Impulse-Control, and Conduct Disorder                    
+      code: 479
+    - name: Unspecified Disruptive, Impulse-Control, and Conduct Disorder                  
+      code: 480
+- name: Substance-Related and Addictive Disorders
+  code: 481
+  children:
+  - name: Substance-Related Disorders
+    code: 483
+    children:
+    - name: Alcohol-Related Disorders
+      code: 490
+      children:
+      - name: Alcohol Use Disorder
+        code: 490
+      - name: Alcohol Intoxication
+        code: 497
+      - name: Alcohol Withdrawal
+        code: 499
+      - name: Other Alcohol-Induced Disorders
+        code: 502
+      - name: Unspecified Alcohol-Related Disorder
+        code: 503
+    - name: Caffeine-Related Disorders
+      code: 503
+      children: 
+      - name: Caffeine Intoxication
+        code: 503
+      - name: Caffeine Withdrawal
+        code: 506
+      - name: Other Caffeine-Induced Disorders
+        code: 508
+      - name: Unspecified Caffeine-Related Disorder
+        code: 509
+    - name: Cannabis-Related  Disorders 
+      code: 509
+      children:
+      - name: Cannabis Use Disorder
+        code: 509
+      - name: Cannabis Intoxication
+        code: 516
+      - name: Cannabis Withdrawal
+        code: 517
+      - name: Other Cannabis-Induced Disorders
+        code: 519
+      - name: Unspecified Cannabis-Related Disorder
+        code: 519
+    - name: Hallucinogen-Related Disorders
+      code: 520
+      children:
+      - name: Phencyclidine Use Disorder
+        code: 520
+      - name: Other Hallucinogen Use Disorder
+        code: 523
+      - name: Phencyclidine Intoxication
+        code: 527
+      - name: Other Hallucinogen Intoxication
+        code: 529
+      - name: Hallucinogen Persisting Perception Disorder
+        code: 531
+      - name: Other Phencyclidine-Induced Disorders
+        code: 531
+      - name: Other Hallucinogen-Induced Disorders
+        code: 533
+      - name: Unspecified Phencyclidine-Related Disorder
+        code: 533
+      - name: Unspecified Hallucinogen-Related Disorder
+        code: 533
+    - name: Inhalant-Related Disorders
+      code: 533
+      children:
+      - name: Inhalant Use Disorder
+        code: 533
+      - name: Inhalant Intoxication
+        code: 538
+      - name: Other Inhalant-Induced Disorders
+        code: 540
+      - name: Unspecified Inhalant-Related Disorder
+        code: 540
+    - name: Opioid-Related Disorders
+      code: 540
+      children:
+      - name: Opioid Use Disorder
+        code: 541
+      - name: Opioid Intoxication
+        code: 546
+      - name: Opioid Withdrawal
+        code: 547
+      - name: Other Opioid-Induced Disorders
+        code: 549
+      - name: Unspecified Opioid-Related Disorder
+        code:  550
+    - name: Sedative-, Hypnotic-, or Anxiolytic-Related Disorders
+      code: 550
+      children:
+      - name: Sedative, Hypnotic, or Anxiolytic Use Disorder
+        code: 550
+      - name: Sedative, Hypnotic, or Anxiolytic Intoxication
+        code: 556
+      - name: Sedative, Hypnotic, or Anxiolytic Withdrawal
+        code: 557
+      - name: Other Sedative-, Hypnotic-, or Anxiolytic-Induced Disorders
+        code: 560
+      - name: Unspecified Sedative-, Hypnotic-, or Anxiolytic-Related Disorder
+        code: 560
+    - name: Stimulant-Related Disorders
+      code: 561
+      children:
+      - name: Stimulant Use Disorder
+        code: 561
+      - name: Stimulant Intoxication
+        code: 567
+      - name: Stimulant Withdrawal
+        code: 569
+      - name: Other Stimulant-Induced Disorders
+        code: 570
+      - name: Unspecified Stimulant-Related Disorder
+        code: 570
+    - name: Tobacco-Related Disorders
+      code: 571
+      children:
+      - name: Tobacco Use Disorder
+        code: 571
+      - name: Tobacco Withdrawal
+        code: 575
+      - name: Other Tobacco-Induced Disorders
+        code: 576
+      - name: Unspecified Tobacco-Related Disorder
+        code: 577
+    - name: Other (or Unknown) Substance-Related Disorders
+      code: 577
+      children:
+      - name: Other (or Unknown) Substance Use Disorder
+        code: 577
+      - name: Other (or Unknown) Substance Intoxication
+        code: 581
+      - name: Other (or Unknown) Substance Withdrawal
+        code: 583
+      - name: Other (or Unknown) Substance-Induced Disorders 
+        code: 584
+      - name: Unspecified Other (or Unknovm) Substance-Related Disorder 
+        code: 585
+  - name: Non-Substance-Related Disorders
+    code: 585
+    children:
+    - name: Gambling Disorder
+      code: 585
+- name: Neurocognitive  Disorders
+  code: 596
+  children:
+  - name: Delirium
+    code: 596
+  - name: Other Specified Delirium
+    code: 602
+  - name: Unspecified Delirium
+    code: 602
+  - name: Major and Mild Neurocognitive Disorders
+    code: 602
+    children:
+    - name: Major Neurocognitive Disorder
+      code: 602
+    - name: Mild Neurocognitive Disorder
+      code: 605
+    - name: Major or Mild Neurocognitive Disorder Due to Alzheimer’s Disease 
+      code: 611
+    - name: Major or Mild Frontotemporal Neurocognitive Disorder
+      code: 614
+    - name: Major or Mild Neurocognitive Disorder With Lewy Bodies
+      code: 618
+    - name: Major or Mild Vascular Neurocognitive Disorder
+      code: 621
+    - name: Major or Mild Neurocognitive Disorder Due to Traumatic Brain Injury
+      code: 624
+    - name: Substance/Medication-Induced Major or Mild Neurocognitive Disorder
+      code: 627
+    - name: Major or Mild  Neurocognitive  Disorder Due to  HIV  Infection 
+      code: 632
+    - name: Major or Mild  Neurocognitive  Disorder Due to  Prion  Disease
+      code: 634
+    - name: Major or Mild  Neurocognitive  Disorder Due to  Parkinson’s  Disease
+      code: 636
+    - name: Major or Mild  Neurocognitive  Disorder Due to  Huntington’s  Disease
+      code: 638
+    - name: Major or Mild  Neurocognitive  Disorder Due to Another Medical  Condition 
+      code: 641
+    - name: Major or Mild  Neurocognitive  Disorder Due to  Multiple  Etiologies 
+      code: 642
+    - name: Unspecified  Neurocognitive  Disorder 
+      code: 643
+- name: Personality Disorders 
+  code: 645
+  children:
+  - name: Cluster A Personality Disorders
+    children:
+    - name: Paranoid Personality Disorder 
+      code: 649
+    - name: Schizoid Personality Disorder 
+      code: 652
+    - name: Schizotypal Personality Disorder  
+      code: 655
+  - name: Cluster B Personality Disorders
+    children:
+    - name: Antisocial Personality Disorder
+      code: 659
+    - name: Borderline Personality Disorder 
+      code: 663
+    - name: Histrionic Personality Disorder 
+      code: 667
+    - name: Narcissistic Personality Disorder 
+      code: 669
+  - name: Cluster C Personality Disorders
+    code: 672
+    children:
+    - name: Avoidant Personality Disorder 
+      code: 672
+    - name: Dependent Personality Disorder
+      code: 675
+    - name: Obsessive-Compulsive Personality Disorder 
+      code: 678
+  - name: Other Personality Disorders
+    children:
+    - name: Personality Change Due to Another Medical Condition 
+      code: 682
+    - name: Other Specified Personality Disorder 
+      code: 684
+    - name: Unspecified Personality Disorder
+      code: 684
+- name: Paraphilic  Disorders 
+  code: 685
+  children:
+  - name: Voyeuristic Disorder
+    code: 686
+  - name: Exhibitionistic Disorder
+    code: 691
+  - name: Frotteuristic Disorder 
+    code: 694
+  - name: Sexual Masochism Disorder
+    code: 695
+  - name: Sexual Sadism Disorder
+    code: 697
+  - name: Pedophilic Disorder 
+    code: 700
+  - name: Fetishistic Disorder
+    code: 702
+  - name: Transvestic Disorder
+    code: 702
+  - name: Other Specified Paraphilic Disorder 
+    code: 705
+  - name: Unspecified Paraphilic Disorder
+    code: 705
+- name: Other Mental Disorders
+  code: 707
+  children:
+  - name: Other Specified Mental Disorder Due to Another Medical Condition
+    code: 707
+  - name: Unspecified Mental Disorder Due to Another Medical Condition
+    code: 708
+  - name: Other Specified Mental Disorder 
+    code: 708
+  - name: Unspecified Mental Disorder 
+    code: 708
+- name: Medication-Induced  Movement  Disorders and Other Adverse  Effects of Medication
+  code: 709
+  children:
+  - name: Neuroleptic-Induced Parkinsonism 
+    code: 709
+  - name: Other Medication-Induced Parkinsonism
+    code: 709
+  - name: Neuroleptic Malignant Syndrome 
+    code: 711
+  - name: Medication-Induced Acute Dystonia  
+    code: 711
+  - name: Medication-Induced Acute Akathisia  
+    code: 712
+  - name: Tardive Dyskinesia 
+    code: 712
+  - name: Tardive Dystonia 
+    code: 712
+  - name: Tardive Akathisia 
+    code: 712
+  - name: Medication-Induced Postural Tremor  
+    code: 712
+  - name: Other Medication-Induced Movement Disorder   
+    code: 712
+  - name: Antidepressant Discontinuation Syndrome  
+    code: 712    
+  - name: Other Adverse Effect of Medication (
+    code: 714
+- name: Other Conditions That May Be a Focus of Clinicai Attention
+  code: 715
+  children:
+  - name: Relational Problems
+    code: 715
+    children:
+    - name: Parent-Child Relational Problem
+      code: 715
+    - name: Sibling Relational Problem
+      code: 716
+    - name: Upbringing Away From Parents 
+      code: 716
+    - name: Child Affected by Parental Relationship Distress  
+      code: 716
+    - name: Relationship Distress With Spouse or Intimate Partner (
+      code: 716
+    - name: Disruption of Family by Separation or Divorce
+      code: 716
+    - name: High Expressed Emotion Level Within Family 
+      code: 716
+    - name: Uncomplicated Bereavement
+      code: 716
+  - name: Abuse and Neglect
+    code: 717
+    children:
+    - name: Child Maltreatment and Neglect Problems
+      code: 717
+      children:
+      - name: Child Physical Abuse
+        code: 717
+        children:
+        - name: Children Physical Abuse, Confirmed
+          code: 717
+        - name: Children Physical Abuse, Suspected
+          code: 717
+        - name: Other Circumstances to Child Physical Abuse
+          code: 718
+      - name: Child Sexual Abuse
+        code: 718
+        children:
+        - name: Children Sexual Abuse, Confirmed
+          code: 718
+        - name: Children Sexual Abuse, Suspected
+          code: 718
+        - name: Other Circumstances to Child Sexual Abuse
+          code: 718
+      - name: Child Neglect
+        code: 718
+        children:
+        - name: Children Neglect, Confirmed
+          code: 718
+        - name: Children Neglect, Suspected
+          code: 719
+        - name: Other circumstances to Child Neglect
+          code: 719
+      - name: Child Psychological Abuse
+        code: 719
+        children:
+        - name: Children Psychological Abuse, Confirmed
+          code: 719
+        - name: Children Psychological Abuse, Suspected
+          code: 719
+        - name: Other Circumstances to Child Psychological Abuse
+          code: 719
+    - name: Adult Maltreatment and Neglect Problems
+      code: 720
+      children:
+      - name: Spouse or Partner Violence, Physical 
+        code: 720
+        children:
+        - name: Spouse or Partner Violence, Physical, Confirmed
+          code: 720
+        - name: Spouse or Partner Violence, Physical, Suspected
+          code: 720
+        - name: Other Circumstances Related to Spouse or Partner Violence, Physical 
+          code: 720
+      - name: Spouse or Partner Violence, Sexual 
+        code: 720
+        children:
+        - name: Spouse or Partner Violence, Sexual, Confirmed
+          code: 720
+        - name: Spouse or Partner Violence, Sexual, Suspected
+          code: 720
+        - name: Other Circumstances Related to Spouse or Partner Violence, Sexual 
+          code: 720
+      - name: Spouse or Partner, Neglect 
+        code: 721
+        children:
+        - name: Spouse or Partner Neglect, Confirmed
+          code: 721
+        - name: Spouse or Partner Neglect, Suspected
+          code: 721
+        - name: Other Circumstances Related to Spouse or Partner Neglect
+          code: 721
+      - name: Spouse or Partner Violence, Psychological 
+        code: 721
+        children:
+        - name: Spouse or Partner Violence, Psychological, Confirmed
+          code: 721
+        - name: Spouse or Partner Violence, Psychological, Suspected
+          code: 721
+        - name: Other Circumstances Related to Spouse or Partner Abuse, Psychological 
+          code: 721
+    - name: Adult Abuse by Nonspouse or Nonpartner
+      code: 722
+      children:
+      - name: Adult Physical Abuse by Nonspouse or Nonpartner, Confirmed
+        code: 722
+      - name: Adult Physical Abuse by Nonspouse or Nonpartner, Suspected
+        code: 722
+      - name: Adult Sexual Abuse by Nonspouse or Nonpartner, Confirmed 
+        code: 722
+      - name: Adult Sexual Abuse by Nonspouse or Nonpartner, Suspected
+        code: 722
+      - name: Adult Psychological Abuse by Nonspouse or Nonpartner, Confirmed 
+        code: 722
+      - name: Adult Psychological Abuse by Nonspouse or Nonpartner, Suspected
+        code: 722
+      - name: Other Circumstances Related to Adult Abuse by Nonspouse or Nonpartner, Confirmed 
+        code: 722
+  - name: Educational and Occupational Problems
+    code: 723
+    children:
+    - name: Educational  Problems
+      code: 723
+      children:
+      - name: Academic or Educational Problem
+        code: 723
+    - name: Occupational Problems
+      code: 723
+      children:
+      - name: Problem Related to Current Military Deployment Status
+        code: 723
+      - name: Other Problem Related to Employment
+        code: 723
+    - name: Housing and Economic Problems
+      code: 723
+      children:
+      - name: Housing Problems
+        code: 723
+        children:
+        - name: Homelessness
+          code: 723
+        - name: Inadequate Housing
+          code: 723
+        - name: Discord with Neighbor, Lodger, or Landlord
+          code: 723
+        - name: Problem Related to Living in a Residential Institution
+          code: 723
+      - name: Economic Problems
+        code: 724
+        children:
+        - name: Lack of Adequate Food or Safe Drinking Water
+          code: 724
+        - name: Extreme Poverty
+          code: 724
+        - name: Low Income
+          code: 724
+        - name: Insufficient Social Insurance or Welfare Support 
+          code: 724
+        - name: Unspecified Housing or Economic Problem
+          code: 724
+      - name: Other Problems Related to the Social Environment 
+        code: 724
+        children:
+        - name: Phase of Life Problem
+          code: 724
+        - name: Problem Related to Living Alone
+          code: 724
+        - name: Acculturation Difficulty
+          code: 724
+        - name: Social Exclusion or Rejection
+          code: 724
+        - name: Target of (Perceived) Adverse Discrimination or Persecution 
+          code: 724
+        - name: Unspecified Problem Related to Social Environment
+          code: 724
+      - name: Problems Related to Crime or Interaction With the  Legal System
+        code: 725
+        children:
+        - name: Victim of Crime
+          code: 725
+        - name: Conviction in Civil or Criminal Proceedings Without Imprisonment
+          code: 725
+        - name: Imprisonment or Other Incarceration 
+          code: 725
+        - name: Problems Related to Release From Prison 
+          code: 725
+        - name: Problems Related to Other Legal Circumstances
+          code: 725
+      - name: Other Health Service Encounters for Counseling and Medical Advice 
+        code: 725
+        children:
+        - name: Sex Counseling
+          code: 725
+        - name: Other Counseling or Consultation
+          code: 725
+      - name: Problems Related to Other Psychosocial, Personal, and Environmental Circumstances
+        code: 725
+        children:
+        - name: Religious or Spiritual Problem
+          code: 725
+        - name: Problems Related to Unwanted Pregnancy 
+          code: 725
+        - name: Problems Related to Multiparity 
+          code: 725
+        - name: Discord With Social Service Provider, Including Probation Officer, Case Manager, or Social Services Worker
+          code: 725
+        - name: Victim of Terrorism or Torture 
+          code: 725
+        - name: Exposure to Disaster, War, or Other Hostilities 
+          code: 725
+        - name: Other Problem Related to Psychosocial Circumstances 
+          code: 725
+        - name: Unspecified Problem Related to Unspecified Psychosocial Circumstances 
+          code: 725
+      - name: Other Circumstances of Personal History
+        code: 726
+        children:
+        - name: Other Personal History of Psychological Trauma
+          code: 726
+        - name: Personal History of Self-Harm
+          code: 726
+        - name: Personal History of Military Deployment 
+          code: 726
+        - name: Other Personal Risk Factors 
+          code: 726
+        - name: Problem Related to Lifestyle
+          code: 726
+        - name: Adult Antisocial Behavior 
+          code: 726
+        - name: Child or Adolescent Antisocial Behavior 
+          code: 726
+      - name: Problems  Related to Access to  Medical and  Other Health  Care
+        code: 726
+        children:
+        - name: Unavailability or Inaccessibility of Health Care Facilities
+          code: 726
+        - name: Unavailability or Inaccessibility of Other Helping Agencies 
+          code: 726
+      - name: Nonadherence to  Medical Treatment 
+        code: 726
+        children:
+        - name: Nonadherence to Medical Treatment 
+          code: 726
+        - name: Overweight or Obesity
+          code: 726
+        - name: Malingering
+          code: 726
+        - name: Wandering Associated With a Mental Disorder
+          code: 727
+        - name: Borderline Intellectual Functioning
+          code: 727
