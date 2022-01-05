@@ -4,7 +4,7 @@ setup(
     name="comorbid-graphs",
     version="0.0.1",
     description="A package for quick analysis of graphical data. Can load from ontology-json.",
-    url="",
+    url="https://github.com/DorenCalliku/comorbid-graphs",
     author="DorenCalliku",
     author_email="doren.calliku01@universitadipavia.it",
     license="",  # TODO add

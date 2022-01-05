@@ -1,16 +1,16 @@
 from anytree import Node
-from .mixins.visualizable_mixin import VisualizableMixin
-from .searchable import LBLNodeMixin, ScorableNodeMixin
+from .searchable import LBLNodeMixin, FilterableNodeMixin
 from .processable import LabelHandlerMixin, ProcessableNodeMixin
+from .mixins.visualizable_mixin import VisualizableMixin
 
 
 class ComorbidGraphNode(
-    Node,
-    VisualizableMixin,
-    ScorableNodeMixin,
+    Node,                  # anytree
+    FilterableNodeMixin,   # searchable group
     LBLNodeMixin,
+    ProcessableNodeMixin,  # processing group
     LabelHandlerMixin,
-    ProcessableNodeMixin,
+    VisualizableMixin,     # visualizable
 ):
     def __init__(self, *args, **kwargs):
         u"""Quick Initializer for testing and defaulting"""

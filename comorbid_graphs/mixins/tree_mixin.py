@@ -10,8 +10,8 @@ from anytree.exporter import DictExporter
 class AnyTreeMixin(object):
     def import_tree(self, json_data, node_type=Node):
         # TODO: testing gives error on some kind of ontology
-        if 'name' not in json_data:
-            json_data['name'] = 'default'
+        if "name" not in json_data:
+            json_data["name"] = "default"
         importer = DictImporter(node_type)
         return importer.import_(json_data)
 
@@ -20,11 +20,14 @@ class AnyTreeMixin(object):
         return DictExporter().export(node)
 
     def export(self):
+        for node in PreOrderIter(self.tree):
+            if hasattr(node, 'old_parent'):
+                node.old_parent = None
         return type(self).export_node(self.tree)
 
     def find_node(self, node_name, pos=0):
         if not node_name:
-            raise Exception('Node not provided.')
+            raise Exception("Node not provided.")
         found_val = findall(
             self.tree, filter_=lambda node: node.name.lower() == node_name.lower()
         )
@@ -40,25 +43,39 @@ class AnyTreeMixin(object):
 
 
 class AnyTreeIOMixin(object):
-
     @classmethod
-    def generate_tree_from_node(cls, node, maxlevel):
-        """ 
+    def generate_tree_from_node(cls, node, maxlevel, include_score=False, top=None):
+        """
         print all nodes to be able to
         see which ones are the ones we need
         """
+        count = 0
         with io.StringIO() as buf, redirect_stdout(buf):
-            for pre, _, node in RenderTree(node, maxlevel=maxlevel):
-                print("%s%s" % (pre, node.name))
+            for pre, _, node in RenderTree(node, maxlevel=maxlevel, childiter=cls.order_by_score):
+                if include_score:
+                    print("%s%s - %s" % (pre, node.name, str(node.accumulative_score())))
+                else:
+                    print("%s%s" % (pre, node.name))
+                if top:
+                    count += 1
+                    if count > top:
+                        print("...")
+                        break
             return buf.getvalue()
 
-    def explore(self, node_name=None, maxlevel=None):
+    def explore(self, node_name=None, maxlevel=None, include_score=False, top=None):
         if not node_name:
             node_name = self.tree.name
         node = self.find_node(node_name)
         if not node:
             return ""
-        return self.generate_tree_from_node(node, maxlevel=maxlevel)
+        return self.generate_tree_from_node(
+            node, maxlevel=maxlevel, include_score=include_score, top=top
+        )
+
+    def print_head(self, maxlevel=3, include_score=False, top=10):
+        string = self.explore(maxlevel=maxlevel, include_score=include_score, top=top)
+        print(string)
 
     def graph(self, node_name=None):
         # check if not starting from center

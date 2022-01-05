@@ -1,23 +1,32 @@
-
-from .from_ontology.ontology_graph_mixin import OntologyGraphMixin
-from .mixins.tree_mixin import AnyTreeMixin, AnyTreeIOMixin
-from .searchable import FilterableSubgraphMixin, SearchableMixin, LBLGraphMixin, SimpleSearchMixin, OrderableMixin
+from .searchable import (
+    FilterableGraphMixin,
+    SearchableMixin,
+    LBLGraphMixin,
+    OrderableMixin,
+    MergeableMixin,
+)
 from .processable import ProcessableGraphMixin
+from .mixins.tree_mixin import AnyTreeMixin, AnyTreeIOMixin
+from .from_ontology.ontology_graph_mixin import OntologyGraphMixin
+
 from anytree import PreOrderIter, LevelOrderIter
+from .comorbid_graph_node import ComorbidGraphNode
 
 
 class ComorbidGraph(
-    AnyTreeMixin,
+    AnyTreeMixin,    # tree group
     AnyTreeIOMixin,
-    OntologyGraphMixin,
-    SearchableMixin,
-    SimpleSearchMixin,
+    SearchableMixin, # search group
+    MergeableMixin,
     OrderableMixin,
-    FilterableSubgraphMixin,
-    ProcessableGraphMixin,
     LBLGraphMixin,
+    FilterableGraphMixin,
+    OntologyGraphMixin,  # ontology
+    ProcessableGraphMixin, # processing
 ):
-    def __init__(self, json_data, node_type, assign_ids=False, root_name=None):
+    def __init__(
+        self, json_data, node_type=ComorbidGraphNode, assign_ids=True, root_name=None
+    ):
         u"""
         A generic tree graph based on json data.
 
@@ -57,15 +66,15 @@ class ComorbidGraph(
     def describe(self):
         count, label_count = 0, 0
         for i in PreOrderIter(self.tree):
-            count += 1 
+            count += 1
             label_count += len(i.annotation_list)
 
         stats = {
             "count": count,
             "label count": label_count,
         }
-        stats['leaves count'] = len(self.tree.leaves)
-        stats['height'] = self.tree.height
+        stats["leaves count"] = len(self.tree.leaves)
+        stats["height"] = self.tree.height
         return stats
 
     @classmethod
@@ -88,15 +97,15 @@ class ComorbidGraph(
     def from_tree(
         cls,
         tree_node,
-        parent_name="Source",
+        title="search results",
     ):
-        new_cg = cls(dict(name=parent_name), node_type=type(tree_node))
+        new_cg = cls(dict(name=''))
         new_cg.tree = tree_node
+        new_cg.tree.name = title
         return new_cg
 
     def select(self, node_name):
         node = self.find_node(node_name)
         if not node:
             return
-        type(self).from_tree(node, parent_name=node_name)
-        return node
+        return type(self).from_tree(node, title=node_name)
