@@ -70,6 +70,7 @@ class ComorbidGraphNode(
                 "score",
                 "body",
                 "description",
+                "annotation_list",
             ]:
                 dict_values[att] = getattr(self, att)
         node = type(self)(**dict_values)

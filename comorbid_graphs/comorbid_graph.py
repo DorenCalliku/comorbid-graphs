@@ -5,7 +5,7 @@ from .searchable import (
     OrderableMixin,
     MergeableMixin,
 )
-from .processable import ProcessableGraphMixin
+from .processable import ProcessableGraphMixin, LabelHandlerMixin
 from .mixins.tree_mixin import AnyTreeMixin, AnyTreeIOMixin
 from .from_ontology.ontology_graph_mixin import OntologyGraphMixin
 
@@ -23,6 +23,7 @@ class ComorbidGraph(
     FilterableGraphMixin,
     OntologyGraphMixin,  # ontology
     ProcessableGraphMixin, # processing
+    LabelHandlerMixin,
 ):
     def __init__(
         self, json_data, node_type=ComorbidGraphNode, assign_ids=True, root_name=None
@@ -50,8 +51,12 @@ class ComorbidGraph(
     def get_names(self):
         return [node.name for node in PreOrderIter(self.tree)]
 
-    def get_nodes(self):
-        return [node for node in PreOrderIter(self.tree)]
+    def get_nodes(self, exclude_head=False):
+        return [
+            node
+            for node in PreOrderIter(self.tree)
+            if node != self.tree or not exclude_head
+        ]
 
     def get_nodes_n_edges(self, node=None, maxlevel=3):
         if not node:
