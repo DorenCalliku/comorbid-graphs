@@ -40,10 +40,10 @@ def get_shared_annotations(df):
     df = df.append(pd.DataFrame([all,shared]).set_index("node"))
     return df
 
-def heatmap_plot_df(numerical_df):
+def heatmap_plot_df(numerical_df, annot=False):
     # optional: resize images from now on
     plt.rcParams["figure.figsize"] = (16, 12)
 
     # numerical data only
-    sns.heatmap(numerical_df)
+    sns.heatmap(numerical_df, annot=annot)
     plt.show()

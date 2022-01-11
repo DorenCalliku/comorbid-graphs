@@ -3,6 +3,7 @@ anytree
 pandas
 numpy
 networkx
+pyyaml
 
 # visualizing
 bs4

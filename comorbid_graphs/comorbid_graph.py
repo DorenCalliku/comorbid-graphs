@@ -7,22 +7,23 @@ from .searchable import (
 )
 from .processable import ProcessableGraphMixin, LabelHandlerMixin
 from .mixins.tree_mixin import AnyTreeMixin, AnyTreeIOMixin
+from .comorbid_graph_node import ComorbidGraphNode
 from .from_ontology.ontology_graph_mixin import OntologyGraphMixin
 
+from .io_utils import read_from_json, read_from_yaml, write_json, write_yaml
 from anytree import PreOrderIter, LevelOrderIter
-from .comorbid_graph_node import ComorbidGraphNode
 
 
 class ComorbidGraph(
-    AnyTreeMixin,    # tree group
+    AnyTreeMixin,  # tree group
     AnyTreeIOMixin,
-    SearchableMixin, # search group
+    SearchableMixin,  # search group
     MergeableMixin,
     OrderableMixin,
     LBLGraphMixin,
     FilterableGraphMixin,
     OntologyGraphMixin,  # ontology
-    ProcessableGraphMixin, # processing
+    ProcessableGraphMixin,  # processing
     LabelHandlerMixin,
 ):
     def __init__(
@@ -104,13 +105,22 @@ class ComorbidGraph(
         tree_node,
         title="search results",
     ):
-        new_cg = cls(dict(name=''))
+        new_cg = cls(dict(name=""))
         new_cg.tree = tree_node
         new_cg.tree.name = title
         return new_cg
 
-    def select(self, node_name):
-        node = self.find_node(node_name)
-        if not node:
-            return
-        return type(self).from_tree(node, title=node_name)
+    @classmethod
+    def from_yaml(cls, filepath):
+        return cls(json_data=read_from_yaml(filepath))
+
+    @classmethod
+    def from_json(cls, filepath):
+        return cls(json_data=read_from_json(filepath))
+
+    def write(self, filepath, method="yaml"):
+        data = self.export()
+        if method == "json":
+            write_json(filepath=filepath, data=data)
+        else:
+            write_yaml(filepath=filepath, data=data)

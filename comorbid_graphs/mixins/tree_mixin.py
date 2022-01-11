@@ -44,7 +44,7 @@ class AnyTreeMixin(object):
 
 class AnyTreeIOMixin(object):
     @classmethod
-    def generate_tree_from_node(cls, node, maxlevel, include_score=False, top=None):
+    def generate_tree_from_node(cls, node, maxlevel, include_score=False, top=None, short_name=None):
         """
         print all nodes to be able to
         see which ones are the ones we need
@@ -52,10 +52,17 @@ class AnyTreeIOMixin(object):
         count = 0
         with io.StringIO() as buf, redirect_stdout(buf):
             for pre, _, node in RenderTree(node, maxlevel=maxlevel, childiter=cls.order_by_score):
-                if include_score:
-                    print("%s%s - %s" % (pre, node.name, str(node.accumulative_score())))
+                if short_name:
+                    cut = 40
+                    if isinstance(short_name, int):
+                        cut = short_name
+                    name = node.name if len(node.name) < cut else node.name[:cut] + '...'
                 else:
-                    print("%s%s" % (pre, node.name))
+                    name = node.name
+                if include_score:
+                    print("%s%s - %s" % (pre, name, str(node.accumulative_score())))
+                else:
+                    print("%s%s" % (pre, name))
                 if top:
                     count += 1
                     if count > top:
@@ -63,18 +70,18 @@ class AnyTreeIOMixin(object):
                         break
             return buf.getvalue()
 
-    def explore(self, node_name=None, maxlevel=None, include_score=False, top=None):
+    def explore(self, node_name=None, maxlevel=None, include_score=False, top=None, short_name=False):
         if not node_name:
             node_name = self.tree.name
         node = self.find_node(node_name)
         if not node:
             return ""
         return self.generate_tree_from_node(
-            node, maxlevel=maxlevel, include_score=include_score, top=top
+            node, maxlevel=maxlevel, include_score=include_score, top=top, short_name=short_name,
         )
 
-    def print_head(self, maxlevel=3, include_score=False, top=10):
-        string = self.explore(maxlevel=maxlevel, include_score=include_score, top=top)
+    def print_head(self, maxlevel=3, include_score=False, top=10, short_name=False):
+        string = self.explore(maxlevel=maxlevel, include_score=include_score, top=top, short_name=short_name)
         print(string)
 
     def graph(self, node_name=None):

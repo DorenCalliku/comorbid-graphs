@@ -9,6 +9,11 @@ If you do not have that, please use the normal version.
 
 
 class SearchableMixin(object):
+    def select(self, node_name):
+        node = self.find_node(node_name)
+        if not node:
+            return
+        return type(self).from_tree(node, title=node_name)
 
     def get_query(self, query_str:str) -> dict:
         return self._build_query(query_str)
