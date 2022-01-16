@@ -1,178 +1,103 @@
----
-jupyter:
-  jupytext:
-    formats: ipynb,md
-    text_representation:
-      extension: .md
-      format_name: markdown
-      format_version: '1.3'
-      jupytext_version: 1.13.5
-  kernelspec:
-    display_name: Python 3 (ipykernel)
-    language: python
-    name: python3
----
-
-
 # Comorbid-Graphs
 Side by side comparison of disorders based on comorbidity factors for clinical psychology.
 
-- create hierarchies of information
-- analyse text for psychological terms
-- visualize
+1. create hierarchies of sources of information
+2. extract valuable elements from text
+3. visualize dependencies
 
 
-**[Examples](https://github.com/DorenCalliku/comorbid-graphs/examples)**: Learn how to apply it to your problem through our use-cases.  
-**[Report issue](https://github.com/DorenCalliku/comorbid-graphs/issues)**: If something doesnt seem right.
+## Simple Example 
+Create from [sample file](big_picture.yaml):
+```py
+from comorbid_graphs import ComorbidGraph
+my_graph = ComorbidGraph.from_yaml('big_picture.yaml')
 
-
-
-
-### Table of Contents
-* [Intro](#intro)
-* [Getting Started](#getting-started)
-    - [Installation](#installation)
-    - [Comorbid-Graphs 101](#comorbid-graphs-101)
-* [Usage](#usage)
-    - [Explore](#explore)
-    - [Select](#select)
-    - [Search](#search)
-    - [Advanced Search](#advanced-search)
-    - [Stats](#stats)
-    - [Process](#analytics)
-    - [Compare](#compare)
-* [References](#references)
-
-
-
-
-## Intro
-* [Short Story Long](https://github.com/DorenCalliku/comorbid-graphs/docs/story.md): What is this tool trying to archive?   
-* [Ontologies](https://github.com/DorenCalliku/comorbid-graphs/docs/ontologies.md): Where do we get the terminology from?   
-* [Data](https://github.com/DorenCalliku/comorbid-graphs/docs/data.md): How to load information?  
-
-- [Applications](https://github.com/DorenCalliku/comorbid-graphs/docs/applications.md): Who is using Comorbid-Graphs?  
-- [Readings](https://github.com/DorenCalliku/comorbid-graphs/docs/notes.md): Interesting related articles or repositories.  
-
-
-
-
-## Getting Started
-
-### Installation
-You can install `comorbid-graph` in any `python` environment.
-
-<!-- #region -->
-```sh
-!pip install git+https://github.com/DorenCalliku/comorbid-graphs
-```
-<!-- #endregion -->
-
-## Comorbid-Graphs 101: Exploration of DSM-V
-An example usage is the analysis of DSM-V.  
-Create the **ComorbidGraph** from raw-json.  
-
-```python tags=["hide-input"]
-import json
-
-# read a json file
-filepath = 'examples/dsm_v/dsm_v.json'
-with open(filepath) as f:
-    data = json.load(f)
-    
-# create the comorbid graph
-from comorbid_graphs import ComorbidGraph, ComorbidGraphNode
-cg = ComorbidGraph(json_data=data, node_type=ComorbidGraphNode)
-cg.print_head()
+print(my_graph.explore(maxlevel=4))
 ```
 
-## Exploration
-These are methods that might come handy during your work with ComorbidGraphs.   
 
-Explore the whole hierarchy through `cg.explore()` or print just the top info `cg.print_head()`.
-
-* **maxlevel**:  how deep in tree you want to go, print_head default = 3 
-* **include_score**: shows on the side how much each result was evaluated, useful in search
-* **top**: shows top X lines
-
-```python
-cg.print_head(maxlevel=3, top=10)
+Results:  
+```
+Diagnosing Mental Health Issues
+├── Frameworks
+│   ├── DSM-V
+│   │   ├── what
+│   │   ├── where
+│   │   │   ├── wikipedia
+│   │   │   ├── website
+│   │   │   └── manual
+│   │   ├── who
+│   │   │   └── APA
+│   │   ├── elements
+│   │   │   ├── disorder
+│   │   │   ├── symptom
+│   │   │   └── diagnostic guideline
+│   │   └── mini versions
+│   │       ├── Chinese Classification of Mental Disorders
+│   │       │   └── wikipedia
+│   │       └── Psychodynamic Diagnostic Manual
+│   │           └── wikipedia
+│   ├── ICD-10
+│   │   ├── what
+│   │   ├── where
+│   │   │   ├── website
+│   │   │   ├── manual
+│   │   │   └── wikipedia
+│   │   ├── who
+│   │   │   └── WHO
+│   │   └── elements
+│   │       └── disorder
+│   ├── HiTOP
+│   │   ├── what
+│   │   ├── where
+│   │   │   ├── website
+│   │   │   └── manual
+│   │   └── elements
+│   │       ├── spectra
+│   │       ├── subfactor
+│   │       ├── syndrome
+│   │       ├── maladaptive trait
+│   │       ├── symptoms
+│   │       └── disorder
+│   └── RDoC
+│       ├── what
+│       ├── where
+│       │   ├── website
+│       │   └── wikipedia
+│       ├── who
+│       │   └── nimh
+│       └── elements
+│           ├── genes
+│           ├── molecules
+│           ├── cells
+│           ├── circuits
+│           ├── physiology
+│           ├── behaviors
+│           ├── self-reports
+│           └── paradigms
+└── approaches
+    ├── authoritative
+    ├── psychodynamic
+    ├── empirical
+    └── network
 ```
 
-### Select
-If you know the name of node that you are looking for, this will return it with all its children.
+## Additional Resources
+- **[Short story long](https://github.com/DorenCalliku/comorbid-graphs/blob/main/docs/story.md)**: Why? What are the elements I am trying to study?  
+- **[In-depth example](https://github.com/DorenCalliku/comorbid-graphs/blob/main/ReadMe.ipynb)**: Check in depth the tool in a notebook.   
+- **[Examples & Resources](https://github.com/DorenCalliku/comorbid-graphs/tree/main/examples)**: Learn how to apply it to your problem through these use-cases.   
+    - [Ontologies on Psychology](https://github.com/DorenCalliku/comorbid-graphs/tree/main/examples) showing different tools to be used when analysing psychological text.   
+    - [DSM-V Exploration](https://github.com/DorenCalliku/comorbid-graphs/tree/main/examples) extraction from book, and analysis of usage of terms.  
+    - [Forensic Neuroscience](https://github.com/DorenCalliku/comorbid-graphs/tree/main/examples/forensic_neuroscience) extraction of cases, and analysis of terms used.   
+    - [Wikipedia Articles](https://github.com/DorenCalliku/comorbid-graphs/tree/main/examples) extract and analyse the well-known source of data.   
+<br>
 
-```python
-results_cg = cg.select("Neurodevelopmental Disorders")
-results_cg.print_head(maxlevel=2)
-```
+- **[Report issue](https://github.com/DorenCalliku/comorbid-graphs/issues)**: If something doesnt seem right.
+- **[Applications](https://github.com/DorenCalliku/comorbid-graphs/blob/main/docs/applications.md)**: Who is using Comorbid-Graphs?   
+- **[Readings](https://github.com/DorenCalliku/comorbid-graphs/blob/main/docs/notes.md)**: Interesting related articles or repositories.  
 
-### Search
-Finds the related nodes regarding specific terms. You can search multiple terms using `,` between terms.  
-It iterates through the nodes, and scores them based on a simple function. After that returns only the included nodes ordered by *relevance*.  
 
-* **select_from**: filter from a certain ancestor that you know
-* **filter_type**: based on your preference, you might filter only sections
-* **title**:    provide a meaningful title for you
-
-**Warning**: Relevance score is **not** meaningful yet.
-
-```python
-# Example: 
-results_cg = cg.search(
-    "headache,migraine",
-    select_from='caffeine',
-    filter_type='default,section',
-    title='Caffeine Solution',
-)
-results_cg.print_head()
-```
-
-### Advanced Search
-
-As you can see from previous search, if you have a **high level of granularity** you might want to do some **filtering** so that you will get more meaningful results. For users who are using search a lot for specifics in a hierarchical graph. For a full guide and explanation check the page [advanced search](https://github.com/DorenCalliku/comorbid-graphs/docs/search.md) in the documentation.
-
-#### Types of filters
-- **inc**: include or filter-in 
-- **exc**: exclude or filter-out
-
-#### Element of filters
-* **name** : find all the nodes that contain these words in their name/title
-* **content** : find all the nodes that contain these words in the body - by default also the unassigned text.
-* **type** : filter the nodes that have a type like this
-* **text_longer** : filter the nodes with text longer than provided
-* **parent** : if parent has name like this
-
-#### Special Filter
-* **ancestor** : Checks if any of the names of the ancestors in the tree is like pattern
-
-```python
-# Example: Which Disorders in 'DSM-V' contain the term 'depressive disorder'?
-# (but I am not interested in neurodevelopmental disorders, and skip small docs too - 
-# say skip disorders smaller than 100 characters of text)
-
-query_string = """
-depressive disorder
-inc_name:        depress,diagnostic criteria
-exc_ancestor:    neurodevelopmental
-inc_text_longer: 100
-"""
-# cg.get_query(query_string)
-```
-
-```python
-results_cg = cg.advanced_search(query_string)
-results_cg.print_head()
-```
-
-### Save for Later
-
-```python
-with open('search_results.json', 'w+') as f:
-    json.dump(results_cg.export(), f)
-```
-
-## References
+## References 
 This package can be thought as a thin wrapper to [Anytree](https://anytree.readthedocs.io/en/latest/index.html), with some useful functionalities for use-case of ontologies and text-processing.   
 
 * Applications using this tool

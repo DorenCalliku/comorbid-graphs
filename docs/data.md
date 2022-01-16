@@ -1,4 +1,4 @@
-# Read Data
+# Future Read Data
 
 ```python
 # use utils to turn your folders into data for Comorbid-Graphs
@@ -14,6 +14,24 @@ from comorbid_graphs.utils.search import search_courtlistener, search_pubmed
 data = search_courtlistener('search-term')
 # or
 data = search_pubmed('search-term')
+```
+
+### Expected Yaml
+```yaml
+- name: grandparent
+  body: Not a ruminator.
+  children:
+  - name: parent's sibling
+    body: Genetically related, might be good to check history.
+    children:
+    - name: cousin
+  - name: parent
+    body: Major factor in mental health disorders and love. Ruminator.
+    children:
+    - name: I
+      body: a person with free time, ruminating on existence.
+    - name: sibling
+      body: similar genetic inheritance
 ```
 
 ### Expected JSON
@@ -39,21 +57,4 @@ The json structure should be as following.
         }
     ]
 }
-```
-### Expected Yaml
-```yaml
-- name: grandparent
-  body: Not a ruminator.
-  children:
-  - name: parent's sibling
-    body: Genetically related, might be good to check history.
-    children:
-    - name: cousin
-  - name: parent
-    body: Major factor in mental health disorders and love. Ruminator.
-    children:
-    - name: I
-      body: a person with free time, ruminating on existence.
-    - name: sibling
-      body: similar genetic inheritance
 ```

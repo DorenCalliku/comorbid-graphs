@@ -1,0 +1,111 @@
+name: Diagnosing Mental Health Issues
+children:
+
+- name: Frameworks
+  children:
+
+  - name: DSM-V
+    children:
+    - name: what
+      body: Diagnostic and Statistical Manual of Mental Health Disorders
+    - name: where
+      children:
+      - name: wikipedia
+        url: https://en.wikipedia.org/wiki/DSM-5
+      - name: website
+        url: https://www.psychiatry.org/psychiatrists/practice/dsm
+      - name: manual
+        url: https://github.com/DorenCalliku/comorbid-graphs/tree/main/examples/dsm_v
+    - name: who 
+      children:
+      - name: APA
+    - name: elements
+      children:
+      - name: disorder
+      - name: symptom
+      - name: diagnostic guideline
+
+    - name: mini versions
+      children:
+      - name: Chinese Classification of Mental Disorders
+        children: 
+        - name: wikipedia 
+          url: https://en.wikipedia.org/wiki/Chinese_Classification_of_Mental_Disorders
+      - name: Psychodynamic Diagnostic Manual
+        children: 
+        - name: wikipedia 
+          url: https://en.wikipedia.org/wiki/Psychodynamic_Diagnostic_Manual
+
+  - name: ICD-10
+    children:
+    - name: what 
+      body: International Statistical Classification of Diseases and Related Health Problems (ICD) - 10
+    - name: where
+      children:
+      - name: website 
+        url: https://www.who.int/standards/classifications/classification-of-diseases
+      - name: manual
+        url: https://icd.who.int/browse10/2019/en
+      - name: wikipedia
+        url: https://en.wikipedia.org/wiki/ICD-10
+    - name: who
+      children:
+      - name: WHO 
+    - name: elements
+      children:
+      - name: disorder
+
+  - name: HiTOP
+    url: https://en.wikipedia.org/wiki/Hierarchical_Taxonomy_of_Psychopathology
+    children:
+    - name: what
+      body: 'The Hierarchical Taxonomy of Psychopathology (HiTOP): A dimensional alternative to traditional nosologies.'
+    - name: where
+      children: 
+      - name: website
+        url: https://doi.org/10.1037/abn0000258
+      - name: manual
+        url: https://osf.io/gmeak/
+    - name: elements
+      children:
+      - name: spectra
+      - name: subfactor
+      - name: syndrome
+      - name: maladaptive trait
+      - name: symptoms
+      - name: disorder
+
+  - name: RDoC
+    children:
+
+    - name: what
+      body: RDoC is a research framework for new approaches to investigating mental disorders, integrating many levels of information
+    - name: where
+      children:
+      - name: website
+        url: https://www.nimh.nih.gov/research/research-funded-by-nimh/rdoc
+      - name: wikipedia 
+        url: https://en.wikipedia.org/wiki/Research_Domain_Criteria
+    - name: who
+      children:
+      - name: nimh
+        body: National Institute of Mental Health
+        url: https://www.nimh.nih.gov/
+    - name: elements
+      children:
+      - name: genes
+      - name: molecules
+      - name: cells
+      - name: circuits
+      - name: physiology
+      - name: behaviors
+      - name: self-reports
+      - name: paradigms
+  
+- name: approaches
+  children:
+  - name: authoritative
+    body: doctors decide what things mean 
+  - name: psychodynamic
+  - name: empirical
+  - name: network
