@@ -4,6 +4,7 @@ pandas
 numpy
 networkx
 pyyaml
+seaborn
 
 # visualizing
 bs4
