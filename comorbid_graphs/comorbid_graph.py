@@ -59,14 +59,16 @@ class ComorbidGraph(
             if node != self.tree or not exclude_head
         ]
 
-    def get_nodes_n_edges(self, node=None, maxlevel=3):
+    def get_nodes_n_edges(self, node=None, maxlevel=3, exclude_parent=False):
         if not node:
             node = self.tree
+
         # filter children
         return [
             j
             for n in LevelOrderIter(node, maxlevel=maxlevel)
             for j in n.get_node_edge()
+            if not(exclude_parent and 'source' in j['data'] and node.parent and j['data']['source'] == node.parent.name)
         ]
 
     def describe(self):

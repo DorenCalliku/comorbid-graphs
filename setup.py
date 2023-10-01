@@ -12,6 +12,9 @@ setup(
     include_package_data=True,
     install_requires=[
         "anytree",
+        "pandas",
+        "micawber",
+        "seaborn"
     ],
     zip_safe=False,
 )
